@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一二九运动（9日）- 中轴线红色文化</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://api.map.baidu.com/api?v=3.0&ak=6429dd84d9c5e1d348f0c6ea025e82d8"></script>
+</head>
+<body>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <div class="brand-icon">🏛️</div>
+            <span class="brand-text">中轴线红色文化</span>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">返回首页</a>
+        </div>
+    </nav>
+    
+    <section class="section hero-section page-hero dec9th-hero">
+        <div class="container">
+            <h1 class="page-title">一二九运动（12月9日）</h1>
+            <p class="page-subtitle">1935年抗日救亡运动</p>
+        </div>
+    </section>
+    
+    <section class="section story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <p>1935年12月9日，北平学生数千人在中国共产党的领导下举行了抗日救国示威游行，反对华北自治，反抗日本帝国主义，掀起了全国抗日救国新高潮。</p>
+                    <p>这次运动推动了抗日民族统一战线的建立，是中国共产党领导的一次伟大的爱国学生运动。</p>
+                </div>
+                <div class="story-image">
+                    <img src="../images/一二九路线9日.png" alt="一二九运动9日路线图" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section spots-section">
+        <div class="container">
+            <h2 class="section-title">重要地点</h2>
+            <div class="spots-grid">
+                <div class="spot-card" onclick="goToSpot('xidan')">
+                    <div class="spot-icon">📍</div>
+                    <h3>西单</h3>
+                    <p>游行队伍集合地点之一</p>
+                    <button class="spot-btn">查看详情</button>
+                </div>
+                <div class="spot-card" onclick="goToSpot('tiananmen')">
+                    <div class="spot-icon">📍</div>
+                    <h3>天安门</h3>
+                    <p>游行集合与出发地</p>
+                    <button class="spot-btn">查看详情</button>
+                </div>
+                <div class="spot-card" onclick="goToSpot('dongjiaominxiang')">
+                    <div class="spot-icon">📍</div>
+                    <h3>东交民巷</h3>
+                    <p>学生游行路线经过地</p>
+                    <button class="spot-btn">查看详情</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-icon">🏛️</div>
+                    <span>探寻北京中轴线红色文化足迹</span>
+                </div>
+                <div class="footer-info">
+                    <p>北京联合大学应用文科综合实验教学中心</p>
+                    <p>2025年文科创新性实验项目</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 红色文化足迹研究项目组</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/main.js"></script>
+    <script>
+        function goToSpot(spotId) {
+            window.location.href = 'spot-detail.html?id=' + spotId + '&from=dec9-9';
+        }
+    </script>
+</body>
+</html>

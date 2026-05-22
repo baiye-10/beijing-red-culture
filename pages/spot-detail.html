@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景点详情</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .spot-detail-header {
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+        }
+        .spot-detail-header.blue {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+        .back-btn:hover {
+            opacity: 0.8;
+        }
+        .detail-content {
+            padding: 3rem 0;
+        }
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .spot-image-wrapper {
+            position: sticky;
+            top: 2rem;
+        }
+        .spot-image {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        .detail-section {
+            margin-bottom: 2rem;
+        }
+        .detail-section h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .detail-section.blue h3 {
+            color: #3498db;
+        }
+        .detail-section p, .detail-section li {
+            line-height: 1.8;
+            color: #555;
+        }
+        .wiki-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .wiki-link.blue {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+        .wiki-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+        }
+        .wiki-link.blue:hover {
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+        }
+        .info-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .info-card h4 {
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+        }
+        .spot-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .gallery-item {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <div class="nav-icon">🏛️</div>
+            <span>北京中轴线红色文化足迹</span>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">首页</a>
+            <a href="may4th.html">五四运动</a>
+            <a href="december9th.html">一二·九运动</a>
+        </div>
+    </nav>
+
+    <section id="spot-detail-header" class="spot-detail-header">
+        <div class="container">
+            <a href="#" id="backBtn" class="back-btn">
+                <span>←</span>
+                <span>返回</span>
+            </a>
+            <h1 class="hero-title" id="spot-title">加载中...</h1>
+            <p class="hero-subtitle" id="spot-subtitle"></p>
+        </div>
+    </section>
+
+    <section class="detail-content">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="spot-image-wrapper">
+                    <img id="spot-image" src="../images/天安门.png" alt="景点照片" class="spot-image">
+                </div>
+                <div>
+                    <div class="detail-section" id="description-section">
+                        <h3>📖 景点介绍</h3>
+                        <div id="spot-description"></div>
+                    </div>
+                    
+                    <div class="detail-section" id="history-section">
+                        <h3>📜 历史背景</h3>
+                        <div id="spot-history"></div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>📍 位置信息</h4>
+                        <p id="spot-location"></p>
+                    </div>
+                    
+                    <a href="#" id="wiki-link" target="_blank" class="wiki-link">
+                        <span>🌐</span>
+                        <span>查看百度百科</span>
+                    </a>
+                    
+                    <div class="detail-section" id="analysis-section" style="margin-top: 2.5rem;">
+                        <h3>📊 游客评价分析</h3>
+                        <div id="spot-analysis-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-icon">🏛️</div>
+                    <span>探寻北京中轴线红色文化足迹</span>
+                </div>
+                <div class="footer-info">
+                    <p>北京联合大学应用文科综合实验教学中心</p>
+                    <p>2025年文科创新性实验项目</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 红色文化足迹研究项目组</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script>
+        const spotsData = {
+            'yongdingmen': {
+                title: '永定门',
+                subtitle: '北京外城的南门，北京中轴线的南端起点',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>永定门位于东城区永定门东滨河路永定门公园内，是北京外城的南门，也是北京城中轴线的南端起点。永定门城楼始建于明嘉靖三十二年（1553年），后增建箭楼，至乾隆年间形成了现在的形制。</p><p>2004年，为恢复历史原貌，永定门得以复建，巍峨壮观的城楼又重现在世人面前，为中轴线申遗奠定了坚实基础。</p>',
+                history: '<p>永定门始建于明嘉靖三十二年（1553年），是北京外城七座城门中最大的一座。1900年八国联军侵华时，城楼遭到一定程度的破坏。1957年，为了改善交通，永定门城楼被拆除。2004年，北京市政府启动复建工程，重新恢复了永定门的历史风貌。</p>',
+                location: '北京市东城区永定门东滨河路永定门公园内',
+                wikiLink: 'https://baike.baidu.com/item/%E6%B0%B8%E5%AE%9A%E9%97%A8/2246215',
+                analysis: ''
+            },
+            'xiannongtan': {
+                title: '先农坛',
+                subtitle: '明清两代帝王祭祀先农、举行耕籍礼的场所',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>先农坛是明、清两代帝王祭祀先农及举行耕籍礼的场所，始建于明永乐十八年（1420年），与天坛东西相对，形成“左祖右社”“郊祀天地”“亲耕亲祭”的传统礼制文化空间。</p><p>先农坛有着众多的文化遗产和历史建筑，见证了我国古代礼制文明的辉煌。</p>',
+                history: '<p>先农坛始建于明永乐十八年（1420年），原名山川坛。嘉靖年间重定名先农坛，形成包括先农坛、天神坛、地祇坛等在内的建筑群。现存建筑有先农神坛、观耕台、庆成宫、太岁殿等。</p>',
+                location: '北京市西城区永定门内大街1号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%85%88%E5%86%9C%E5%9D%9B/666692',
+                analysis: ''
+            },
+            'tianqiao': {
+                title: '天桥',
+                subtitle: '老北京民俗文化的聚集地',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>天桥是老北京民俗文化的聚集地，历史悠久，文化底蕴深厚。它位于天坛与先农坛之间，是中轴线上的重要节点。</p><p>天桥地区以其独特的市井文化而闻名，过去曾是艺人汇聚、表演杂耍的地方，被誉为"北京的天桥"。</p>',
+                history: '<p>天桥的历史可以追溯到元代，当时这里是元大都丽正门郊外。明清时期逐渐发展成为繁华的商业区和民间艺术表演场所。20世纪50年代后，随着城市改造，天桥地区的面貌发生了很大变化。</p>',
+                location: '北京市东城区天桥南大街',
+                wikiLink: 'https://baike.baidu.com/item/%E5%A4%A9%E6%A1%A5/131565',
+                analysis: ''
+            },
+            'zhushikou': {
+                title: '珠市口',
+                subtitle: '北京南城重要的商业中心',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>珠市口是北京南城重要的商业中心，位于中轴线南段，历史悠久，商业繁荣。</p><p>明清时期，这里就是繁华的商业区，各类店铺林立，人流如织。</p>',
+                history: '<p>珠市口在明代就是重要的商业街道，原名"猪市口"，因生猪交易市场而得名。清代以后逐渐发展成为综合性商业区，店铺鳞次栉比。</p>',
+                location: '北京市东城区珠市口东大街与西大街交叉口',
+                wikiLink: 'https://baike.baidu.com/item/%E7%8F%A0%E5%B8%82%E5%8F%A3/10554814',
+                analysis: ''
+            },
+            'qianmen': {
+                title: '前门大街',
+                subtitle: '北京著名的商业街，历史悠久',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>前门大街是北京著名的商业街，位于天安门广场的南侧，是北京最古老的商业街之一。</p><p>前门大街有着数百年的历史，见证了北京的繁荣与发展。这里汇聚了众多老字号店铺，是体验老北京风情的绝佳去处。</p>',
+                history: '<p>前门大街始建于明代，当时就是重要的商业通道。清代至民国时期，前门大街达到鼎盛，各类店铺、戏院、饭馆云集。2008年，前门大街进行了全面修缮，恢复了清末民初的历史风貌。</p>',
+                location: '北京市东城区前门大街',
+                wikiLink: 'https://baike.baidu.com/item/%E5%89%8D%E9%97%A8%E5%A4%A7%E8%A1%97/657266',
+                analysis: ''
+            },
+            'tiananmen': {
+                title: '天安门',
+                subtitle: '中华人民共和国的象征，北京的标志性建筑',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>天安门坐落在中华人民共和国首都北京市的中心，故宫的南端，与天安门广场以及人民英雄纪念碑、毛主席纪念堂、人民大会堂、中国国家博物馆隔长安街相望，占地面积4800平方米，以杰出的建筑艺术和特殊的政治地位为世人所瞩目。</p><p>天安门是明清两代北京皇城的正门，始建于明朝永乐十五年（1417年），最初名“承天门”，寓“承天启运、受命于天”之意。</p>',
+                history: '<p>天安门始建于明永乐十五年（1417年），原名承天门。清顺治八年（1651年）改建后改称天安门。1911年辛亥革命后，天安门广场对外开放。1949年10月1日，中华人民共和国开国大典在这里举行，天安门从此成为新中国的象征。</p>',
+                location: '北京市东城区天安门广场北侧',
+                wikiLink: 'https://baike.baidu.com/item/%E5%A4%A9%E5%AE%89%E9%97%A8/19816',
+                analysis: ''
+            },
+            'shejitan': {
+                title: '社稷坛',
+                subtitle: '明清两代帝王祭祀土地神和五谷神的场所',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>社稷坛（中山公园）位于紫禁城午门前广场西侧，与东侧的太庙（今劳动人民文化宫）左右对称，按照“左祖右社”的帝王之都布局设计而成，是明、清两朝祭祀太社、太稷的场所。</p><p>社稷坛文化内涵丰富，历史建筑保存完整，是中国古代祭祀文化的重要见证。</p>',
+                history: '<p>社稷坛始建于明永乐十八年（1420年），是按照《周礼·考工记》"左祖右社"的制度兴建的。1914年改为中央公园，1928年为纪念孙中山先生，改名为中山公园。</p>',
+                location: '北京市东城区中华路4号',
+                wikiLink: 'https://baike.baidu.com/item/%E7%A4%BE%E7%A8%9C%E5%9D%9B/171486',
+                analysis: ''
+            },
+            'taimiao': {
+                title: '太庙',
+                subtitle: '明清两代皇家祭祖的宗庙',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>太庙（今劳动人民文化宫）位于紫禁城午门前广场东侧，是明清两代皇帝祭祀祖先的场所，与西侧社稷坛（中山公园）呼应，构成了“左祖右社”的帝王之都的重要组成部分。</p><p>太庙建筑宏伟壮观，文化底蕴深厚，是全国重点文物保护单位。</p>',
+                history: '<p>太庙始建于明永乐十八年（1420年），按照"左祖右社"的布局兴建。此后多次修缮和扩建。1924年改为和平公园，1950年正式命名为劳动人民文化宫。</p>',
+                location: '北京市东城区天安门东侧',
+                wikiLink: 'https://baike.baidu.com/item/%E5%A4%AA%E5%BA%99/171466',
+                analysis: ''
+            },
+            'duanmen': {
+                title: '端门',
+                subtitle: '故宫的正门之一，位于天安门和午门之间',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>端门是紫禁城的正门之一，位于天安门和午门之间，是明清两代皇帝从故宫时的必经之路。</p><p>端门始建于明永乐十八年（1420年），建筑形制与天安门相似，是紫禁城的重要门户。</p>',
+                history: '<p>端门始建于明永乐十八年（1420年），与天安门同时建成。明清时期，端门是存放皇帝仪仗的重要场所。1949年后，端门得到妥善保护。</p>',
+                location: '北京市东城区天安门广场北侧',
+                wikiLink: 'https://baike.baidu.com/item/%E7%AB%AF%E9%97%A8/171501',
+                analysis: ''
+            },
+            'mengzangxuexiao': {
+                title: '蒙藏学校',
+                subtitle: '中国共产党早期民族工作的重要阵地',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>蒙藏学校是中国共产党早期在少数民族中开展工作的重要阵地，培养了一大批少数民族干部。</p><p>李大钊、赵世炎、邓中夏等早期共产党人曾在这里开展工作，传播马克思主义。</p>',
+                history: '<p>蒙藏学校创办于1913年，是北洋政府为培养蒙藏等少数民族子弟设立的学校。中国共产党成立后，李大钊等在这里建立党组织，培养了乌兰夫等一批少数民族干部。</p>',
+                location: '北京市西城区小石虎胡同33号',
+                wikiLink: 'https://baike.baidu.com/item/%E8%92%99%E8%97%8F%E5%AD%A6%E6%A0%A1/10600018',
+                analysis: ''
+            },
+            'zhongshanpark': {
+                title: '中山公园',
+                subtitle: '纪念孙中山先生的公园，原社稷坛',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>中山公园位于紫禁城午门前广场西侧，与东侧的太庙（今劳动人民文化宫）左右对称，按照"左祖右社"的帝王之都布局设计而成，是明、清两朝祭祀太社、太稷的场所。</p><p>1928年为纪念孙中山先生，改名为中山公园。</p>',
+                history: '<p>社稷坛始建于明永乐十八年（1420年），是按照《周礼·考工记》"左祖右社"的制度兴建的。1914年改为中央公园，1928年为纪念孙中山先生，改名为中山公园。</p>',
+                location: '北京市东城区中华路4号',
+                wikiLink: 'https://baike.baidu.com/item/%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD/15704',
+                analysis: ''
+            },
+            'tiananmensquare': {
+                title: '天安门广场',
+                subtitle: '世界上最大的城市广场',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>天安门广场位于北京市中心，是世界上最大的城市广场，是中华人民共和国的象征性广场。</p><p>广场上有人民英雄纪念碑、毛主席纪念堂、人民大会堂、中国国家博物馆等重要建筑。</p>',
+                history: '<p>天安门广场始建于明代，当时是明清时期是皇家广场。1949年开国大典在此举行。后经过多次扩建，形成今天的规模。</p>',
+                location: '北京市东城区天安门广场',
+                wikiLink: 'https://baike.baidu.com/item/%E5%A4%A9%E5%AE%89%E9%97%A8%E5%B9%E5%9C%BA/19825',
+                analysis: ''
+            },
+            'gugong': {
+                title: '故宫博物院',
+                subtitle: '中国最大的古代文化艺术博物馆，旧称紫禁城',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>故宫又称紫禁城，是中国明清两代的皇家宫殿，位于北京中轴线的中心，是世界上现存规模最大、保存最为完整的木质结构古建筑群，被誉为"殿宇之海"。</p><p>故宫博物院建立于1925年10月10日，是在明清皇宫及其收藏的基础上建立起来的中国综合性博物馆。</p>',
+                history: '<p>故宫始建于明永乐四年（1406年），建成于永乐十八年（1420年）。从明成祖朱棣到清末代皇帝溥仪，共有24位皇帝在这里居住。1925年故宫博物院成立，对公众开放。</p>',
+                location: '北京市东城区景山前街4号',
+                wikiLink: 'https://baike.baidu.com/item/%E6%95%85%E5%AE%AB%E5%8D%9A%E9%99%A2/156889',
+                analysis: ''
+            },
+            'zhengyangmen': {
+                title: '正阳门',
+                subtitle: '北京内城的正门，俗称前门',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>正阳门是北京内城的正门，俗称前门，位于天安门广场南侧。</p>',
+                history: '<p>正阳门始建于明永乐十七年（1419年），是北京内城九门之一，位于天安门广场南端。</p>',
+                location: '北京市东城区前门大街北端',
+                wikiLink: 'https://baike.baidu.com/item/%E6%AD%A3%E9%98%B3%E9%97%A8/156872',
+                analysis: ''
+            },
+            'nanzhongzhouyudao': {
+                title: '南中轴御道',
+                subtitle: '北京中轴线南段的历史文化景观',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>南中轴御道是北京中轴线南段的历史文化景观，从正阳门到永定门，是明清皇帝祭天时的必经之路。</p>',
+                history: '<p>南中轴御道历史悠久，是北京中轴线的重要组成部分。近年来得到保护和修缮。</p>',
+                location: '北京市东城区永定门内大街',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%B8%AD%E5%BA%99%E7%BA%BF/127528',
+                analysis: ''
+            },
+            'tiantan': {
+                title: '天坛',
+                subtitle: '明清两代帝王祭祀皇天、祈祷五谷丰登的场所',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>天坛是明、清两代帝王祭祀皇天、祈祷五谷丰登的场所，位于北京城南，是中国现存最大的古代祭祀性建筑群。</p><p>天坛建筑宏伟，环境优美，是世界文化遗产。</p>',
+                history: '<p>天坛始建于明永乐十八年（1420年），原名天地坛。嘉靖年间重定名天坛，形成包括祈谷坛、圜丘坛等在内的建筑群。</p>',
+                location: '北京市东城区天坛内东里7号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%A4%A9%E5%9D%8B/127531',
+                analysis: ''
+            },
+            'hongenguan': {
+                title: '宏恩观',
+                subtitle: '北京历史悠久的道教庙宇',
+                image: '../images/地安门.png',
+                theme: 'red',
+                description: '<p>宏恩观是北京历史悠久的道教庙宇，位于地安门外大街。</p>',
+                history: '<p>宏恩观历史悠久，是北京重要的道教场所。</p>',
+                location: '北京市西城区地安门外大街',
+                wikiLink: 'https://baike.baidu.com/item/%E5%AE%8F%E6%81%A9/127547',
+                analysis: ''
+            },
+            'wanningqiao': {
+                title: '万宁桥',
+                subtitle: '北京中轴线上的古老石桥',
+                image: '../images/地安门.png',
+                theme: 'red',
+                description: '<p>万宁桥是北京中轴线上的古老石桥，位于地安门外大街，是元大都时期的重要桥梁。</p>',
+                history: '<p>万宁桥始建于元代，是元大都时期的重要桥梁。明清时期多次修缮。</p>',
+                location: '北京市西城区地安门外大街',
+                wikiLink: 'https://baike.baidu.com/item/%E4%B8%87%E5%AE%97/157116',
+                analysis: ''
+            },
+            'guihuazhanlanguan': {
+                title: '北京市规划展览馆',
+                subtitle: '展示北京城市规划和发展历史的展览馆',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>北京市规划展览馆是展示北京城市规划和发展历史的专业展览馆，位于前门东大街。</p>',
+                history: '<p>北京市规划展览馆成立于2004年，是展示北京城市规划的重要窗口。</p>',
+                location: '北京市东城区前门东大街20号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A7%84%E5%B1%95%E9%A6%88/10573466',
+                analysis: ''
+            },
+            'tiedaobowuguan': {
+                title: '中国铁道博物馆正阳门馆',
+                subtitle: '展示中国铁路发展历史的专业博物馆',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>中国铁道博物馆正阳门馆是展示中国铁路发展历史的专业博物馆，位于前门东大街。</p>',
+                history: '<p>中国铁道博物馆正阳门馆位于原京奉铁路正阳门东车站旧址。</p>',
+                location: '北京市东城区前门东大街甲2号',
+                wikiLink: 'https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E9%93%81%E9%87%8C%E5%8D%9A%E7%89%A9%E9%99%86/228069',
+                analysis: ''
+            },
+            'ziranbowuguan': {
+                title: '国家自然博物馆',
+                subtitle: '中国唯一的国家级自然历史博物馆',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>国家自然博物馆是中国唯一的国家级自然历史博物馆，位于天桥南大街。</p>',
+                history: '<p>国家自然博物馆前身是北京自然博物馆，成立于1951年。2023年更名为国家自然博物馆。</p>',
+                location: '北京市东城区天桥南大街126号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%9B%BD%E5%AE%AB%E8%87%AA%E5%8D%9A%E7%89%A9%E9%A6%86/7267006',
+                analysis: ''
+            },
+            'gudaijianzhubowuguan': {
+                title: '北京古代建筑博物馆',
+                subtitle: '展示中国古代建筑艺术的博物馆',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>北京古代建筑博物馆是展示中国古代建筑艺术的专业博物馆，位于先农坛内。</p>',
+                history: '<p>北京古代建筑博物馆成立于1991年，位于先农坛内。</p>',
+                location: '北京市西城区东经路21号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%BB%B6%E4%BB%A3%E5%BB%BA%E7%AF%91%E5%8D%9A%E7%89%A9%E9%99%86/285964',
+                analysis: ''
+            },
+            'quanjudebowuguan': {
+                title: '全聚德博物馆',
+                subtitle: '展示全聚德烤鸭历史文化的博物馆',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>全聚德博物馆是展示全聚德烤鸭历史文化的专业博物馆，位于和平门。</p>',
+                history: '<p>全聚德创建于清同治三年（1864年），是北京著名的老字号。</p>',
+                location: '北京市西城区前门西大街14号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%85%A8%E8%81%9A%E5%BE%97/130341',
+                analysis: ''
+            },
+            'laoshechaguan': {
+                title: '老舍茶馆',
+                subtitle: '北京著名的老字号茶馆',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>老舍茶馆是北京著名的老字号茶馆，位于前门西大街。</p>',
+                history: '<p>老舍茶馆成立于1988年，是北京著名的茶馆。</p>',
+                location: '北京市西城区前门西大街3号',
+                wikiLink: 'https://baike.baidu.com/item/%E8%80%81%E8%88%8D%E8%8C%96/140815',
+                analysis: ''
+            },
+            'neiliansheng': {
+                title: '内联升',
+                subtitle: '北京著名的老字号鞋店',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>内联升是北京著名的老字号鞋店，位于大栅栏。</p>',
+                history: '<p>内联升创建于清咸丰三年（1853年），是北京著名的老字号。</p>',
+                location: '北京市西城区大栅栏街34号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%86%85%E8%81%94%E5%8D%87/10547711',
+                analysis: ''
+            },
+            'tongrentang': {
+                title: '北京同仁堂',
+                subtitle: '中国著名的老字号中药店',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>北京同仁堂是中国著名的老字号中药店，位于大栅栏。</p>',
+                history: '<p>同仁堂创建于清康熙八年（1669年），是中国著名的老字号。</p>',
+                location: '北京市西城区大栅栏街24号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%90%8C%E4%BB%81/127572',
+                analysis: ''
+            },
+            'shengxifu': {
+                title: '盛锡福中国冠帽文化馆',
+                subtitle: '北京著名的老字号帽店',
+                image: '../images/前门.png',
+                theme: 'red',
+                description: '<p>盛锡福是北京著名的老字号帽店，位于前门大街。</p>',
+                history: '<p>盛锡福创建于1911年，是北京著名的老字号。</p>',
+                location: '北京市东城区前门大街18号',
+                wikiLink: 'https://baike.baidu.com/item/%E7%9B%9B%E9%94%A1%E7%A6%8F/10547882',
+                analysis: ''
+            },
+            'gugong': {
+                title: '故宫博物院',
+                subtitle: '中国最大的古代文化艺术博物馆，旧称紫禁城',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>故宫又称紫禁城，是中国明清两代的皇家宫殿，位于北京中轴线的中心，是世界上现存规模最大、保存最为完整的木质结构古建筑群，被誉为"殿宇之海"。</p><p>故宫博物院建立于1925年10月10日，是在明清皇宫及其收藏的基础上建立起来的中国综合性博物馆。</p>',
+                history: '<p>故宫始建于明永乐四年（1406年），建成于永乐十八年（1420年）。从明成祖朱棣到清末代皇帝溥仪，共有24位皇帝在这里居住。1925年故宫博物院成立，对公众开放。</p>',
+                location: '北京市东城区景山前街4号',
+                wikiLink: 'https://baike.baidu.com/item/%E6%95%85%E5%AE%AB%E5%8D%9A%E9%99%A2/156889',
+                analysis: ''
+            },
+            'gugong': {
+                title: '故宫博物院',
+                subtitle: '中国最大的古代文化艺术博物馆，旧称紫禁城',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>故宫又称紫禁城，是中国明清两代的皇家宫殿，位于北京中轴线的中心，是世界上现存规模最大、保存最为完整的木质结构古建筑群，被誉为“殿宇之海”。</p><p>故宫博物院建立于1925年10月10日，是在明清皇宫及其收藏的基础上建立起来的中国综合性博物馆。</p>',
+                history: '<p>故宫始建于明永乐四年（1406年），建成于永乐十八年（1420年）。从明成祖朱棣到清末代皇帝溥仪，共有24位皇帝在这里居住。1925年故宫博物院成立，对公众开放。</p>',
+                location: '北京市东城区景山前街4号',
+                wikiLink: 'https://baike.baidu.com/item/%E6%95%85%E5%AE%AB%E5%8D%9A%E9%99%A2/156889',
+                analysis: ''
+            },
+            'jingshan': {
+                title: '景山',
+                subtitle: '北京城内的制高点，俯瞰紫禁城的绝佳位置',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>景山是明清两代皇帝游幸的皇家园林，位于北京内城的中心位置。景山的主峰高43米，是北京城内的制高点，站在山顶可以俯瞰整个紫禁城和北京城的壮丽景色。</p><p>景山不仅是一座优美的皇家园林，更是北京城历史文化的重要见证。</p>',
+                history: '<p>景山原名万岁山，始建于明永乐年间，是用挖掘紫禁城护城河和南海的泥土堆筑而成。顺治年间改名景山。1928年景山公园对外开放，成为市民休闲游览的场所。</p>',
+                location: '北京市西城区景山西街44号',
+                wikiLink: 'https://baike.baidu.com/item/%E6%99%AF%E5%B1%B1/452037',
+                analysis: ''
+            },
+            'beihai': {
+                title: '北海公园',
+                subtitle: '中国现存最古老、最完整的皇家园林之一',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>北海公园是中国现存最古老、最完整、最具综合性和代表性的皇家园林之一，是中国古代皇家园林的杰作。</p><p>北海公园始建于辽代，历经金、元、明、清各朝代的修建，形成了今天的规模。园林由琼华岛、团城、太液池等部分组成。</p>',
+                history: '<p>北海的历史可以追溯到辽代，当时这里是瑶屿行宫。金大定十九年（1179年）在此修建大宁宫。明清时期北海进一步扩建，形成"一池三山"的格局。1925年北海公园正式开放。</p>',
+                location: '北京市西城区文津街1号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E6%B5%B7%E5%85%AC%E5%9B%AD/155856',
+                analysis: ''
+            },
+            'shichahai': {
+                title: '什刹海',
+                subtitle: '北京城内著名的历史文化风景区',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>什刹海是北京城内著名的历史文化风景区，包括前海、后海和西海（又称积水潭）三个水域及周边地区，被誉为"北方的水乡"。</p><p>什刹海地区历史悠久，文化底蕴深厚，有众多名人故居、王府庙宇。如今这里更是酒吧、特色店铺云集，成为体验北京文化的好去处。</p>',
+                history: '<p>什刹海历史悠久，元代时这里是大运河的终点。明清时期，什刹海成为王府聚集之地。20世纪后，什刹海逐渐成为市民休闲和旅游的热门去处。</p>',
+                location: '北京市西城区地安门西大街以北',
+                wikiLink: 'https://baike.baidu.com/item/%E4%BB%80%E5%88%B9%E6%B5%B7/176141',
+                analysis: ''
+            },
+            'di\'anmen': {
+                title: '地安门',
+                subtitle: '北京皇城的北门',
+                image: '../images/地安门.png',
+                theme: 'red',
+                description: '<p>地安门是明清两代皇城的北门，与天安门南北相对，遥相呼应，寓意"天地平安"。地安门在历史上曾是北京北城的重要交通枢纽。</p><p>虽然原建筑已不存，但地安门作为北京中轴线的重要节点，其历史地位依然重要。</p>',
+                history: '<p>地安门始建于明永乐十八年（1420年），原名北安门，清顺治年间改名地安门。1954年为疏导城市交通，地安门被拆除。2019年，地安门雁翅楼复建工程完工。</p>',
+                location: '北京市西城区地安门外大街',
+                wikiLink: 'https://baike.baidu.com/item/%E5%9C%B0%E5%AE%89%E9%97%A8/171518',
+                analysis: ''
+            },
+            'gulou': {
+                title: '鼓楼',
+                subtitle: '北京中轴线上的标志性建筑，古代报时中心',
+                image: '../images/地安门.png',
+                theme: 'red',
+                description: '<p>北京鼓楼是北京城中轴线上的标志性建筑，与钟楼一前一后，构成古代北京的报时中心。</p><p>鼓楼始建于元代，历经多次重建，现存建筑为清乾隆年间所建。楼内原设有更鼓，用于报时。</p>',
+                history: '<p>鼓楼始建于元至元九年（1272年），元大都齐政楼。明永乐十八年（1420年）在原址东侧重建。嘉靖十八年（1539年）第三次重建。1924年后鼓楼停止报时，改为京兆通俗教育馆。</p>',
+                location: '北京市东城区钟楼湾胡同临字9号',
+                wikiLink: 'https://baike.baidu.com/item/%E9%BC%9F%E6%A5%BC/139920',
+                analysis: ''
+            },
+            'zhonglou': {
+                title: '钟楼',
+                subtitle: '北京中轴线上的标志性建筑，与鼓楼遥相呼应',
+                image: '../images/地安门.png',
+                theme: 'red',
+                description: '<p>钟楼位于北京中轴线的北端，与鼓楼南北相望，是明清北京城的报时建筑，也是全国重点文物保护单位。</p><p>钟楼建筑独特，气势恢宏，是了解北京历史文化的重要窗口。</p>',
+                history: '<p>钟楼始建于元至元九年（1272年），后毁于火灾。明永乐十八年（1420年）重建，后又毁于火灾。清乾隆年间再次重建，全部采用砖石结构，无梁无柱，建筑技艺精湛。</p>',
+                location: '北京市东城区钟楼湾胡同临字9号',
+                wikiLink: 'https://baike.baidu.com/item/%E9%92%9F%E6%A5%BC/139923',
+                analysis: ''
+            },
+            'yonghegong': {
+                title: '雍和宫',
+                subtitle: '北京最大的藏传佛教寺院',
+                image: '../images/永定门.png',
+                theme: 'red',
+                description: '<p>雍和宫是北京最大的藏传佛教寺院，始建于清康熙三十三年（1694年），原是康熙皇帝赐给四子胤禛的王府，雍正即位后改为行宫，乾隆九年（1744年）改为藏传佛教寺院。</p><p>雍和宫建筑宏伟壮观，收藏有大量珍贵的佛教文物。</p>',
+                history: '<p>雍和宫始建于清康熙三十三年（1694年），原为胤禛的府邸。雍正三年（1725年）改为行宫，称雍和宫。乾隆九年（1744年）正式改为藏传佛教寺院，成为清政府管理藏传佛教的中心。</p>',
+                location: '北京市东城区雍和宫大街12号',
+                wikiLink: 'https://baike.baidu.com/item/%E9%9B%8D%E5%92%8C%E5%AE%AB/283113',
+                analysis: ''
+            },
+            'beidahonglou': {
+                title: '北京大学红楼',
+                subtitle: '五四运动的策源地，中国共产主义运动的发祥地',
+                image: '../images/北大红楼.png',
+                theme: 'red',
+                description: '<p>北京大学红楼是新文化运动的中心、五四运动的策源地、中国共产党的重要发祥地之一、北京最早的共产党组织诞生地。</p><p>红楼见证了中国近代史上许多重要的历史时刻，是中国红色文化的重要象征。</p>',
+                history: '<p>北京大学红楼建成于1918年，原为北京大学第一院，是当时北大文科和图书馆的所在地。李大钊、陈独秀、毛泽东等曾在此工作。1919年五四运动的游行队伍就是从这里出发的。</p>',
+                location: '北京市东城区五四大街29号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%A4%A7%E7%BA%A2%E6%A5%BC/8467656',
+                analysis: ''
+            },
+            'dongjiaominxiang': {
+                title: '东交民巷',
+                subtitle: '近代西方列强在中国的使馆区',
+                image: '../images/东交民巷.png',
+                theme: 'red',
+                description: '<p>东交民巷是北京市东城区的一条街道，曾是20世纪初西方列强在中国的使馆区，有"国中之国"之称。</p><p>东交民巷保存有大量西方近代建筑，见证了中国近代史上一段屈辱而又抗争的历史。</p>',
+                history: '<p>东交民巷在元代称江米巷。明代开始成为中央衙署所在地。1860年第二次鸦片战争后，各国在东交民巷设立使馆。1949年北平解放后，东交民巷回到中国人民手中。</p>',
+                location: '北京市东城区东交民巷',
+                wikiLink: 'https://baike.baidu.com/item/%E4%B8%9C%E4%BA%A4%E6%B0%91%E5%B7%B7/1304253',
+                analysis: ''
+            },
+            'zhaojialou': {
+                title: '赵家楼',
+                subtitle: '五四运动中"火烧赵家楼"事件的发生地',
+                image: '../images/赵家楼.png',
+                theme: 'red',
+                description: '<p>赵家楼是五四运动历史事件中"火烧赵家楼"的发生地，见证了中国近代史上重要的历史时刻。</p><p>1919年5月4日，北京爱国学生在这里火烧了曹汝霖的住宅，痛打了章宗祥，史称"火烧赵家楼"事件，这是五四运动的重要组成部分。</p>',
+                history: '<p>赵家楼原为明代赵贞吉故居，故称赵家楼。后来成为曹汝霖的住宅。1919年五四运动中，爱国学生游行至此，放火烧毁了赵家楼。现在赵家楼遗址建有纪念设施。</p>',
+                location: '北京市东城区前赵家楼胡同1号',
+                wikiLink: 'https://baike.baidu.com/item/%E8%B5%B5%95%E5%AE%B6%E6%A5%BC/20605568',
+                analysis: ''
+            },
+            'xuehuibian': {
+                title: '新会会馆',
+                subtitle: '五四运动学生代表会议的召开地',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>新会会馆是五四运动时期学生代表会议的召开地，见证了五四爱国运动的重要历史时刻。</p><p>1919年5月4日，北京学生在天安门集会游行后，在此召开会议，决定了后续的行动计划。</p>',
+                history: '<p>新会会馆建于清嘉庆年间，是广东新会籍人士在京的会馆。五四运动期间，这里成为学生运动的重要活动场所。解放后曾作为民居使用，现在得到了妥善保护。</p>',
+                location: '北京市西城区菜市口大街',
+                wikiLink: 'https://baike.baidu.com/item/%E6%96%B0%E4%BC%9A%E4%BC%9A%E9%A6%86/13022047',
+                analysis: ''
+            },
+            'beidaeryuan': {
+                title: '北大二院旧址',
+                subtitle: '五四运动的重要活动场所',
+                image: '../images/北大二院旧址.png',
+                theme: 'red',
+                description: '<p>北大二院旧址是原北京大学第二院，是五四运动时期学生活动的重要场所。</p><p>这里曾是北大的理科校舍，五四运动期间，学生们多次在此集会，探讨爱国救亡的道路。</p>',
+                history: '<p>北大二院原为京师大学堂的译学馆，1912年改为北京大学第二院。五四时期，这里是进步学生的聚集地。1920年李大钊在这里组织了马克思学说研究会。</p>',
+                location: '北京市东城区沙滩后街55号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%A4%A7%E4%BA%8C%E9%99%A2/10573236',
+                analysis: ''
+            },
+            'mengzangxuexiao': {
+                title: '蒙藏学校',
+                subtitle: '中国共产党早期民族工作的重要阵地',
+                image: '../images/天安门.png',
+                theme: 'red',
+                description: '<p>蒙藏学校是中国共产党早期在少数民族中开展工作的重要阵地，培养了一大批少数民族干部。</p><p>李大钊、赵世炎、邓中夏等早期共产党人曾在这里开展工作，传播马克思主义。</p>',
+                history: '<p>蒙藏学校创办于1913年，是北洋政府为培养蒙藏等少数民族子弟设立的学校。中国共产党成立后，李大钊等在这里建立党组织，培养了乌兰夫等一批少数民族干部。</p>',
+                location: '北京市西城区小石虎胡同33号',
+                wikiLink: 'https://baike.baidu.com/item/%E8%92%99%E8%97%8F%E5%AD%A6%E6%A0%A1/10600018',
+                analysis: ''
+            },
+            'xidan': {
+                title: '西单',
+                subtitle: '一二·九运动中学生游行集合地之一',
+                image: '../images/西单.png',
+                theme: 'blue',
+                description: '<p>西单是北京著名的商业区，也是一二·九运动时期学生游行集合地之一。</p><p>1935年12月9日，爱国学生在这里集会游行，掀起了抗日救亡运动的新高潮。</p>',
+                history: '<p>西单历史悠久，明代开始就是繁华的商业区。民国时期，这里发展成为北京重要的商业中心。一二·九运动期间，这里是学生运动的重要场所。</p>',
+                location: '北京市西城区西单北大街',
+                wikiLink: 'https://baike.baidu.com/item/%E8%A5%BF%E5%8D%95%E5%8D%97/19656',
+                analysis: ''
+            },
+            'xinhua': {
+                title: '新华门',
+                subtitle: '国务院正门，中南海的南门',
+                image: '../images/新华门.png',
+                theme: 'blue',
+                description: '<p>新华门是国务院正门，也是中南海的南门，位于北京西长安街上。它既是中国政府的象征，也是一处历史建筑。</p><p>新华门原名宝月楼，始建于清乾隆年间。1913年改建成新华门。</p>',
+                history: '<p>新华门始建于清乾隆二十三年（1758年），原名宝月楼，是乾隆皇帝为宠妃香妃所建。1913年袁世凯将其改建为总统府正门，改名新华门。现为中央人民政府的正门。</p>',
+                location: '北京市西城区西长安街',
+                wikiLink: 'https://baike.baidu.com/item/%E6%96%B0%E5%8D%8E%E9%97%A8/157168',
+                analysis: ''
+            },
+            'fuchengmen': {
+                title: '阜成门',
+                subtitle: '一二·九运动游行路线的重要节点',
+                image: '../images/阜成门.png',
+                theme: 'blue',
+                description: '<p>阜成门是北京内城九门之一，是一二·九运动游行路线的重要节点。</p><p>1935年12月9日，游行学生曾经过此地，掀起了抗日救亡运动的高潮。</p>',
+                history: '<p>阜成门始建于明洪武元年（1368年），是北京内城九门之一。明清时，阜成门是运送煤炭的通道。1935年一二·九运动期间，这里是学生游行的重要地点。阜成门在20世纪60年代被拆除。</p>',
+                location: '北京市西城区阜成门内大街',
+                wikiLink: 'https://baike.baidu.com/item/%E9%96%8C%E6%88%90%E9%97%A8/171532',
+                analysis: ''
+            },
+            'xibianmen': {
+                title: '西便门',
+                subtitle: '北京外城西南门，一二·九运动纪念地',
+                image: '../images/西便门.png',
+                theme: 'blue',
+                description: '<p>西便门是北京外城七门之一，位于外城西南角。这里是一二·九运动时期的重要纪念地。</p><p>1935年12月，爱国学生曾在这一带游行示威，呼吁停止内战，一致抗日。</p>',
+                history: '<p>西便门始建于明嘉靖三十二年（1553年），是北京外城最小的城门。1952年西便门被拆除。1988年在附近修建了西便门明北京城墙遗迹公园。</p>',
+                location: '北京市西城区西便门东大街',
+                wikiLink: 'https://baike.baidu.com/item/%E8%A5%BF%E4%BE%BF%E9%97%A8/171536',
+                analysis: ''
+            },
+            'gaoliangqiao': {
+                title: '高粱桥',
+                subtitle: '一二·九运动中学生与军警对峙的地方',
+                image: '../images/高粱桥.png',
+                theme: 'blue',
+                description: '<p>高粱桥是一座历史悠久的古桥，位于北京西直门外，是一二·九运动时期学生与军警对峙的地方。</p><p>1935年12月9日，游行学生在这里与前来阻拦的军警进行了英勇的斗争。</p>',
+                history: '<p>高粱桥始建于元代，是元大都通惠河上的重要桥梁。明清时期，这里是北京西郊的重要通道。1935年一二·九运动期间，这里发生了学生与军警的激烈对峙。</p>',
+                location: '北京市海淀区高粱桥路',
+                wikiLink: 'https://baike.baidu.com/item/%E9%AB%98%E7%B1%B3%E6%A1%A5/13042272',
+                analysis: ''
+            },
+            'qinghua': {
+                title: '清华大学',
+                subtitle: '一二·九运动的重要策源地',
+                image: '../images/北京大学.png',
+                theme: 'blue',
+                description: '<p>清华大学是中国著名高等学府，也是一二·九运动的重要策源地。</p><p>1935年，清华师生积极投身抗日救亡运动，成为一二·九运动的重要力量。蒋南翔等学生领导人在这里发出了"华北之大，已经安放不得一张平静的书桌了"的呐喊。</p>',
+                history: '<p>清华大学的前身清华学堂始建于1911年。1928年正式定名国立清华大学。一二·九运动时期，清华师生积极参与，成为运动的重要力量。</p>',
+                location: '北京市海淀区双清路30号',
+                wikiLink: 'https://baike.baidu.com/item/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6/130017',
+                analysis: ''
+            },
+            'xizhimen': {
+                title: '西直门',
+                subtitle: '一二·九运动学生进城集结地',
+                image: '../images/阜成门.png',
+                theme: 'blue',
+                description: '<p>西直门是北京内城九门之一，是一二·九运动时期学生进城的重要集结地。</p><p>1935年12月16日，西郊各校学生在西直门集结，与城内学生会师，举行了更大规模的示威游行。</p>',
+                history: '<p>西直门始建于明洪武元年（1368年），是北京内城九门之一。明清时期，西直门是通往玉泉山的运水通道。1935年一二·九运动期间，这里是学生进城的重要地点。西直门在20世纪60年代被拆除。</p>',
+                location: '北京市西城区西直门外大街',
+                wikiLink: 'https://baike.baidu.com/item/%E8%A5%BF%E7%9B%B4%E9%97%A8/171530',
+                analysis: ''
+            },
+            'zhengyang': {
+                title: '正阳门',
+                subtitle: '一二·九运动学生集会地',
+                image: '../images/前门.png',
+                theme: 'blue',
+                description: '<p>正阳门是北京内城的正门，俗称前门，是一二·九运动时期学生集会的重要地点。</p><p>1935年12月16日，爱国学生在这里举行集会，反对冀察政务委员会的成立。</p>',
+                history: '<p>正阳门始建于明永乐十七年（1419年），是北京内城九门之一，位于天安门广场南端。1915年进行了改建。一二·九运动期间，这里是学生运动的重要场所。</p>',
+                location: '北京市东城区前门大街北端',
+                wikiLink: 'https://baike.baidu.com/item/%E6%AD%A3%E9%98%B3%E9%97%A8/156872',
+                analysis: ''
+            },
+            'yanda': {
+                title: '燕京大学',
+                subtitle: '一二·九运动的重要参与者',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>燕京大学是中国近代史上著名的教会大学，也是一二·九运动的重要参与者。</p><p>燕大师生积极投身抗日救亡运动，许多学生成为运动的骨干力量。</p>',
+                history: '<p>燕京大学成立于1919年，由美国和英国教会合办。司徒雷登担任首任校长。1952年院系调整后，燕京大学与北京大学合并。</p>',
+                location: '北京市海淀区颐和园路5号（原址）',
+                wikiLink: 'https://baike.baidu.com/item/%E7%87%9D%E4%BA%AC%E5%A4%A7%E5%AD%A6/130048',
+                analysis: ''
+            },
+            'beida': {
+                title: '北京大学',
+                subtitle: '一二·九运动的中心之一',
+                image: '../images/北京大学.png',
+                theme: 'blue',
+                description: '<p>北京大学是中国著名的高等学府，也是一二·九运动的中心之一。</p><p>北大师生在一二·九运动中发挥了重要作用，许多学生成为运动的组织者和积极参与者。</p>',
+                history: '<p>北京大学创于1898年，初名京师大学堂，是中国第一所国立综合性大学。一二·九运动时期，北大师生积极参与，成为运动的重要力量。</p>',
+                location: '北京市海淀区颐和园路5号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%A4%A7/130016',
+                analysis: ''
+            },
+            'shifan': {
+                title: '北京师范大学',
+                subtitle: '一二·九运动的重要参加者',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>北京师范大学是中国著名高等学府，也是一二·九运动的重要参加者。</p><p>北师大师生积极投身抗日救亡运动，为民族解放事业贡献了力量。</p>',
+                history: '<p>北京师范大学的前身是1902年创立的京师大学堂师范馆。1923年正式定名北京师范大学。一二·九运动时期，师大师生积极参与，成为运动的重要力量。</p>',
+                location: '北京市海淀区新街口外大街19号',
+                wikiLink: 'https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7/130049',
+                analysis: ''
+            },
+            'zhongguo': {
+                title: '中国大学',
+                subtitle: '一二·九运动的重要阵地',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>中国大学是民国时期著名的私立大学，也是一二·九运动的重要阵地。</p><p>中国大学师生积极参与抗日救亡运动，许多学生成为运动的骨干。</p>',
+                history: '<p>中国大学成立于1912年，由孙中山创办。1949年后，中国大学并入北京师范大学等校。一二·九运动时期，中大师生积极参与，成为运动的重要力量。</p>',
+                location: '北京市西城区西单大木仓胡同（原址）',
+                wikiLink: 'https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6/13046785',
+                analysis: ''
+            },
+            'dongcheng': {
+                title: '东城',
+                subtitle: '一二·九运动重要活动区域',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>东城是北京的中心城区，也是一二·九运动的重要活动区域。</p><p>1935年12月，爱国学生在东城多地举行游行示威，掀起了抗日救亡运动的高潮。</p>',
+                history: '<p>东城历史悠久，是北京文物古迹最集中的地区之一。近代以来，这里成为学生运动的重要场所。一二·九运动期间，东城区是学生运动的重要活动区域。</p>',
+                location: '北京市东城区',
+                wikiLink: 'https://baike.baidu.com/item/%E4%B8%9C%E5%9F%8E%E5%8C%BA/171358',
+                analysis: ''
+            },
+            'xuanwu': {
+                title: '宣武',
+                subtitle: '一二·九运动重要活动区域',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>宣武是北京的中心城区之一，也是一二·九运动的重要活动区域。</p><p>1935年12月，爱国学生在宣武地区举行游行示威，呼吁停止内战，一致抗日。</p>',
+                history: '<p>宣武历史悠久，是北京城的发祥地之一。金代在这里建中都城。一二·九运动期间，宣武是学生运动的重要活动区域。</p>',
+                location: '北京市西城区（原宣武区）',
+                wikiLink: 'https://baike.baidu.com/item/%E5%AE%A3%E6%AD%A6%8C%E5%8C%BA/171361',
+                analysis: ''
+            },
+            'chaoyang': {
+                title: '朝阳',
+                subtitle: '一二·九运动重要活动区域',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>朝阳是北京的中心城区之一，也是一二·九运动的重要活动区域。</p><p>1935年12月，爱国学生在朝阳地区举行游行示威，掀起了抗日救亡运动的高潮。</p>',
+                history: '<p>朝阳历史悠久，是北京重要的城区。民国时期，这里发展成为北京的重要区域。一二·九运动期间，朝阳是学生运动的重要活动区域。</p>',
+                location: '北京市朝阳区',
+                wikiLink: 'https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8C%BA/171372',
+                analysis: ''
+            },
+            'wudaokou': {
+                title: '五道口',
+                subtitle: '一二·九运动中学生活动区域',
+                image: '../images/天安门.png',
+                theme: 'blue',
+                description: '<p>五道口是北京海淀区的一个地名，因是五条铁路的交汇口而得名，也是一二·九运动中学生活动的区域。</p><p>1935年，清华、北大、燕大等校学生常在这里聚会，讨论救亡图存的道路。</p>',
+                history: '<p>五道口因京张铁路等五条铁路在此交汇而得名。20世纪30年代，这里是清华、北大等校学生活动的重要区域。如今的五道口是北京著名的繁华区域。</p>',
+                location: '北京市海淀区成府路五道口',
+                wikiLink: 'https://baike.baidu.com/item/%E4%BA%94%E9%81%93%E5%8F%A3/13041688',
+                analysis: ''
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollProgress();
+            initNavigation();
+            initScrollAnimations();
+            loadSpotDetail();
+        });
+
+        function loadSpotDetail() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const spotId = urlParams.get('id');
+            const from = urlParams.get('from');
+            
+            const spot = spotsData[spotId];
+            if (spot) {
+                document.getElementById('spot-title').textContent = spot.title;
+                document.getElementById('spot-subtitle').textContent = spot.subtitle;
+                document.getElementById('spot-image').src = spot.image;
+                document.getElementById('spot-description').innerHTML = spot.description;
+                document.getElementById('spot-history').innerHTML = spot.history;
+                document.getElementById('spot-location').textContent = spot.location;
+                document.getElementById('wiki-link').href = spot.wikiLink;
+                document.getElementById('spot-analysis-content').innerHTML = spot.analysis || '<p>暂无分析数据</p>';
+                
+                const header = document.getElementById('spot-detail-header');
+                const descSection = document.getElementById('description-section');
+                const historySection = document.getElementById('history-section');
+                const wikiLink = document.getElementById('wiki-link');
+                
+                if (spot.theme === 'blue') {
+                    header.classList.add('blue');
+                    descSection.classList.add('blue');
+                    historySection.classList.add('blue');
+                    wikiLink.classList.add('blue');
+                }
+                
+                if (from === 'may4th') {
+                    document.getElementById('backBtn').href = 'may4th.html';
+                    document.getElementById('backBtn').innerHTML = '<span>←</span><span>返回五四运动路线</span>';
+                } else if (from === 'dec9th' || from === 'dec9th-16') {
+                    document.getElementById('backBtn').href = 'dec9th-day16.html';
+                    document.getElementById('backBtn').innerHTML = '<span>←</span><span>返回一二·九16日路线</span>';
+                } else if (from === 'dec9th-9') {
+                    document.getElementById('backBtn').href = 'dec9th-day9.html';
+                    document.getElementById('backBtn').innerHTML = '<span>←</span><span>返回一二·九9日路线</span>';
+                } else {
+                    document.getElementById('backBtn').href = '../index.html';
+                    document.getElementById('backBtn').innerHTML = '<span>←</span><span>返回首页</span>';
+                }
+            } else {
+                document.getElementById('spot-title').textContent = '景点未找到';
+            }
+        }
+    </script>
+</body>
+</html>

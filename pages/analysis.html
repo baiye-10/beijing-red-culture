@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游客价值感知分析 - 北京中轴线红色文化</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
+    <style>
+        :root {
+            --primary: #c84038;
+            --primary-light: #e85d55;
+            --gold: #d4af37;
+            --gold-light: #e8c94a;
+            --dark: #2c3e50;
+            --bg: #faf7f0;
+            --bg-card: #ffffff;
+            --text: #333333;
+            --text-light: #666666;
+            --border: #e8e0d4;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Serif SC', 'Source Han Serif CN', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .page-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(250, 247, 240, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--gold);
+            padding: 0.8rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .page-nav .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .page-nav .nav-brand .brand-icon { font-size: 1.5rem; }
+        .page-nav .nav-brand .brand-text { font-size: 1.1rem; font-weight: 600; }
+
+        .page-nav .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .page-nav .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .page-nav .nav-links a:hover,
+        .page-nav .nav-links a.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem 3rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 3rem 0;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header h1 span { color: var(--primary); }
+
+        .page-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .method-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: linear-gradient(135deg, var(--primary), var(--gold));
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .stat-card .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .stat-value {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-top: 0.3rem;
+        }
+
+        .section-block {
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .section-block h2 {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .section-block .section-desc {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            padding-left: 1.2rem;
+        }
+
+        .chart-container {
+            width: 100%;
+            height: 450px;
+        }
+
+        .chart-container.tall { height: 550px; }
+        .chart-container.short { height: 350px; }
+
+        .route-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .route-btn {
+            padding: 0.5rem 1.2rem;
+            border: 2px solid var(--border);
+            border-radius: 2rem;
+            background: transparent;
+            color: var(--text-light);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .route-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+        .route-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
+
+        .spot-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .spot-btn {
+            padding: 0.35rem 0.9rem;
+            border: 1px solid var(--border);
+            border-radius: 1.5rem;
+            background: transparent;
+            color: var(--text-light);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.8rem;
+            transition: all 0.3s;
+        }
+
+        .spot-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+        .spot-btn.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: white;
+        }
+
+        .vp-framework {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .vp-dimension {
+            border-radius: 0.8rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .vp-dimension.base {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border: 2px solid #66bb6a;
+        }
+
+        .vp-dimension.middle {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border: 2px solid #ffa726;
+        }
+
+        .vp-dimension.core {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            border: 2px solid #ef5350;
+        }
+
+        .vp-dimension .dim-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+
+        .vp-dimension.base .dim-title { color: #2e7d32; }
+        .vp-dimension.middle .dim-title { color: #e65100; }
+        .vp-dimension.core .dim-title { color: #c62828; }
+
+        .vp-dimension .dim-level {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 0.8rem;
+        }
+
+        .vp-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0.8rem;
+            margin: 0.3rem 0;
+            background: rgba(255,255,255,0.7);
+            border-radius: 0.5rem;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .vp-indicator .ind-code {
+            font-weight: 700;
+            font-size: 0.75rem;
+            min-width: 2rem;
+        }
+
+        .vp-dimension.base .ind-code { color: #2e7d32; }
+        .vp-dimension.middle .ind-code { color: #e65100; }
+        .vp-dimension.core .ind-code { color: #c62828; }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .lda-topic-card {
+            background: var(--bg);
+            border-radius: 0.8rem;
+            padding: 1.2rem;
+            margin: 0.5rem 0;
+            border-left: 4px solid var(--gold);
+        }
+
+        .lda-topic-card .topic-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .lda-topic-card .topic-id {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .lda-topic-card .topic-proportion {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            background: var(--bg-card);
+            padding: 0.2rem 0.6rem;
+            border-radius: 1rem;
+        }
+
+        .lda-topic-card .topic-words {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .lda-topic-card .topic-word {
+            padding: 0.25rem 0.7rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            color: var(--dark);
+        }
+
+        .lda-topics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .lda-topics-grid::-webkit-scrollbar { width: 6px; }
+        .lda-topics-grid::-webkit-scrollbar-track { background: var(--bg); border-radius: 3px; }
+        .lda-topics-grid::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+        .loading-hint {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+
+        .loading-hint .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .footer-section {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid { grid-template-columns: 1fr; }
+            .two-col { grid-template-columns: 1fr; }
+            .vp-framework { grid-template-columns: 1fr; }
+            .lda-topics-grid { grid-template-columns: 1fr; }
+            .page-header h1 { font-size: 1.8rem; }
+            .main-content { padding: 5rem 1rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="page-nav">
+        <a href="../index.html" class="nav-brand">
+            <span class="brand-icon">🏛️</span>
+            <span class="brand-text">中轴线红色文化</span>
+        </a>
+        <div class="nav-links">
+            <a href="#overview">总览</a>
+            <a href="#sentiment">情感分析</a>
+            <a href="#tfidf">关键词分析</a>
+            <a href="#lda">主题模型</a>
+            <a href="#framework">评价体系</a>
+            <a href="#findings">研究发现</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="page-header">
+            <h1>游客价值感知<span>分析</span></h1>
+            <p>基于LDA主题模型与BERT情感分析的北京中轴线遗产景观游客评价研究</p>
+            <div class="method-badge">📊 LDA + BERT + TF-IDF 综合分析</div>
+        </div>
+
+        <div class="dashboard-grid" id="overview">
+            <div class="stat-card">
+                <div class="stat-icon">🏛️</div>
+                <div class="stat-value" id="stat-spots">--</div>
+                <div class="stat-label">分析景点数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💬</div>
+                <div class="stat-value" id="stat-reviews">--</div>
+                <div class="stat-label">总评论数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">😊</div>
+                <div class="stat-value" id="stat-positive">--</div>
+                <div class="stat-label">平均正面率</div>
+            </div>
+        </div>
+
+        <div class="section-block" id="sentiment">
+            <h2>情感分析</h2>
+            <p class="section-desc">基于BERT模型（uer/roberta-base-finetuned-jd-binary-chinese）的游客评论情感分类结果</p>
+            <div class="route-selector" id="sentiment-route-selector"></div>
+            <div class="chart-container" id="chart-sentiment"></div>
+        </div>
+
+        <div class="two-col">
+            <div class="section-block" id="sentiment-ranking">
+                <h2>正面率排名</h2>
+                <p class="section-desc">各景点正面评价占比排名</p>
+                <div class="chart-container" id="chart-ranking"></div>
+            </div>
+            <div class="section-block">
+                <h2>评论数量分布</h2>
+                <p class="section-desc">各景点采集的评论数量</p>
+                <div class="chart-container" id="chart-review-count"></div>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <h2>关联分析</h2>
+            <p class="section-desc">评论数量、正面率与LDA主题数的关联关系</p>
+            <div class="chart-container" id="chart-correlation"></div>
+        </div>
+
+        <div class="section-block" id="tfidf">
+            <h2>关键词分析（TF-IDF）</h2>
+            <p class="section-desc">基于TF-IDF算法提取的各景点高频特征词</p>
+            <div class="spot-selector" id="tfidf-spot-selector"></div>
+            <div class="chart-container tall" id="chart-wordcloud"></div>
+        </div>
+
+        <div class="section-block" id="lda">
+            <h2>LDA主题模型</h2>
+            <p class="section-desc">基于LDA（Latent Dirichlet Allocation）的游客评论主题挖掘，通过困惑度与一致性确定最优主题数</p>
+            <div class="spot-selector" id="lda-spot-selector"></div>
+            <div class="two-col">
+                <div>
+                    <h3 style="font-size:1rem;color:#2c3e50;margin-bottom:0.5rem;">主题词分布</h3>
+                    <div class="chart-container" id="chart-lda-topics"></div>
+                </div>
+                <div>
+                    <h3 style="font-size:1rem;color:#2c3e50;margin-bottom:0.5rem;">模型评估（困惑度 & 一致性）</h3>
+                    <div class="chart-container" id="chart-lda-metrics"></div>
+                </div>
+            </div>
+            <div id="lda-topic-detail" style="margin-top:1.5rem;">
+                <h3 style="font-size:1rem;color:#2c3e50;margin-bottom:0.5rem;">主题详情</h3>
+                <div class="lda-topics-grid" id="lda-topics-grid"></div>
+            </div>
+        </div>
+
+        <div class="section-block" id="framework">
+            <h2>游客价值感知评价体系</h2>
+            <p class="section-desc">参照刘键（2024）研究构建的三维度十五指标评价框架</p>
+            <div class="vp-framework" id="vp-framework"></div>
+        </div>
+
+        <div class="section-block" id="findings">
+            <h2>研究发现与讨论</h2>
+            <p class="section-desc">基于以上分析的核心发现与讨论</p>
+            <div id="findings-content" style="padding:0 1rem;">
+                <div style="margin-bottom:1.5rem;">
+                    <h3 style="font-size:1.1rem;color:var(--dark);margin-bottom:0.5rem;">📊 情感分析发现</h3>
+                    <div style="background:var(--bg);border-radius:0.8rem;padding:1.2rem;border-left:4px solid var(--primary);">
+                        <p style="margin-bottom:0.5rem;"><strong>整体正面率偏高（96.55%）</strong>，这与数据源特性密切相关：</p>
+                        <ul style="padding-left:1.5rem;color:var(--text-light);font-size:0.9rem;line-height:2;">
+                            <li>数据来源为游记文本，游客撰写游记时倾向于分享正面体验</li>
+                            <li>红色文化景点（天安门、北大红楼等）正面率接近100%，反映爱国情感共鸣</li>
+                            <li>商业类景点（全聚德85.8%、老舍茶馆88.9%）正面率相对较低，存在价格/服务负面评价</li>
+                            <li>自然/文化复合型景点（国家自然博物馆92.8%、什刹海94.7%）负面评论绝对数较多</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-bottom:1.5rem;">
+                    <h3 style="font-size:1.1rem;color:var(--dark);margin-bottom:0.5rem;">🔍 LDA主题分析发现</h3>
+                    <div style="background:var(--bg);border-radius:0.8rem;padding:1.2rem;border-left:4px solid var(--gold);">
+                        <p style="margin-bottom:0.5rem;"><strong>主题数量分布</strong>：42个景点的最优主题数集中在3-8个，反映游客关注维度多元：</p>
+                        <ul style="padding-left:1.5rem;color:var(--text-light);font-size:0.9rem;line-height:2;">
+                            <li>3主题景点（12个）：游客关注点集中，如天坛（祭祀文化、游览攻略、建筑欣赏）</li>
+                            <li>5-6主题景点（14个）：关注维度中等，如中山公园、先农坛</li>
+                            <li>7-8主题景点（16个）：关注维度多元，如蒙藏学校旧址、正阳门</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-bottom:1.5rem;">
+                    <h3 style="font-size:1.1rem;color:var(--dark);margin-bottom:0.5rem;">💡 价值感知维度关联</h3>
+                    <div style="background:var(--bg);border-radius:0.8rem;padding:1.2rem;border-left:4px solid #2e7d32;">
+                        <p style="margin-bottom:0.5rem;"><strong>三维度十五指标与数据映射</strong>：</p>
+                        <ul style="padding-left:1.5rem;color:var(--text-light);font-size:0.9rem;line-height:2;">
+                            <li><strong>能力提升层</strong>（S1-S3）：LDA主题中"知识增长""历史了解"类关键词高频出现</li>
+                            <li><strong>认知体验层</strong>（S4-S9）：TF-IDF词频中"体验""感受""震撼"等情感体验词显著</li>
+                            <li><strong>文化认同层</strong>（S10-S15）：红色景点LDA主题中"传承""自豪""骄傲"等文化认同词突出</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5rem;">
+                    <h3 style="font-size:1.1rem;color:var(--dark);margin-bottom:0.5rem;">⚠️ 研究局限</h3>
+                    <div style="background:var(--bg);border-radius:0.8rem;padding:1.2rem;border-left:4px solid #e65100;">
+                        <ul style="padding-left:1.5rem;color:var(--text-light);font-size:0.9rem;line-height:2;">
+                            <li>数据来源为游记文本而非结构化评论，情感极性分布偏正</li>
+                            <li>BERT模型基于京东评论微调，对游记文本的适应性有限</li>
+                            <li>部分景点评论数量不足（如南中轴御道61条、赵家楼79条），统计效力有限</li>
+                            <li>钟楼与鼓楼因地理位置相邻，搜索结果高度重叠</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <p>北京联合大学应用文科综合实验教学中心 · 2025年文科创新性实验项目</p>
+            <p style="margin-top:0.3rem;font-size:0.8rem;">分析方法：jieba分词 + TF-IDF + BERT情感分析 + LDA主题模型</p>
+        </div>
+    </div>
+
+    <script>
+    let overviewData = null;
+    let sentimentData = null;
+    let wordcloudData = null;
+    let ldaDetailData = null;
+    let vpData = null;
+
+    const ROUTE_COLORS = {
+        '路线一': '#c84038',
+        '路线二': '#d4af37',
+        '路线三': '#2e7d32',
+        '路线四': '#1565c0',
+        '路线五': '#6a1b9a',
+        '五四运动': '#e65100',
+        '一二九运动': '#00838f',
+        '天安门广场': '#ad1457',
+    };
+
+    async function loadData() {
+        try {
+            const [r1, r2, r3, r4, r5] = await Promise.all([
+                fetch('../data/analysis_overview.json').then(r => r.json()),
+                fetch('../data/sentiment_detail.json').then(r => r.json()),
+                fetch('../data/tfidf_wordcloud.json').then(r => r.json()),
+                fetch('../data/lda_detail.json').then(r => r.json()),
+                fetch('../data/value_perception.json').then(r => r.json()),
+            ]);
+            overviewData = r1;
+            sentimentData = r2;
+            wordcloudData = r3;
+            ldaDetailData = r4;
+            vpData = r5;
+            initPage();
+        } catch (e) {
+            console.error('数据加载失败:', e);
+        }
+    }
+
+    function initPage() {
+        renderDashboard();
+        renderSentimentChart();
+        renderRankingChart();
+        renderReviewCountChart();
+        renderCorrelationChart();
+        renderTfidfSelector();
+        renderLdaSelector();
+        renderVpFramework();
+    }
+
+    function renderDashboard() {
+        document.getElementById('stat-spots').textContent = overviewData.total_spots;
+        document.getElementById('stat-reviews').textContent = overviewData.total_reviews.toLocaleString();
+        document.getElementById('stat-positive').textContent = (overviewData.avg_positive_ratio * 100).toFixed(1) + '%';
+    }
+
+    function renderSentimentChart(routeFilter) {
+        const selector = document.getElementById('sentiment-route-selector');
+        if (!selector.children.length) {
+            const routes = [...new Set(overviewData.spots.map(s => s.route))];
+            const allBtn = document.createElement('button');
+            allBtn.className = 'route-btn active';
+            allBtn.textContent = '全部';
+            allBtn.onclick = () => {
+                selector.querySelectorAll('.route-btn').forEach(b => b.classList.remove('active'));
+                allBtn.classList.add('active');
+                renderSentimentChart();
+            };
+            selector.appendChild(allBtn);
+
+            routes.forEach(r => {
+                const btn = document.createElement('button');
+                btn.className = 'route-btn';
+                btn.textContent = r;
+                btn.onclick = () => {
+                    selector.querySelectorAll('.route-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderSentimentChart(r);
+                };
+                selector.appendChild(btn);
+            });
+        }
+
+        let spots = overviewData.spots;
+        if (routeFilter) {
+            spots = spots.filter(s => s.route === routeFilter);
+        }
+
+        const chart = echarts.init(document.getElementById('chart-sentiment'));
+        chart.setOption({
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: function(params) {
+                    const p = params[0];
+                    const n = params[1];
+                    return `<b>${p.name}</b><br/>正面率: ${p.value}%<br/>负面率: ${n.value}%`;
+                }
+            },
+            legend: { data: ['正面率', '负面率'], top: 5 },
+            grid: { left: '3%', right: '4%', bottom: '15%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: spots.map(s => s.name),
+                axisLabel: { rotate: 45, fontSize: 11, interval: 0 },
+            },
+            yAxis: {
+                type: 'value',
+                max: 100,
+                axisLabel: { formatter: '{value}%' },
+            },
+            series: [
+                {
+                    name: '正面率',
+                    type: 'bar',
+                    stack: 'total',
+                    data: spots.map(s => s.positive_ratio),
+                    itemStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            { offset: 0, color: '#c84038' },
+                            { offset: 1, color: '#e85d55' },
+                        ]),
+                    },
+                },
+                {
+                    name: '负面率',
+                    type: 'bar',
+                    stack: 'total',
+                    data: spots.map(s => Math.round((100 - s.positive_ratio) * 100) / 100),
+                    itemStyle: { color: '#e0e0e0' },
+                },
+            ],
+        });
+        window.addEventListener('resize', () => chart.resize());
+    }
+
+    function renderRankingChart() {
+        const ranking = sentimentData.ranking.slice(0, 15);
+        const chart = echarts.init(document.getElementById('chart-ranking'));
+        chart.setOption({
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: p => `<b>${p[0].name}</b><br/>正面率: ${p[0].value}%`,
+            },
+            grid: { left: '3%', right: '8%', bottom: '3%', containLabel: true },
+            xAxis: { type: 'value', max: 100, axisLabel: { formatter: '{value}%' } },
+            yAxis: {
+                type: 'category',
+                data: ranking.map(r => r.name).reverse(),
+                axisLabel: { fontSize: 11 },
+            },
+            series: [{
+                type: 'bar',
+                data: ranking.map(r => r.positive_ratio).reverse(),
+                itemStyle: {
+                    color: function(params) {
+                        const v = params.value;
+                        if (v >= 98) return '#c84038';
+                        if (v >= 95) return '#d4af37';
+                        if (v >= 90) return '#ffa726';
+                        return '#66bb6a';
+                    },
+                },
+                label: { show: true, position: 'right', formatter: '{c}%', fontSize: 10 },
+            }],
+        });
+        window.addEventListener('resize', () => chart.resize());
+    }
+
+    function renderReviewCountChart() {
+        const spots = overviewData.spots.filter(s => s.review_count > 0).sort((a, b) => b.review_count - a.review_count).slice(0, 15);
+        const chart = echarts.init(document.getElementById('chart-review-count'));
+        chart.setOption({
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+            },
+            grid: { left: '3%', right: '8%', bottom: '3%', containLabel: true },
+            xAxis: { type: 'value' },
+            yAxis: {
+                type: 'category',
+                data: spots.map(s => s.name).reverse(),
+                axisLabel: { fontSize: 11 },
+            },
+            series: [{
+                type: 'bar',
+                data: spots.map(s => s.review_count).reverse(),
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                        { offset: 0, color: '#d4af37' },
+                        { offset: 1, color: '#e8c94a' },
+                    ]),
+                },
+                label: { show: true, position: 'right', formatter: '{c}', fontSize: 10 },
+            }],
+        });
+        window.addEventListener('resize', () => chart.resize());
+    }
+
+    function renderTfidfSelector() {
+        const selector = document.getElementById('tfidf-spot-selector');
+        const spots = overviewData.spots.filter(s => s.top_words && s.top_words.length > 0);
+        spots.forEach((s, i) => {
+            const btn = document.createElement('button');
+            btn.className = 'spot-btn' + (i === 0 ? ' active' : '');
+            btn.textContent = s.name;
+            btn.onclick = () => {
+                selector.querySelectorAll('.spot-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderWordcloud(s.id, s.name);
+            };
+            selector.appendChild(btn);
+        });
+        if (spots.length > 0) {
+            renderWordcloud(spots[0].id, spots[0].name);
+        }
+    }
+
+    function renderWordcloud(spotId, spotName) {
+        const words = wordcloudData[spotId];
+        if (!words || words.length === 0) {
+            document.getElementById('chart-wordcloud').innerHTML = '<div class="loading-hint">暂无词云数据</div>';
+            return;
+        }
+
+        const chart = echarts.init(document.getElementById('chart-wordcloud'));
+        const maxVal = Math.max(...words.map(w => w.value));
+
+        chart.setOption({
+            title: {
+                text: spotName + ' - 关键词词云',
+                left: 'center',
+                textStyle: { fontSize: 16, color: '#2c3e50', fontFamily: 'Noto Serif SC' },
+            },
+            tooltip: {
+                show: true,
+                formatter: function(params) {
+                    return params.name + ': ' + params.value;
+                },
+            },
+            series: [{
+                type: 'wordCloud',
+                shape: 'circle',
+                left: 'center',
+                top: 'center',
+                width: '90%',
+                height: '85%',
+                sizeRange: [14, 60],
+                rotationRange: [-45, 45],
+                rotationStep: 15,
+                gridSize: 8,
+                drawOutOfBound: false,
+                textStyle: {
+                    fontFamily: 'Noto Serif SC',
+                    fontWeight: 'bold',
+                    color: function() {
+                        const colors = ['#c84038', '#d4af37', '#2c3e50', '#e85d55', '#8d6e63', '#5d4037', '#bf360c', '#ff6f00'];
+                        return colors[Math.floor(Math.random() * colors.length)];
+                    },
+                },
+                emphasis: {
+                    textStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.3)' },
+                },
+                data: words.map(w => ({
+                    name: w.name,
+                    value: w.value,
+                })),
+            }],
+        });
+        window.addEventListener('resize', () => chart.resize());
+    }
+
+    function renderLdaSelector() {
+        const selector = document.getElementById('lda-spot-selector');
+        const ldaSpots = Object.keys(ldaDetailData);
+        if (ldaSpots.length === 0) {
+            selector.innerHTML = '<span style="color:#999;font-size:0.9rem;">LDA模型正在计算中，请稍后刷新页面...</span>';
+            return;
+        }
+
+        ldaSpots.forEach((sid, i) => {
+            const spot = overviewData.spots.find(s => s.id === sid);
+            const btn = document.createElement('button');
+            btn.className = 'spot-btn' + (i === 0 ? ' active' : '');
+            btn.textContent = spot ? spot.name : sid;
+            btn.onclick = () => {
+                selector.querySelectorAll('.spot-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderLdaCharts(sid);
+            };
+            selector.appendChild(btn);
+        });
+        renderLdaCharts(ldaSpots[0]);
+    }
+
+    function renderLdaCharts(spotId) {
+        const data = ldaDetailData[spotId];
+        if (!data) return;
+
+        const topicsChart = echarts.init(document.getElementById('chart-lda-topics'));
+        topicsChart.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: function(params) {
+                    const t = data.topics[params.dataIndex];
+                    return `<b>主题 ${params.dataIndex + 1}</b><br/>占比: ${(t.proportion * 100).toFixed(1)}%<br/>关键词: ${t.top_words.join('、')}`;
+                },
+            },
+            series: [{
+                type: 'pie',
+                radius: ['35%', '65%'],
+                center: ['50%', '50%'],
+                data: data.topics.map((t, i) => ({
+                    name: '主题' + (i + 1),
+                    value: (t.proportion * 100).toFixed(1),
+                })),
+                label: {
+                    formatter: '{b}\n{c}%',
+                    fontSize: 11,
+                },
+                emphasis: {
+                    itemStyle: { shadowBlur: 10, shadowOffsetX: 0, shadowColor: 'rgba(0,0,0,0.3)' },
+                },
+                itemStyle: {
+                    color: function(params) {
+                        const palette = ['#c84038','#d4af37','#2e7d32','#1565c0','#6a1b9a','#e65100','#00838f','#ad1457','#4e342e','#37474f','#f57f17','#00695c'];
+                        return palette[params.dataIndex % palette.length];
+                    },
+                },
+            }],
+        });
+        window.addEventListener('resize', () => topicsChart.resize());
+
+        const metricsChart = echarts.init(document.getElementById('chart-lda-metrics'));
+        if (data.topic_range && data.perplexities && data.coherences) {
+            metricsChart.setOption({
+                tooltip: { trigger: 'axis' },
+                legend: { data: ['困惑度', '一致性'], top: 5 },
+                grid: { left: '8%', right: '8%', bottom: '10%', containLabel: true },
+                xAxis: {
+                    type: 'category',
+                    data: data.topic_range.map(String),
+                    name: '主题数',
+                },
+                yAxis: [
+                    { type: 'value', name: '困惑度', position: 'left' },
+                    { type: 'value', name: '一致性', position: 'right' },
+                ],
+                series: [
+                    {
+                        name: '困惑度',
+                        type: 'line',
+                        data: data.perplexities,
+                        smooth: true,
+                        lineStyle: { color: '#c84038', width: 2 },
+                        itemStyle: { color: '#c84038' },
+                        markLine: data.optimal_topics ? {
+                            data: [{ xAxis: String(data.optimal_topics), label: { formatter: '最优: {c}' } }],
+                            lineStyle: { color: '#c84038', type: 'dashed' },
+                        } : undefined,
+                    },
+                    {
+                        name: '一致性',
+                        type: 'line',
+                        yAxisIndex: 1,
+                        data: data.coherences,
+                        smooth: true,
+                        lineStyle: { color: '#d4af37', width: 2 },
+                        itemStyle: { color: '#d4af37' },
+                    },
+                ],
+            });
+        } else {
+            metricsChart.setOption({
+                title: { text: '暂无评估数据', left: 'center', top: 'center', textStyle: { color: '#999' } },
+            });
+        }
+        window.addEventListener('resize', () => metricsChart.resize());
+
+        const grid = document.getElementById('lda-topics-grid');
+        grid.innerHTML = '';
+        data.topics.forEach((t, i) => {
+            const card = document.createElement('div');
+            card.className = 'lda-topic-card';
+            card.innerHTML = `
+                <div class="topic-header">
+                    <span class="topic-id">主题 ${i + 1}</span>
+                    <span class="topic-proportion">占比 ${(t.proportion * 100).toFixed(1)}%</span>
+                </div>
+                <div class="topic-words">
+                    ${t.top_words.map(w => `<span class="topic-word">${w}</span>`).join('')}
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    function renderCorrelationChart() {
+        const chart = echarts.init(document.getElementById('chart-correlation'));
+        const routeGroups = {};
+        overviewData.spots.forEach(s => {
+            if (s.review_count <= 0) return;
+            const lda = ldaDetailData[s.id];
+            const topicCount = lda ? lda.optimal_topics : 0;
+            if (!routeGroups[s.route]) routeGroups[s.route] = [];
+            routeGroups[s.route].push({
+                name: s.name,
+                value: [s.review_count, s.positive_ratio, topicCount],
+            });
+        });
+
+        const series = Object.keys(routeGroups).map(route => ({
+            name: route,
+            type: 'scatter',
+            data: routeGroups[route],
+            symbolSize: function(data) {
+                return Math.max(data[2] * 5, 10);
+            },
+            itemStyle: {
+                color: ROUTE_COLORS[route] || '#999',
+                opacity: 0.75,
+            },
+            emphasis: {
+                itemStyle: { opacity: 1, shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.3)' },
+            },
+        }));
+
+        chart.setOption({
+            tooltip: {
+                formatter: function(params) {
+                    const d = params.value;
+                    return `<b>${params.name}</b><br/>` +
+                           `路线: ${params.seriesName}<br/>` +
+                           `评论数: ${d[0]}<br/>` +
+                           `正面率: ${d[1]}%<br/>` +
+                           `LDA主题数: ${d[2]}`;
+                },
+            },
+            legend: {
+                data: Object.keys(routeGroups),
+                top: 5,
+                textStyle: { fontSize: 11 },
+            },
+            grid: { left: '8%', right: '5%', bottom: '12%', containLabel: true },
+            xAxis: {
+                type: 'value',
+                name: '评论数量',
+                nameLocation: 'middle',
+                nameGap: 30,
+                splitLine: { lineStyle: { type: 'dashed' } },
+            },
+            yAxis: {
+                type: 'value',
+                name: '正面率(%)',
+                nameLocation: 'middle',
+                nameGap: 40,
+                min: function(value) { return Math.floor(value.min - 2); },
+                splitLine: { lineStyle: { type: 'dashed' } },
+            },
+            series: series,
+        });
+        window.addEventListener('resize', () => chart.resize());
+    }
+
+    function renderVpFramework() {
+        const container = document.getElementById('vp-framework');
+        const dimConfig = [
+            { key: '能力提升', cls: 'base', level: '基础层' },
+            { key: '认知体验', cls: 'middle', level: '中间层' },
+            { key: '文化认同', cls: 'core', level: '核心层' },
+        ];
+
+        dimConfig.forEach(dc => {
+            const dim = vpData.dimensions.find(d => d.name === dc.key);
+            const indicators = vpData.indicators.filter(i => i.dimension === dc.key);
+            const div = document.createElement('div');
+            div.className = `vp-dimension ${dc.cls}`;
+            div.innerHTML = `
+                <div class="dim-title">${dc.key}</div>
+                <div class="dim-level">${dc.level}</div>
+                ${indicators.map(ind => `
+                    <div class="vp-indicator">
+                        <span class="ind-code">${ind.code}</span>
+                        <span>${ind.name}</span>
+                    </div>
+                `).join('')}
+            `;
+            container.appendChild(div);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

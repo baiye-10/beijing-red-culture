@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五四运动路线</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+    <style>
+        .map-controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+        .map-btn {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .map-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+        }
+        .map-btn.secondary {
+            background: #95a5a6;
+        }
+        .map-btn.secondary:hover {
+            box-shadow: 0 4px 15px rgba(149, 165, 166, 0.4);
+        }
+        .route-info {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #e74c3c;
+        }
+        .route-step {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .route-step:last-child {
+            border-bottom: none;
+        }
+        .step-number {
+            background: #e74c3c;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .step-name {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.05rem;
+        }
+        .step-desc {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        #maplibre-map {
+            width: 100%;
+            height: 580px;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 8px 35px rgba(0,0,0,0.12);
+        }
+        .maplibregl-popup-content {
+            padding: 14px 16px;
+            border-radius: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .maplibregl-popup-content h3 {
+            margin: 0 0 8px 0;
+            color: #e74c3c;
+            font-size: 1rem;
+        }
+        .maplibregl-popup-content p {
+            margin: 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        .marker-label {
+            background: rgba(255,255,255,0.98);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #333;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            white-space: nowrap;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <div class="nav-icon">🏛️</div>
+            <span>北京中轴线红色文化足迹</span>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">首页</a>
+            <a href="may4th.html" class="active">五四运动</a>
+            <a href="december9th.html">一二·九运动</a>
+        </div>
+    </nav>
+
+    <section class="hero-section" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+        <div class="container">
+            <h1 class="hero-title">五四运动路线</h1>
+            <p class="hero-subtitle">1919年5月4日，北京学生反帝反封建爱国运动的历史足迹</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 3rem 0;">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <p>1919年5月4日，北京大学等校学生三千余人在天安门前集会，高呼"外争主权，内除国贼"等口号，随后举行示威游行。学生游行队伍从天安门出发，经东交民巷，最终到达赵家楼曹汝霖住宅，痛打章宗祥，火烧赵家楼，这就是震惊中外的五四运动。</p>
+                    <p>五四运动标志着中国新民主主义革命的开端，促进了马克思主义在中国的传播，为中国共产党的成立作了思想上和干部上的准备。</p>
+                </div>
+                <div class="story-image">
+                    <img src="../images/五四运动路线图.png" alt="五四运动路线图" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section map-section" style="padding: 3rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2.5rem; font-size: 1.8rem;">路线动态地图</h2>
+            
+            <div class="route-info">
+                <h3 style="margin: 0 0 1.25rem 0; color: #e74c3c; font-size: 1.25rem;">📋 游行路线</h3>
+                <div class="route-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <div class="step-name">北大红楼</div>
+                        <div class="step-desc">起点 - 学生集合出发</div>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <div class="step-name">天安门</div>
+                        <div class="step-desc">集会演讲</div>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <div class="step-name">东交民巷</div>
+                        <div class="step-desc">游行示威</div>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <div class="step-name">赵家楼</div>
+                        <div class="step-desc">终点 - 火烧赵家楼</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-controls">
+                <button class="map-btn" id="playBtn">▶️ 播放动画</button>
+                <button class="map-btn secondary" id="resetBtn">🔄 重置</button>
+            </div>
+            
+            <div id="maplibre-map"></div>
+        </div>
+    </section>
+    
+    <section class="section spots-section" style="padding: 3rem 0;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 2.5rem; font-size: 1.8rem;">关键地点</h2>
+            <div class="spots-grid">
+                <div class="spot-card">
+                    <div class="spot-icon">📍</div>
+                    <h3>北大红楼</h3>
+                    <p>五四运动策源地</p>
+                    <a href="https://baike.baidu.com/item/%E5%8C%97%E5%A4%A7%E4%BA%8C%E9%99%A2%E6%97%A7%E5%9D%80/67601935" target="_blank" class="spot-btn">查看详情</a>
+                </div>
+                <div class="spot-card">
+                    <div class="spot-icon">📍</div>
+                    <h3>天安门</h3>
+                    <p>游行集会地点</p>
+                    <a href="https://baike.baidu.com/item/%E5%A4%A9%E5%AE%89%E9%97%A8" target="_blank" class="spot-btn">查看详情</a>
+                </div>
+                <div class="spot-card">
+                    <div class="spot-icon">📍</div>
+                    <h3>东交民巷</h3>
+                    <p>游行示威地点</p>
+                    <a href="https://baike.baidu.com/item/%E4%B8%9C%E4%BA%A4%E6%B0%91%E5%B7%B7" target="_blank" class="spot-btn">查看详情</a>
+                </div>
+                <div class="spot-card">
+                    <div class="spot-icon">📍</div>
+                    <h3>赵家楼</h3>
+                    <p>火烧赵家楼</p>
+                    <a href="https://baike.baidu.com/item/%E8%B5%B5%BD%E5%AE%B6%E6%A5%BC" target="_blank" class="spot-btn">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section footer-section" style="padding: 3rem 0;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-icon">🏛️</div>
+                    <span>探寻北京中轴线红色文化足迹</span>
+                </div>
+                <div class="footer-info">
+                    <p>北京联合大学应用文科综合实验教学中心</p>
+                    <p>2025年文科创新性实验项目</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 红色文化足迹研究项目组</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script>
+        let map;
+        let animationId = null;
+        let markers = []; // 存储标记对象，便于管理
+        
+        // 路线点 - 严格按照用户指定的4个点
+        const routePoints = [
+            { name: '北大红楼', lng: 116.4033, lat: 39.9178, desc: '起点 - 学生集合出发' },
+            { name: '天安门', lng: 116.3975, lat: 39.9087, desc: '集会演讲' },
+            { name: '东交民巷', lng: 116.4067, lat: 39.9075, desc: '游行示威' },
+            { name: '赵家楼', lng: 116.4122, lat: 39.9145, desc: '终点 - 火烧赵家楼' }
+        ];
+        
+        // 真实步行路线的坐标点（模拟实际街道行走）
+        const walkingRouteCoords = [
+            [116.4033, 39.9178], // 北大红楼
+            [116.4025, 39.9178],
+            [116.4025, 39.9150],
+            [116.4000, 39.9150],
+            [116.4000, 39.9100],
+            [116.3980, 39.9100],
+            [116.3980, 39.9090],
+            [116.3975, 39.9087], // 天安门
+            [116.3980, 39.9085],
+            [116.3980, 39.9070],
+            [116.4020, 39.9070],
+            [116.4050, 39.9070],
+            [116.4067, 39.9075], // 东交民巷
+            [116.4080, 39.9080],
+            [116.4090, 39.9090],
+            [116.4100, 39.9110],
+            [116.4110, 39.9120],
+            [116.4120, 39.9135],
+            [116.4122, 39.9145]  // 赵家楼
+        ];
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            initScrollProgress();
+            initNavigation();
+            initScrollAnimations();
+            initMapLibreMap();
+            
+            document.getElementById('playBtn').addEventListener('click', playAnimation);
+            document.getElementById('resetBtn').addEventListener('click', resetMap);
+        });
+        
+        function initMapLibreMap() {
+            map = new maplibregl.Map({
+                container: 'maplibre-map',
+                style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+                center: [116.403, 39.912],
+                zoom: 14,
+                pitch: 30,
+                bearing: -10,
+                trackResize: true
+            });
+            
+            map.on('load', function() {
+                addRouteSourceAndLayers();
+                addMarkers();
+            });
+        }
+        
+        function addRouteSourceAndLayers() {
+            map.addSource('route-full', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': walkingRouteCoords
+                    }
+                }
+            });
+            
+            map.addSource('route-animated', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [walkingRouteCoords[0]]
+                    }
+                }
+            });
+            
+            map.addLayer({
+                'id': 'route-bg',
+                'type': 'line',
+                'source': 'route-full',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': '#ddd',
+                    'line-width': 5,
+                    'line-opacity': 0.7
+                }
+            });
+            
+            map.addLayer({
+                'id': 'route-animation',
+                'type': 'line',
+                'source': 'route-animated',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': '#e74c3c',
+                    'line-width': 6,
+                    'line-opacity': 0.95
+                }
+            });
+        }
+        
+        function addMarkers() {
+            // 先清除所有已存在的标记
+            markers.forEach(marker => marker.remove());
+            markers = [];
+            
+            routePoints.forEach((point, index) => {
+                // 标记点
+                const el = document.createElement('div');
+                el.className = 'marker-point';
+                el.style.backgroundColor = index === 0 ? '#27ae60' : (index === routePoints.length - 1 ? '#e74c3c' : '#e74c3c');
+                el.style.width = '24px';
+                el.style.height = '24px';
+                el.style.borderRadius = '50%';
+                el.style.border = '4px solid white';
+                el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.3)';
+                el.style.cursor = 'pointer';
+                el.style.zIndex = '100';
+                el.style.transition = 'transform 0.3s ease';
+                
+                const pointMarker = new maplibregl.Marker(el)
+                    .setLngLat([point.lng, point.lat])
+                    .setPopup(new maplibregl.Popup({ offset: 30 })
+                        .setHTML('<h3>' + point.name + '</h3><p>' + point.desc + '</p>'))
+                    .addTo(map);
+                markers.push(pointMarker);
+                
+                // 文字标注 - 在标记点旁边，更清晰
+                const labelEl = document.createElement('div');
+                labelEl.className = 'marker-label';
+                labelEl.textContent = point.name;
+                labelEl.style.backgroundColor = 'rgba(255,255,255,0.95)';
+                labelEl.style.padding = '6px 12px';
+                labelEl.style.borderRadius = '6px';
+                labelEl.style.fontSize = '14px';
+                labelEl.style.fontWeight = '700';
+                labelEl.style.color = '#2c3e50';
+                labelEl.style.boxShadow = '0 3px 10px rgba(0,0,0,0.2)';
+                labelEl.style.whiteSpace = 'nowrap';
+                labelEl.style.border = '2px solid #e74c3c';
+                
+                const labelMarker = new maplibregl.Marker(labelEl, { offset: [0, -45] })
+                    .setLngLat([point.lng, point.lat])
+                    .addTo(map);
+                markers.push(labelMarker);
+            });
+        }
+        
+        function playAnimation() {
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+            }
+            
+            resetMap();
+            
+            let startTime = null;
+            const duration = 8000;
+            
+            function animate(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                
+                const totalPoints = walkingRouteCoords.length;
+                const currentIndex = Math.floor(progress * (totalPoints - 1));
+                const t = (progress * (totalPoints - 1)) - currentIndex;
+                
+                let animatedCoords = [];
+                for (let i = 0; i <= currentIndex; i++) {
+                    animatedCoords.push(walkingRouteCoords[i]);
+                }
+                
+                if (currentIndex < totalPoints - 1) {
+                    const from = walkingRouteCoords[currentIndex];
+                    const to = walkingRouteCoords[currentIndex + 1];
+                    const interpolated = [
+                        from[0] + (to[0] - from[0]) * t,
+                        from[1] + (to[1] - from[1]) * t
+                    ];
+                    animatedCoords.push(interpolated);
+                }
+                
+                map.getSource('route-animated').setData({
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': animatedCoords
+                    }
+                });
+                
+                // 更新标记点状态
+                const markers = document.querySelectorAll('.marker-point');
+                let activatedPoints = 0;
+                if (progress >= 0) activatedPoints = 1;
+                if (progress >= 0.35) activatedPoints = 2;
+                if (progress >= 0.65) activatedPoints = 3;
+                if (progress >= 0.9) activatedPoints = 4;
+                
+                markers.forEach((marker, i) => {
+                    if (i < activatedPoints) {
+                        marker.style.transform = 'scale(1.3)';
+                    }
+                });
+                
+                if (progress < 1) {
+                    animationId = requestAnimationFrame(animate);
+                }
+            }
+            
+            animationId = requestAnimationFrame(animate);
+        }
+        
+        function resetMap() {
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+            }
+            
+            map.getSource('route-animated').setData({
+                'type': 'Feature',
+                'properties': {},
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [walkingRouteCoords[0]]
+                }
+            });
+            
+            const markers = document.querySelectorAll('.marker-point');
+            markers.forEach((marker, i) => {
+                marker.style.transform = 'scale(1)';
+            });
+            
+            map.flyTo({
+                center: [116.403, 39.912],
+                zoom: 14,
+                pitch: 30,
+                bearing: -10,
+                speed: 0.4,
+                curve: 1
+            });
+        }
+    </script>
+</body>
+</html>

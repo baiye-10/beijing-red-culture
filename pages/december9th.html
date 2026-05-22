@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一二九运动路线图 - 探寻北京中轴线红色文化足迹</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <div class="brand-icon">🏛️</div>
+            <span class="brand-text">中轴线红色文化</span>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">返回首页</a>
+            <a href="../index.html#manyou" class="nav-link">漫游</a>
+        </div>
+    </nav>
+    
+    <section class="section hero-section page-hero dec9th-hero">
+        <div class="container">
+            <h1 class="page-title">一二九运动</h1>
+            <p class="page-subtitle">1935年抗日救亡运动路线探索</p>
+        </div>
+    </section>
+    
+    <section class="section story-section">
+        <div class="container">
+            <h2 class="section-title">历史背景</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>一二九运动，又称为一二九抗日救亡运动。1935年12月9日，北平（北京）大中学生数千人举行了抗日救国示威游行，反对华北自治，反抗日本帝国主义，要求保全中国领土的完整，掀起全国抗日救国新高潮。</p>
+                    <p>一二九运动公开揭露了日本帝国主义侵略中国，并吞华北五省的阴谋，打击了国民党政府的妥协投降政策，大大地促进了中国人民的觉醒。它配合了红军北上抗日，促进了国内和平和对日抗战。它标志着中国人民抗日民主运动新高潮的来到。</p>
+                </div>
+                <div class="story-image">
+                    <img src="../images/一二九运动路线图.png" alt="一二九运动路线图" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section map-section">
+        <div class="container">
+            <h2 class="section-title">路线探索</h2>
+            <div id="dec9th-map" style="width: 100%; height: 500px; border-radius: 1rem; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1);"></div>
+        </div>
+    </section>
+    
+    <section class="section spots-section">
+        <div class="container">
+            <h2 class="section-title">关键地点</h2>
+            <div class="spots-grid">
+                <div class="spot-card" data-spot="xinhua">
+                    <div class="spot-icon">📍</div>
+                    <h3>新华门</h3>
+                    <p>抗日救亡集会地</p>
+                    <button class="spot-btn" onclick="showSpotDetail('xinhua')">查看详情</button>
+                </div>
+                <div class="spot-card" data-spot="beida">
+                    <div class="spot-icon">🏛️</div>
+                    <h3>北京大学</h3>
+                    <p>运动发起地</p>
+                    <button class="spot-btn" onclick="showSpotDetail('beida')">查看详情</button>
+                </div>
+                <div class="spot-card" data-spot="xidan">
+                    <div class="spot-icon">🔥</div>
+                    <h3>西单</h3>
+                    <p>游行重要节点</p>
+                    <button class="spot-btn" onclick="showSpotDetail('xidan')">查看详情</button>
+                </div>
+                <div class="spot-card" data-spot="tianqiao">
+                    <div class="spot-icon">📜</div>
+                    <h3>天桥</h3>
+                    <p>群众集会地</p>
+                    <button class="spot-btn" onclick="showSpotDetail('tianqiao')">查看详情</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-icon">🏛️</div>
+                    <span>探寻北京中轴线红色文化足迹</span>
+                </div>
+                <div class="footer-info">
+                    <p>北京联合大学应用文科综合实验教学中心</p>
+                    <p>2025年文科创新性实验项目</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 红色文化足迹研究项目组</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/december9th.js"></script>
+</body>
+</html>

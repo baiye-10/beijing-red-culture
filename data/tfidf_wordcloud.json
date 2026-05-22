@@ -1,0 +1,8486 @@
+{
+  "tiananmen_sq": [
+    {
+      "name": "天安门广场",
+      "value": 1416
+    },
+    {
+      "name": "天安门",
+      "value": 915
+    },
+    {
+      "name": "中国",
+      "value": 763
+    },
+    {
+      "name": "广场",
+      "value": 482
+    },
+    {
+      "name": "历史",
+      "value": 346
+    },
+    {
+      "name": "参观",
+      "value": 266
+    },
+    {
+      "name": "游客",
+      "value": 254
+    },
+    {
+      "name": "人民",
+      "value": 249
+    },
+    {
+      "name": "天安门城楼",
+      "value": 239
+    },
+    {
+      "name": "升旗仪式",
+      "value": 219
+    },
+    {
+      "name": "酒店",
+      "value": 214
+    },
+    {
+      "name": "时间",
+      "value": 209
+    },
+    {
+      "name": "旅游",
+      "value": 206
+    },
+    {
+      "name": "国旗",
+      "value": 202
+    },
+    {
+      "name": "北京天安门广场",
+      "value": 200
+    },
+    {
+      "name": "世界",
+      "value": 183
+    },
+    {
+      "name": "攻略",
+      "value": 177
+    },
+    {
+      "name": "国家",
+      "value": 163
+    },
+    {
+      "name": "预约",
+      "value": 163
+    },
+    {
+      "name": "人民英雄纪念碑",
+      "value": 162
+    },
+    {
+      "name": "毛主席纪念堂",
+      "value": 162
+    },
+    {
+      "name": "故宫",
+      "value": 162
+    },
+    {
+      "name": "祖国",
+      "value": 151
+    },
+    {
+      "name": "城楼",
+      "value": 150
+    },
+    {
+      "name": "庄严",
+      "value": 137
+    },
+    {
+      "name": "文化",
+      "value": 129
+    },
+    {
+      "name": "最大",
+      "value": 126
+    },
+    {
+      "name": "六四",
+      "value": 125
+    },
+    {
+      "name": "五星红旗",
+      "value": 124
+    },
+    {
+      "name": "升旗",
+      "value": 121
+    },
+    {
+      "name": "开放",
+      "value": 120
+    },
+    {
+      "name": "城市",
+      "value": 119
+    },
+    {
+      "name": "游览",
+      "value": 119
+    },
+    {
+      "name": "感受",
+      "value": 114
+    },
+    {
+      "name": "中心",
+      "value": 110
+    },
+    {
+      "name": "位于",
+      "value": 108
+    },
+    {
+      "name": "大家",
+      "value": 106
+    },
+    {
+      "name": "人民大会堂",
+      "value": 104
+    },
+    {
+      "name": "来到",
+      "value": 103
+    },
+    {
+      "name": "举行",
+      "value": 103
+    },
+    {
+      "name": "建筑",
+      "value": 101
+    },
+    {
+      "name": "看到",
+      "value": 101
+    },
+    {
+      "name": "周年",
+      "value": 99
+    },
+    {
+      "name": "北京市",
+      "value": 98
+    },
+    {
+      "name": "象征",
+      "value": 96
+    },
+    {
+      "name": "英雄",
+      "value": 95
+    },
+    {
+      "name": "国家博物馆",
+      "value": 95
+    },
+    {
+      "name": "毛主席",
+      "value": 95
+    },
+    {
+      "name": "爷爷",
+      "value": 93
+    },
+    {
+      "name": "精神",
+      "value": 91
+    }
+  ],
+  "tiananmen_gate": [
+    {
+      "name": "天安门城楼",
+      "value": 978
+    },
+    {
+      "name": "天安门",
+      "value": 447
+    },
+    {
+      "name": "预约",
+      "value": 385
+    },
+    {
+      "name": "参观",
+      "value": 368
+    },
+    {
+      "name": "中国",
+      "value": 292
+    },
+    {
+      "name": "天安门广场",
+      "value": 240
+    },
+    {
+      "name": "城楼",
+      "value": 233
+    },
+    {
+      "name": "时间",
+      "value": 163
+    },
+    {
+      "name": "历史",
+      "value": 161
+    },
+    {
+      "name": "开放",
+      "value": 142
+    },
+    {
+      "name": "游客",
+      "value": 140
+    },
+    {
+      "name": "旅游",
+      "value": 137
+    },
+    {
+      "name": "广场",
+      "value": 120
+    },
+    {
+      "name": "攻略",
+      "value": 115
+    },
+    {
+      "name": "画像",
+      "value": 103
+    },
+    {
+      "name": "阅兵",
+      "value": 94
+    },
+    {
+      "name": "毛主席",
+      "value": 88
+    },
+    {
+      "name": "游览",
+      "value": 86
+    },
+    {
+      "name": "建筑",
+      "value": 86
+    },
+    {
+      "name": "登上",
+      "value": 85
+    },
+    {
+      "name": "人民",
+      "value": 79
+    },
+    {
+      "name": "感受",
+      "value": 78
+    },
+    {
+      "name": "故宫",
+      "value": 78
+    },
+    {
+      "name": "象征",
+      "value": 73
+    },
+    {
+      "name": "提前",
+      "value": 72
+    },
+    {
+      "name": "爷爷",
+      "value": 72
+    },
+    {
+      "name": "微信",
+      "value": 62
+    },
+    {
+      "name": "公众",
+      "value": 62
+    },
+    {
+      "name": "进行",
+      "value": 59
+    },
+    {
+      "name": "文化",
+      "value": 56
+    },
+    {
+      "name": "照片",
+      "value": 54
+    },
+    {
+      "name": "国家",
+      "value": 53
+    },
+    {
+      "name": "金水桥",
+      "value": 53
+    },
+    {
+      "name": "主席",
+      "value": 52
+    },
+    {
+      "name": "台湾",
+      "value": 52
+    },
+    {
+      "name": "更是",
+      "value": 51
+    },
+    {
+      "name": "国旗",
+      "value": 51
+    },
+    {
+      "name": "天安",
+      "value": 50
+    },
+    {
+      "name": "路线",
+      "value": 48
+    },
+    {
+      "name": "大家",
+      "value": 47
+    },
+    {
+      "name": "五星红旗",
+      "value": 47
+    },
+    {
+      "name": "世界",
+      "value": 47
+    },
+    {
+      "name": "进入",
+      "value": 47
+    },
+    {
+      "name": "毛泽东",
+      "value": 46
+    },
+    {
+      "name": "升旗仪式",
+      "value": 46
+    },
+    {
+      "name": "祖国",
+      "value": 46
+    },
+    {
+      "name": "抗战",
+      "value": 46
+    },
+    {
+      "name": "入口",
+      "value": 45
+    },
+    {
+      "name": "来宝",
+      "value": 44
+    },
+    {
+      "name": "升旗",
+      "value": 43
+    }
+  ],
+  "duanmen": [
+    {
+      "name": "端门",
+      "value": 677
+    },
+    {
+      "name": "旅游",
+      "value": 248
+    },
+    {
+      "name": "城楼",
+      "value": 208
+    },
+    {
+      "name": "天安门",
+      "value": 202
+    },
+    {
+      "name": "中国",
+      "value": 199
+    },
+    {
+      "name": "故宫",
+      "value": 144
+    },
+    {
+      "name": "攻略",
+      "value": 139
+    },
+    {
+      "name": "建筑",
+      "value": 128
+    },
+    {
+      "name": "照片",
+      "value": 128
+    },
+    {
+      "name": "品牌",
+      "value": 123
+    },
+    {
+      "name": "午门",
+      "value": 113
+    },
+    {
+      "name": "天安门广场",
+      "value": 101
+    },
+    {
+      "name": "历史",
+      "value": 95
+    },
+    {
+      "name": "皇帝",
+      "value": 93
+    },
+    {
+      "name": "游玩",
+      "value": 92
+    },
+    {
+      "name": "服务",
+      "value": 92
+    },
+    {
+      "name": "仪仗",
+      "value": 90
+    },
+    {
+      "name": "体验",
+      "value": 90
+    },
+    {
+      "name": "开放",
+      "value": 84
+    },
+    {
+      "name": "酒吧",
+      "value": 82
+    },
+    {
+      "name": "个人信息",
+      "value": 81
+    },
+    {
+      "name": "周永康",
+      "value": 77
+    },
+    {
+      "name": "主要",
+      "value": 75
+    },
+    {
+      "name": "游客",
+      "value": 75
+    },
+    {
+      "name": "香港",
+      "value": 75
+    },
+    {
+      "name": "使用",
+      "value": 74
+    },
+    {
+      "name": "产品",
+      "value": 72
+    },
+    {
+      "name": "相册",
+      "value": 71
+    },
+    {
+      "name": "紫禁城",
+      "value": 70
+    },
+    {
+      "name": "提供",
+      "value": 69
+    },
+    {
+      "name": "文化",
+      "value": 68
+    },
+    {
+      "name": "存放",
+      "value": 67
+    },
+    {
+      "name": "文物",
+      "value": 67
+    },
+    {
+      "name": "正门",
+      "value": 67
+    },
+    {
+      "name": "信息",
+      "value": 67
+    },
+    {
+      "name": "酒店",
+      "value": 65
+    },
+    {
+      "name": "用户",
+      "value": 65
+    },
+    {
+      "name": "西湖",
+      "value": 65
+    },
+    {
+      "name": "明清",
+      "value": 64
+    },
+    {
+      "name": "特色",
+      "value": 63
+    },
+    {
+      "name": "客户",
+      "value": 62
+    },
+    {
+      "name": "用品",
+      "value": 58
+    },
+    {
+      "name": "明清两代",
+      "value": 58
+    },
+    {
+      "name": "时间",
+      "value": 56
+    },
+    {
+      "name": "皇城",
+      "value": 55
+    },
+    {
+      "name": "数据",
+      "value": 55
+    },
+    {
+      "name": "参观",
+      "value": 55
+    },
+    {
+      "name": "打卡",
+      "value": 55
+    },
+    {
+      "name": "公园",
+      "value": 53
+    },
+    {
+      "name": "故宫博物院",
+      "value": 53
+    }
+  ],
+  "zhongshan_park": [
+    {
+      "name": "中山公园",
+      "value": 510
+    },
+    {
+      "name": "公园",
+      "value": 232
+    },
+    {
+      "name": "社稷",
+      "value": 156
+    },
+    {
+      "name": "郁金香",
+      "value": 117
+    },
+    {
+      "name": "天安门",
+      "value": 103
+    },
+    {
+      "name": "故宫",
+      "value": 99
+    },
+    {
+      "name": "北京中山公园",
+      "value": 91
+    },
+    {
+      "name": "园林",
+      "value": 75
+    },
+    {
+      "name": "位于",
+      "value": 73
+    },
+    {
+      "name": "西侧",
+      "value": 63
+    },
+    {
+      "name": "历史",
+      "value": 60
+    },
+    {
+      "name": "先生",
+      "value": 58
+    },
+    {
+      "name": "五色土",
+      "value": 57
+    },
+    {
+      "name": "中心",
+      "value": 53
+    },
+    {
+      "name": "建筑",
+      "value": 52
+    },
+    {
+      "name": "园内",
+      "value": 43
+    },
+    {
+      "name": "祭祀",
+      "value": 43
+    },
+    {
+      "name": "皇家",
+      "value": 43
+    },
+    {
+      "name": "古树",
+      "value": 43
+    },
+    {
+      "name": "很多",
+      "value": 43
+    },
+    {
+      "name": "孙中山",
+      "value": 42
+    },
+    {
+      "name": "不错",
+      "value": 41
+    },
+    {
+      "name": "景色",
+      "value": 40
+    },
+    {
+      "name": "明清",
+      "value": 39
+    },
+    {
+      "name": "文化",
+      "value": 38
+    },
+    {
+      "name": "里面",
+      "value": 38
+    },
+    {
+      "name": "一座",
+      "value": 36
+    },
+    {
+      "name": "春天",
+      "value": 36
+    },
+    {
+      "name": "银杏",
+      "value": 35
+    },
+    {
+      "name": "值得",
+      "value": 33
+    },
+    {
+      "name": "游客",
+      "value": 33
+    },
+    {
+      "name": "打卡",
+      "value": 33
+    },
+    {
+      "name": "中央公园",
+      "value": 31
+    },
+    {
+      "name": "北京市",
+      "value": 30
+    },
+    {
+      "name": "水榭",
+      "value": 30
+    },
+    {
+      "name": "古典",
+      "value": 30
+    },
+    {
+      "name": "环境",
+      "value": 30
+    },
+    {
+      "name": "花坞",
+      "value": 29
+    },
+    {
+      "name": "皇帝",
+      "value": 29
+    },
+    {
+      "name": "城市",
+      "value": 29
+    },
+    {
+      "name": "土地",
+      "value": 28
+    },
+    {
+      "name": "明清两代",
+      "value": 28
+    },
+    {
+      "name": "中山堂",
+      "value": 27
+    },
+    {
+      "name": "天安门广场",
+      "value": 27
+    },
+    {
+      "name": "花卉",
+      "value": 26
+    },
+    {
+      "name": "今雨轩",
+      "value": 26
+    },
+    {
+      "name": "休闲",
+      "value": 26
+    },
+    {
+      "name": "每年",
+      "value": 26
+    },
+    {
+      "name": "紫禁城",
+      "value": 26
+    },
+    {
+      "name": "改名",
+      "value": 25
+    }
+  ],
+  "mengzang": [
+    {
+      "name": "学校",
+      "value": 660
+    },
+    {
+      "name": "蒙藏",
+      "value": 632
+    },
+    {
+      "name": "旧址",
+      "value": 531
+    },
+    {
+      "name": "体验",
+      "value": 276
+    },
+    {
+      "name": "文化",
+      "value": 208
+    },
+    {
+      "name": "民族",
+      "value": 188
+    },
+    {
+      "name": "中华民族",
+      "value": 165
+    },
+    {
+      "name": "开放",
+      "value": 150
+    },
+    {
+      "name": "历史",
+      "value": 147
+    },
+    {
+      "name": "少数民族",
+      "value": 132
+    },
+    {
+      "name": "红色",
+      "value": 120
+    },
+    {
+      "name": "革命",
+      "value": 120
+    },
+    {
+      "name": "工作",
+      "value": 110
+    },
+    {
+      "name": "学生",
+      "value": 105
+    },
+    {
+      "name": "观众",
+      "value": 103
+    },
+    {
+      "name": "中国共产党",
+      "value": 102
+    },
+    {
+      "name": "参观",
+      "value": 101
+    },
+    {
+      "name": "共同体",
+      "value": 92
+    },
+    {
+      "name": "中国",
+      "value": 89
+    },
+    {
+      "name": "中华",
+      "value": 78
+    },
+    {
+      "name": "青年",
+      "value": 76
+    },
+    {
+      "name": "优秀",
+      "value": 74
+    },
+    {
+      "name": "活动",
+      "value": 71
+    },
+    {
+      "name": "时间",
+      "value": 61
+    },
+    {
+      "name": "走进",
+      "value": 60
+    },
+    {
+      "name": "感受",
+      "value": 60
+    },
+    {
+      "name": "文物",
+      "value": 60
+    },
+    {
+      "name": "李大钊",
+      "value": 58
+    },
+    {
+      "name": "主题",
+      "value": 56
+    },
+    {
+      "name": "故事",
+      "value": 56
+    },
+    {
+      "name": "学习",
+      "value": 55
+    },
+    {
+      "name": "项目",
+      "value": 53
+    },
+    {
+      "name": "空间",
+      "value": 51
+    },
+    {
+      "name": "民族团结",
+      "value": 50
+    },
+    {
+      "name": "胡同",
+      "value": 50
+    },
+    {
+      "name": "百年",
+      "value": 46
+    },
+    {
+      "name": "乌兰夫",
+      "value": 46
+    },
+    {
+      "name": "传播",
+      "value": 46
+    },
+    {
+      "name": "石虎",
+      "value": 46
+    },
+    {
+      "name": "重要",
+      "value": 45
+    },
+    {
+      "name": "历程",
+      "value": 44
+    },
+    {
+      "name": "预约",
+      "value": 44
+    },
+    {
+      "name": "专题",
+      "value": 43
+    },
+    {
+      "name": "介绍",
+      "value": 43
+    },
+    {
+      "name": "西单",
+      "value": 43
+    },
+    {
+      "name": "展示",
+      "value": 43
+    },
+    {
+      "name": "玉树",
+      "value": 43
+    },
+    {
+      "name": "西城区",
+      "value": 42
+    },
+    {
+      "name": "伟大成就",
+      "value": 41
+    },
+    {
+      "name": "光辉",
+      "value": 40
+    }
+  ],
+  "taimiao": [
+    {
+      "name": "太庙",
+      "value": 725
+    },
+    {
+      "name": "建筑",
+      "value": 227
+    },
+    {
+      "name": "中国",
+      "value": 194
+    },
+    {
+      "name": "皇帝",
+      "value": 180
+    },
+    {
+      "name": "胡同",
+      "value": 180
+    },
+    {
+      "name": "文化",
+      "value": 178
+    },
+    {
+      "name": "旅游",
+      "value": 171
+    },
+    {
+      "name": "历史",
+      "value": 141
+    },
+    {
+      "name": "故宫",
+      "value": 130
+    },
+    {
+      "name": "紫禁城",
+      "value": 125
+    },
+    {
+      "name": "公园",
+      "value": 103
+    },
+    {
+      "name": "祭祀",
+      "value": 98
+    },
+    {
+      "name": "皇家",
+      "value": 95
+    },
+    {
+      "name": "明代",
+      "value": 93
+    },
+    {
+      "name": "攻略",
+      "value": 91
+    },
+    {
+      "name": "城内",
+      "value": 87
+    },
+    {
+      "name": "酒吧",
+      "value": 81
+    },
+    {
+      "name": "古代",
+      "value": 80
+    },
+    {
+      "name": "周永康",
+      "value": 77
+    },
+    {
+      "name": "北京市",
+      "value": 76
+    },
+    {
+      "name": "南北",
+      "value": 73
+    },
+    {
+      "name": "重要",
+      "value": 72
+    },
+    {
+      "name": "打卡",
+      "value": 71
+    },
+    {
+      "name": "活动",
+      "value": 68
+    },
+    {
+      "name": "酒店",
+      "value": 67
+    },
+    {
+      "name": "时间",
+      "value": 66
+    },
+    {
+      "name": "特色",
+      "value": 64
+    },
+    {
+      "name": "成为",
+      "value": 62
+    },
+    {
+      "name": "香港",
+      "value": 60
+    },
+    {
+      "name": "京城",
+      "value": 58
+    },
+    {
+      "name": "北京市劳动人民文化宫",
+      "value": 57
+    },
+    {
+      "name": "游客",
+      "value": 57
+    },
+    {
+      "name": "国家",
+      "value": 56
+    },
+    {
+      "name": "广场",
+      "value": 55
+    },
+    {
+      "name": "主要",
+      "value": 54
+    },
+    {
+      "name": "进行",
+      "value": 54
+    },
+    {
+      "name": "城市",
+      "value": 54
+    },
+    {
+      "name": "永乐",
+      "value": 54
+    },
+    {
+      "name": "皇宫",
+      "value": 53
+    },
+    {
+      "name": "来到",
+      "value": 53
+    },
+    {
+      "name": "参观",
+      "value": 53
+    },
+    {
+      "name": "感受",
+      "value": 53
+    },
+    {
+      "name": "祭祖",
+      "value": 52
+    },
+    {
+      "name": "天安门",
+      "value": 52
+    },
+    {
+      "name": "中共",
+      "value": 52
+    },
+    {
+      "name": "城墙",
+      "value": 50
+    },
+    {
+      "name": "亲王",
+      "value": 49
+    },
+    {
+      "name": "心得体会",
+      "value": 49
+    },
+    {
+      "name": "温家宝",
+      "value": 49
+    },
+    {
+      "name": "看到",
+      "value": 48
+    }
+  ],
+  "zhengyangmen": [
+    {
+      "name": "正阳门",
+      "value": 247
+    },
+    {
+      "name": "前门",
+      "value": 119
+    },
+    {
+      "name": "箭楼",
+      "value": 112
+    },
+    {
+      "name": "城楼",
+      "value": 95
+    },
+    {
+      "name": "建筑",
+      "value": 62
+    },
+    {
+      "name": "城门",
+      "value": 53
+    },
+    {
+      "name": "历史",
+      "value": 52
+    },
+    {
+      "name": "瓮城",
+      "value": 45
+    },
+    {
+      "name": "北京城",
+      "value": 36
+    },
+    {
+      "name": "天安门广场",
+      "value": 33
+    },
+    {
+      "name": "保存",
+      "value": 30
+    },
+    {
+      "name": "正门",
+      "value": 29
+    },
+    {
+      "name": "好好",
+      "value": 28
+    },
+    {
+      "name": "前门大街",
+      "value": 27
+    },
+    {
+      "name": "位于",
+      "value": 27
+    },
+    {
+      "name": "内城",
+      "value": 27
+    },
+    {
+      "name": "不错",
+      "value": 25
+    },
+    {
+      "name": "一座",
+      "value": 22
+    },
+    {
+      "name": "京城",
+      "value": 22
+    },
+    {
+      "name": "城墙",
+      "value": 21
+    },
+    {
+      "name": "大栅栏",
+      "value": 20
+    },
+    {
+      "name": "俗称",
+      "value": 19
+    },
+    {
+      "name": "明清",
+      "value": 18
+    },
+    {
+      "name": "九门",
+      "value": 18
+    },
+    {
+      "name": "感觉",
+      "value": 18
+    },
+    {
+      "name": "古代",
+      "value": 17
+    },
+    {
+      "name": "重要",
+      "value": 17
+    },
+    {
+      "name": "游客",
+      "value": 17
+    },
+    {
+      "name": "门楼",
+      "value": 17
+    },
+    {
+      "name": "完整",
+      "value": 17
+    },
+    {
+      "name": "南门",
+      "value": 16
+    },
+    {
+      "name": "始建",
+      "value": 16
+    },
+    {
+      "name": "唯一",
+      "value": 16
+    },
+    {
+      "name": "文化",
+      "value": 16
+    },
+    {
+      "name": "高大",
+      "value": 16
+    },
+    {
+      "name": "防御",
+      "value": 16
+    },
+    {
+      "name": "看看",
+      "value": 16
+    },
+    {
+      "name": "原名",
+      "value": 15
+    },
+    {
+      "name": "京师",
+      "value": 15
+    },
+    {
+      "name": "值得",
+      "value": 15
+    },
+    {
+      "name": "前面",
+      "value": 14
+    },
+    {
+      "name": "天安门",
+      "value": 14
+    },
+    {
+      "name": "人们",
+      "value": 13
+    },
+    {
+      "name": "十七年",
+      "value": 12
+    },
+    {
+      "name": "中国",
+      "value": 11
+    },
+    {
+      "name": "标志性",
+      "value": 11
+    },
+    {
+      "name": "古老",
+      "value": 11
+    },
+    {
+      "name": "晚上",
+      "value": 11
+    },
+    {
+      "name": "南大门",
+      "value": 11
+    },
+    {
+      "name": "建楼",
+      "value": 11
+    }
+  ],
+  "nanzhongzhou": [
+    {
+      "name": "御道",
+      "value": 167
+    },
+    {
+      "name": "中国",
+      "value": 122
+    },
+    {
+      "name": "永定门",
+      "value": 95
+    },
+    {
+      "name": "文化",
+      "value": 83
+    },
+    {
+      "name": "酒吧",
+      "value": 81
+    },
+    {
+      "name": "周永康",
+      "value": 76
+    },
+    {
+      "name": "天桥",
+      "value": 69
+    },
+    {
+      "name": "中轴",
+      "value": 67
+    },
+    {
+      "name": "御路",
+      "value": 66
+    },
+    {
+      "name": "打卡",
+      "value": 63
+    },
+    {
+      "name": "香港",
+      "value": 60
+    },
+    {
+      "name": "天坛",
+      "value": 57
+    },
+    {
+      "name": "中共",
+      "value": 51
+    },
+    {
+      "name": "特色",
+      "value": 50
+    },
+    {
+      "name": "温家宝",
+      "value": 49
+    },
+    {
+      "name": "正阳门",
+      "value": 45
+    },
+    {
+      "name": "薄熙来",
+      "value": 45
+    },
+    {
+      "name": "熱門",
+      "value": 44
+    },
+    {
+      "name": "成为",
+      "value": 43
+    },
+    {
+      "name": "礼仪",
+      "value": 43
+    },
+    {
+      "name": "旅遊",
+      "value": 42
+    },
+    {
+      "name": "交通",
+      "value": 41
+    },
+    {
+      "name": "历史",
+      "value": 40
+    },
+    {
+      "name": "南段",
+      "value": 40
+    },
+    {
+      "name": "传统",
+      "value": 38
+    },
+    {
+      "name": "台积",
+      "value": 38
+    },
+    {
+      "name": "徐明",
+      "value": 38
+    },
+    {
+      "name": "游客",
+      "value": 37
+    },
+    {
+      "name": "博物馆",
+      "value": 37
+    },
+    {
+      "name": "市民",
+      "value": 36
+    },
+    {
+      "name": "北京市",
+      "value": 34
+    },
+    {
+      "name": "景點",
+      "value": 34
+    },
+    {
+      "name": "政变",
+      "value": 34
+    },
+    {
+      "name": "工程",
+      "value": 33
+    },
+    {
+      "name": "皇家",
+      "value": 33
+    },
+    {
+      "name": "台湾",
+      "value": 33
+    },
+    {
+      "name": "中央",
+      "value": 32
+    },
+    {
+      "name": "皇帝",
+      "value": 32
+    },
+    {
+      "name": "形成",
+      "value": 32
+    },
+    {
+      "name": "中心",
+      "value": 30
+    },
+    {
+      "name": "先农坛",
+      "value": 30
+    },
+    {
+      "name": "酒店",
+      "value": 30
+    },
+    {
+      "name": "美食",
+      "value": 30
+    },
+    {
+      "name": "建筑",
+      "value": 29
+    },
+    {
+      "name": "感受",
+      "value": 29
+    },
+    {
+      "name": "市口",
+      "value": 28
+    },
+    {
+      "name": "城楼",
+      "value": 28
+    },
+    {
+      "name": "地址",
+      "value": 28
+    },
+    {
+      "name": "半导体",
+      "value": 28
+    },
+    {
+      "name": "大街",
+      "value": 27
+    }
+  ],
+  "tiantan": [
+    {
+      "name": "天坛",
+      "value": 2031
+    },
+    {
+      "name": "祈年殿",
+      "value": 963
+    },
+    {
+      "name": "建筑",
+      "value": 899
+    },
+    {
+      "name": "天坛公园",
+      "value": 796
+    },
+    {
+      "name": "讲解",
+      "value": 759
+    },
+    {
+      "name": "导游",
+      "value": 660
+    },
+    {
+      "name": "不错",
+      "value": 624
+    },
+    {
+      "name": "圜丘",
+      "value": 545
+    },
+    {
+      "name": "历史",
+      "value": 521
+    },
+    {
+      "name": "回音壁",
+      "value": 444
+    },
+    {
+      "name": "值得",
+      "value": 439
+    },
+    {
+      "name": "祭天",
+      "value": 433
+    },
+    {
+      "name": "很多",
+      "value": 412
+    },
+    {
+      "name": "公园",
+      "value": 401
+    },
+    {
+      "name": "皇帝",
+      "value": 385
+    },
+    {
+      "name": "古代",
+      "value": 375
+    },
+    {
+      "name": "祭祀",
+      "value": 360
+    },
+    {
+      "name": "文化",
+      "value": 331
+    },
+    {
+      "name": "中国",
+      "value": 308
+    },
+    {
+      "name": "主要",
+      "value": 270
+    },
+    {
+      "name": "场所",
+      "value": 256
+    },
+    {
+      "name": "游客",
+      "value": 231
+    },
+    {
+      "name": "时间",
+      "value": 228
+    },
+    {
+      "name": "里面",
+      "value": 214
+    },
+    {
+      "name": "了解",
+      "value": 209
+    },
+    {
+      "name": "东门",
+      "value": 199
+    },
+    {
+      "name": "景色",
+      "value": 199
+    },
+    {
+      "name": "体验",
+      "value": 198
+    },
+    {
+      "name": "方便",
+      "value": 197
+    },
+    {
+      "name": "推荐",
+      "value": 195
+    },
+    {
+      "name": "感受",
+      "value": 194
+    },
+    {
+      "name": "穹宇",
+      "value": 194
+    },
+    {
+      "name": "皇家",
+      "value": 191
+    },
+    {
+      "name": "景区",
+      "value": 185
+    },
+    {
+      "name": "好好",
+      "value": 183
+    },
+    {
+      "name": "旅游",
+      "value": 174
+    },
+    {
+      "name": "很大",
+      "value": 171
+    },
+    {
+      "name": "世界",
+      "value": 166
+    },
+    {
+      "name": "感觉",
+      "value": 165
+    },
+    {
+      "name": "斋宫",
+      "value": 163
+    },
+    {
+      "name": "孩子",
+      "value": 159
+    },
+    {
+      "name": "祈谷",
+      "value": 158
+    },
+    {
+      "name": "游览",
+      "value": 154
+    },
+    {
+      "name": "谷坛",
+      "value": 153
+    },
+    {
+      "name": "拍照",
+      "value": 152
+    },
+    {
+      "name": "一次",
+      "value": 147
+    },
+    {
+      "name": "看到",
+      "value": 146
+    },
+    {
+      "name": "古树",
+      "value": 145
+    },
+    {
+      "name": "游玩",
+      "value": 143
+    },
+    {
+      "name": "建议",
+      "value": 143
+    }
+  ],
+  "xiannongtan": [
+    {
+      "name": "建筑",
+      "value": 199
+    },
+    {
+      "name": "先农坛",
+      "value": 147
+    },
+    {
+      "name": "博物馆",
+      "value": 146
+    },
+    {
+      "name": "古代",
+      "value": 137
+    },
+    {
+      "name": "中国",
+      "value": 97
+    },
+    {
+      "name": "藻井",
+      "value": 87
+    },
+    {
+      "name": "文化",
+      "value": 70
+    },
+    {
+      "name": "历史",
+      "value": 67
+    },
+    {
+      "name": "祭祀",
+      "value": 46
+    },
+    {
+      "name": "古建筑",
+      "value": 38
+    },
+    {
+      "name": "天花板",
+      "value": 38
+    },
+    {
+      "name": "展示",
+      "value": 28
+    },
+    {
+      "name": "讲解",
+      "value": 26
+    },
+    {
+      "name": "值得",
+      "value": 24
+    },
+    {
+      "name": "隆福寺",
+      "value": 23
+    },
+    {
+      "name": "艺术",
+      "value": 23
+    },
+    {
+      "name": "了解",
+      "value": 23
+    },
+    {
+      "name": "先农",
+      "value": 23
+    },
+    {
+      "name": "皇家",
+      "value": 22
+    },
+    {
+      "name": "位于",
+      "value": 22
+    },
+    {
+      "name": "开放",
+      "value": 22
+    },
+    {
+      "name": "传统",
+      "value": 21
+    },
+    {
+      "name": "参观",
+      "value": 20
+    },
+    {
+      "name": "发展",
+      "value": 19
+    },
+    {
+      "name": "明清",
+      "value": 18
+    },
+    {
+      "name": "模型",
+      "value": 18
+    },
+    {
+      "name": "天坛",
+      "value": 18
+    },
+    {
+      "name": "文创",
+      "value": 18
+    },
+    {
+      "name": "古建",
+      "value": 17
+    },
+    {
+      "name": "太岁",
+      "value": 17
+    },
+    {
+      "name": "天宫",
+      "value": 17
+    },
+    {
+      "name": "里面",
+      "value": 17
+    },
+    {
+      "name": "皇帝",
+      "value": 15
+    },
+    {
+      "name": "建筑群",
+      "value": 15
+    },
+    {
+      "name": "游客",
+      "value": 14
+    },
+    {
+      "name": "技术",
+      "value": 14
+    },
+    {
+      "name": "感受",
+      "value": 14
+    },
+    {
+      "name": "展览",
+      "value": 14
+    },
+    {
+      "name": "研究",
+      "value": 13
+    },
+    {
+      "name": "技艺",
+      "value": 13
+    },
+    {
+      "name": "遗址",
+      "value": 13
+    },
+    {
+      "name": "环境",
+      "value": 13
+    },
+    {
+      "name": "明清两代",
+      "value": 13
+    },
+    {
+      "name": "旅游",
+      "value": 13
+    },
+    {
+      "name": "庆成宫",
+      "value": 13
+    },
+    {
+      "name": "农耕",
+      "value": 12
+    },
+    {
+      "name": "知识",
+      "value": 12
+    },
+    {
+      "name": "星空",
+      "value": 12
+    },
+    {
+      "name": "专题性",
+      "value": 12
+    },
+    {
+      "name": "冰箱",
+      "value": 12
+    }
+  ],
+  "hongen_guan": [
+    {
+      "name": "文化",
+      "value": 69
+    },
+    {
+      "name": "宏恩",
+      "value": 63
+    },
+    {
+      "name": "胡同",
+      "value": 36
+    },
+    {
+      "name": "历史",
+      "value": 35
+    },
+    {
+      "name": "成为",
+      "value": 20
+    },
+    {
+      "name": "主题",
+      "value": 19
+    },
+    {
+      "name": "开放",
+      "value": 19
+    },
+    {
+      "name": "观中",
+      "value": 19
+    },
+    {
+      "name": "钟楼",
+      "value": 19
+    },
+    {
+      "name": "建筑",
+      "value": 16
+    },
+    {
+      "name": "龙尾",
+      "value": 16
+    },
+    {
+      "name": "之要",
+      "value": 16
+    },
+    {
+      "name": "修缮",
+      "value": 16
+    },
+    {
+      "name": "北侧",
+      "value": 15
+    },
+    {
+      "name": "邮局",
+      "value": 14
+    },
+    {
+      "name": "故事",
+      "value": 14
+    },
+    {
+      "name": "体验",
+      "value": 14
+    },
+    {
+      "name": "空间",
+      "value": 13
+    },
+    {
+      "name": "庙宇",
+      "value": 13
+    },
+    {
+      "name": "如今",
+      "value": 13
+    },
+    {
+      "name": "东城区",
+      "value": 12
+    },
+    {
+      "name": "中国",
+      "value": 12
+    },
+    {
+      "name": "今日",
+      "value": 11
+    },
+    {
+      "name": "博物馆",
+      "value": 11
+    },
+    {
+      "name": "传统",
+      "value": 11
+    },
+    {
+      "name": "利用",
+      "value": 11
+    },
+    {
+      "name": "观内",
+      "value": 10
+    },
+    {
+      "name": "佛寺",
+      "value": 10
+    },
+    {
+      "name": "古建",
+      "value": 10
+    },
+    {
+      "name": "短剧",
+      "value": 10
+    },
+    {
+      "name": "称为",
+      "value": 10
+    },
+    {
+      "name": "陈雪",
+      "value": 10
+    },
+    {
+      "name": "多年",
+      "value": 9
+    },
+    {
+      "name": "头条",
+      "value": 9
+    },
+    {
+      "name": "生活",
+      "value": 9
+    },
+    {
+      "name": "钟鼓楼",
+      "value": 9
+    },
+    {
+      "name": "文章",
+      "value": 9
+    },
+    {
+      "name": "配图",
+      "value": 9
+    },
+    {
+      "name": "古老",
+      "value": 8
+    },
+    {
+      "name": "文化底蕴",
+      "value": 8
+    },
+    {
+      "name": "常设",
+      "value": 8
+    },
+    {
+      "name": "年间",
+      "value": 8
+    },
+    {
+      "name": "始建",
+      "value": 8
+    },
+    {
+      "name": "独特",
+      "value": 8
+    },
+    {
+      "name": "感受",
+      "value": 8
+    },
+    {
+      "name": "豆腐",
+      "value": 8
+    },
+    {
+      "name": "活化",
+      "value": 8
+    },
+    {
+      "name": "时代",
+      "value": 8
+    },
+    {
+      "name": "拥有",
+      "value": 7
+    },
+    {
+      "name": "游客",
+      "value": 7
+    }
+  ],
+  "zhonglou": [
+    {
+      "name": "钟鼓楼",
+      "value": 110
+    },
+    {
+      "name": "建筑",
+      "value": 99
+    },
+    {
+      "name": "鼓楼",
+      "value": 91
+    },
+    {
+      "name": "钟楼",
+      "value": 67
+    },
+    {
+      "name": "历史",
+      "value": 61
+    },
+    {
+      "name": "报时",
+      "value": 49
+    },
+    {
+      "name": "时间",
+      "value": 46
+    },
+    {
+      "name": "文化",
+      "value": 43
+    },
+    {
+      "name": "中心",
+      "value": 29
+    },
+    {
+      "name": "体验",
+      "value": 26
+    },
+    {
+      "name": "中国",
+      "value": 25
+    },
+    {
+      "name": "感受",
+      "value": 24
+    },
+    {
+      "name": "北端",
+      "value": 24
+    },
+    {
+      "name": "游客",
+      "value": 21
+    },
+    {
+      "name": "古代",
+      "value": 21
+    },
+    {
+      "name": "参观",
+      "value": 19
+    },
+    {
+      "name": "重要",
+      "value": 19
+    },
+    {
+      "name": "游览",
+      "value": 17
+    },
+    {
+      "name": "三代",
+      "value": 16
+    },
+    {
+      "name": "攻略",
+      "value": 16
+    },
+    {
+      "name": "打卡",
+      "value": 16
+    },
+    {
+      "name": "全国",
+      "value": 16
+    },
+    {
+      "name": "胡同",
+      "value": 15
+    },
+    {
+      "name": "重点",
+      "value": 15
+    },
+    {
+      "name": "单位",
+      "value": 15
+    },
+    {
+      "name": "钟声",
+      "value": 15
+    },
+    {
+      "name": "开放",
+      "value": 14
+    },
+    {
+      "name": "城市",
+      "value": 14
+    },
+    {
+      "name": "文物保护",
+      "value": 14
+    },
+    {
+      "name": "独特",
+      "value": 13
+    },
+    {
+      "name": "纵置",
+      "value": 13
+    },
+    {
+      "name": "都城",
+      "value": 13
+    },
+    {
+      "name": "文物",
+      "value": 13
+    },
+    {
+      "name": "古建筑",
+      "value": 12
+    },
+    {
+      "name": "始建",
+      "value": 12
+    },
+    {
+      "name": "旅游",
+      "value": 12
+    },
+    {
+      "name": "风貌",
+      "value": 12
+    },
+    {
+      "name": "铜钟",
+      "value": 12
+    },
+    {
+      "name": "古都",
+      "value": 11
+    },
+    {
+      "name": "高大",
+      "value": 11
+    },
+    {
+      "name": "砖石",
+      "value": 11
+    },
+    {
+      "name": "地址",
+      "value": 11
+    },
+    {
+      "name": "照片",
+      "value": 11
+    },
+    {
+      "name": "了解",
+      "value": 11
+    },
+    {
+      "name": "大街",
+      "value": 11
+    },
+    {
+      "name": "击鼓",
+      "value": 11
+    },
+    {
+      "name": "表演",
+      "value": 11
+    },
+    {
+      "name": "周边",
+      "value": 10
+    },
+    {
+      "name": "西安",
+      "value": 10
+    },
+    {
+      "name": "标志性",
+      "value": 10
+    }
+  ],
+  "gulou": [
+    {
+      "name": "鼓楼",
+      "value": 157
+    },
+    {
+      "name": "钟鼓楼",
+      "value": 69
+    },
+    {
+      "name": "历史",
+      "value": 69
+    },
+    {
+      "name": "时间",
+      "value": 61
+    },
+    {
+      "name": "中国",
+      "value": 54
+    },
+    {
+      "name": "文化",
+      "value": 51
+    },
+    {
+      "name": "建筑",
+      "value": 48
+    },
+    {
+      "name": "游客",
+      "value": 38
+    },
+    {
+      "name": "古代",
+      "value": 34
+    },
+    {
+      "name": "钟楼",
+      "value": 31
+    },
+    {
+      "name": "报时",
+      "value": 30
+    },
+    {
+      "name": "胡同",
+      "value": 30
+    },
+    {
+      "name": "北京市",
+      "value": 27
+    },
+    {
+      "name": "打卡",
+      "value": 26
+    },
+    {
+      "name": "开放",
+      "value": 25
+    },
+    {
+      "name": "城市",
+      "value": 24
+    },
+    {
+      "name": "体验",
+      "value": 24
+    },
+    {
+      "name": "参观",
+      "value": 23
+    },
+    {
+      "name": "旅游",
+      "value": 22
+    },
+    {
+      "name": "中心",
+      "value": 21
+    },
+    {
+      "name": "表演",
+      "value": 21
+    },
+    {
+      "name": "生活",
+      "value": 21
+    },
+    {
+      "name": "必去",
+      "value": 21
+    },
+    {
+      "name": "古都",
+      "value": 20
+    },
+    {
+      "name": "感受",
+      "value": 20
+    },
+    {
+      "name": "攻略",
+      "value": 19
+    },
+    {
+      "name": "承载",
+      "value": 17
+    },
+    {
+      "name": "击鼓",
+      "value": 16
+    },
+    {
+      "name": "喜欢",
+      "value": 15
+    },
+    {
+      "name": "大街",
+      "value": 14
+    },
+    {
+      "name": "标志性",
+      "value": 14
+    },
+    {
+      "name": "重要",
+      "value": 14
+    },
+    {
+      "name": "北端",
+      "value": 13
+    },
+    {
+      "name": "地址",
+      "value": 13
+    },
+    {
+      "name": "全国",
+      "value": 13
+    },
+    {
+      "name": "重点",
+      "value": 13
+    },
+    {
+      "name": "计时",
+      "value": 13
+    },
+    {
+      "name": "东城区",
+      "value": 12
+    },
+    {
+      "name": "点评",
+      "value": 12
+    },
+    {
+      "name": "沉浸",
+      "value": 12
+    },
+    {
+      "name": "什刹海",
+      "value": 12
+    },
+    {
+      "name": "拍照",
+      "value": 12
+    },
+    {
+      "name": "地安门",
+      "value": 11
+    },
+    {
+      "name": "古建筑",
+      "value": 11
+    },
+    {
+      "name": "魅力",
+      "value": 11
+    },
+    {
+      "name": "文物保护",
+      "value": 11
+    },
+    {
+      "name": "单位",
+      "value": 11
+    },
+    {
+      "name": "展览",
+      "value": 11
+    },
+    {
+      "name": "元代",
+      "value": 11
+    },
+    {
+      "name": "酒店",
+      "value": 11
+    }
+  ],
+  "wanning_bridge": [
+    {
+      "name": "万宁",
+      "value": 109
+    },
+    {
+      "name": "历史",
+      "value": 34
+    },
+    {
+      "name": "什刹海",
+      "value": 27
+    },
+    {
+      "name": "海子",
+      "value": 26
+    },
+    {
+      "name": "中国",
+      "value": 25
+    },
+    {
+      "name": "市场",
+      "value": 24
+    },
+    {
+      "name": "公司",
+      "value": 21
+    },
+    {
+      "name": "后门",
+      "value": 20
+    },
+    {
+      "name": "亿元",
+      "value": 19
+    },
+    {
+      "name": "这座",
+      "value": 17
+    },
+    {
+      "name": "桥梁",
+      "value": 15
+    },
+    {
+      "name": "河道",
+      "value": 15
+    },
+    {
+      "name": "机会",
+      "value": 15
+    },
+    {
+      "name": "元代",
+      "value": 14
+    },
+    {
+      "name": "侯仁之",
+      "value": 14
+    },
+    {
+      "name": "工程",
+      "value": 14
+    },
+    {
+      "name": "直播",
+      "value": 14
+    },
+    {
+      "name": "股王",
+      "value": 14
+    },
+    {
+      "name": "一座",
+      "value": 13
+    },
+    {
+      "name": "发展",
+      "value": 13
+    },
+    {
+      "name": "先生",
+      "value": 13
+    },
+    {
+      "name": "积水潭",
+      "value": 13
+    },
+    {
+      "name": "继续",
+      "value": 13
+    },
+    {
+      "name": "涨停",
+      "value": 13
+    },
+    {
+      "name": "建设",
+      "value": 12
+    },
+    {
+      "name": "板块",
+      "value": 12
+    },
+    {
+      "name": "预计",
+      "value": 12
+    },
+    {
+      "name": "强势股",
+      "value": 12
+    },
+    {
+      "name": "建筑",
+      "value": 11
+    },
+    {
+      "name": "城市",
+      "value": 11
+    },
+    {
+      "name": "规划",
+      "value": 11
+    },
+    {
+      "name": "地安门",
+      "value": 11
+    },
+    {
+      "name": "交通",
+      "value": 11
+    },
+    {
+      "name": "新桥",
+      "value": 11
+    },
+    {
+      "name": "相关",
+      "value": 11
+    },
+    {
+      "name": "特高压",
+      "value": 11
+    },
+    {
+      "name": "业绩",
+      "value": 11
+    },
+    {
+      "name": "超短",
+      "value": 11
+    },
+    {
+      "name": "大家",
+      "value": 11
+    },
+    {
+      "name": "文化",
+      "value": 10
+    },
+    {
+      "name": "桥下",
+      "value": 10
+    },
+    {
+      "name": "方向",
+      "value": 10
+    },
+    {
+      "name": "科技",
+      "value": 10
+    },
+    {
+      "name": "增长",
+      "value": 10
+    },
+    {
+      "name": "同比",
+      "value": 10
+    },
+    {
+      "name": "投资",
+      "value": 10
+    },
+    {
+      "name": "操作",
+      "value": 10
+    },
+    {
+      "name": "北京城",
+      "value": 9
+    },
+    {
+      "name": "发布",
+      "value": 9
+    },
+    {
+      "name": "古老",
+      "value": 9
+    }
+  ],
+  "shichahai": [
+    {
+      "name": "什刹海",
+      "value": 866
+    },
+    {
+      "name": "不错",
+      "value": 286
+    },
+    {
+      "name": "历史",
+      "value": 283
+    },
+    {
+      "name": "景色",
+      "value": 197
+    },
+    {
+      "name": "讲解",
+      "value": 183
+    },
+    {
+      "name": "很多",
+      "value": 170
+    },
+    {
+      "name": "胡同",
+      "value": 162
+    },
+    {
+      "name": "文化",
+      "value": 152
+    },
+    {
+      "name": "值得",
+      "value": 147
+    },
+    {
+      "name": "酒吧",
+      "value": 142
+    },
+    {
+      "name": "恭王府",
+      "value": 142
+    },
+    {
+      "name": "后海",
+      "value": 120
+    },
+    {
+      "name": "景区",
+      "value": 117
+    },
+    {
+      "name": "北京市",
+      "value": 103
+    },
+    {
+      "name": "水域",
+      "value": 101
+    },
+    {
+      "name": "导游",
+      "value": 100
+    },
+    {
+      "name": "性价比",
+      "value": 98
+    },
+    {
+      "name": "冬天",
+      "value": 96
+    },
+    {
+      "name": "夏天",
+      "value": 95
+    },
+    {
+      "name": "晚上",
+      "value": 95
+    },
+    {
+      "name": "北京城",
+      "value": 94
+    },
+    {
+      "name": "西海",
+      "value": 86
+    },
+    {
+      "name": "旅游",
+      "value": 79
+    },
+    {
+      "name": "体验",
+      "value": 78
+    },
+    {
+      "name": "游客",
+      "value": 77
+    },
+    {
+      "name": "风景",
+      "value": 77
+    },
+    {
+      "name": "感觉",
+      "value": 76
+    },
+    {
+      "name": "秀才",
+      "value": 76
+    },
+    {
+      "name": "推荐",
+      "value": 74
+    },
+    {
+      "name": "滑冰",
+      "value": 73
+    },
+    {
+      "name": "位于",
+      "value": 72
+    },
+    {
+      "name": "荷花",
+      "value": 65
+    },
+    {
+      "name": "热闹",
+      "value": 65
+    },
+    {
+      "name": "周边",
+      "value": 64
+    },
+    {
+      "name": "面积",
+      "value": 63
+    },
+    {
+      "name": "公园",
+      "value": 62
+    },
+    {
+      "name": "风景区",
+      "value": 60
+    },
+    {
+      "name": "喜欢",
+      "value": 59
+    },
+    {
+      "name": "水面",
+      "value": 59
+    },
+    {
+      "name": "一片",
+      "value": 58
+    },
+    {
+      "name": "打卡",
+      "value": 58
+    },
+    {
+      "name": "感受",
+      "value": 58
+    },
+    {
+      "name": "著名",
+      "value": 57
+    },
+    {
+      "name": "看看",
+      "value": 57
+    },
+    {
+      "name": "孩子",
+      "value": 56
+    },
+    {
+      "name": "西城区",
+      "value": 55
+    },
+    {
+      "name": "前海",
+      "value": 54
+    },
+    {
+      "name": "游览",
+      "value": 54
+    },
+    {
+      "name": "银锭",
+      "value": 53
+    },
+    {
+      "name": "王府",
+      "value": 53
+    }
+  ],
+  "guihua_guan": [
+    {
+      "name": "规划",
+      "value": 79
+    },
+    {
+      "name": "展览馆",
+      "value": 70
+    },
+    {
+      "name": "北京市",
+      "value": 64
+    },
+    {
+      "name": "历史",
+      "value": 47
+    },
+    {
+      "name": "展示",
+      "value": 38
+    },
+    {
+      "name": "城市",
+      "value": 32
+    },
+    {
+      "name": "建筑",
+      "value": 31
+    },
+    {
+      "name": "发展",
+      "value": 30
+    },
+    {
+      "name": "模型",
+      "value": 25
+    },
+    {
+      "name": "建设",
+      "value": 25
+    },
+    {
+      "name": "城市规划",
+      "value": 24
+    },
+    {
+      "name": "前门",
+      "value": 20
+    },
+    {
+      "name": "参观",
+      "value": 20
+    },
+    {
+      "name": "未来",
+      "value": 19
+    },
+    {
+      "name": "杂志",
+      "value": 18
+    },
+    {
+      "name": "了解",
+      "value": 17
+    },
+    {
+      "name": "介绍",
+      "value": 16
+    },
+    {
+      "name": "文化",
+      "value": 15
+    },
+    {
+      "name": "位于",
+      "value": 15
+    },
+    {
+      "name": "内容",
+      "value": 15
+    },
+    {
+      "name": "展览",
+      "value": 14
+    },
+    {
+      "name": "中国",
+      "value": 14
+    },
+    {
+      "name": "东大街",
+      "value": 12
+    },
+    {
+      "name": "平方米",
+      "value": 12
+    },
+    {
+      "name": "时间",
+      "value": 12
+    },
+    {
+      "name": "期刊",
+      "value": 12
+    },
+    {
+      "name": "故宫",
+      "value": 11
+    },
+    {
+      "name": "感受",
+      "value": 11
+    },
+    {
+      "name": "首都",
+      "value": 11
+    },
+    {
+      "name": "而成",
+      "value": 11
+    },
+    {
+      "name": "纺织",
+      "value": 11
+    },
+    {
+      "name": "东城区",
+      "value": 10
+    },
+    {
+      "name": "改造",
+      "value": 10
+    },
+    {
+      "name": "展馆",
+      "value": 10
+    },
+    {
+      "name": "面积",
+      "value": 10
+    },
+    {
+      "name": "看到",
+      "value": 10
+    },
+    {
+      "name": "三层",
+      "value": 9
+    },
+    {
+      "name": "原有",
+      "value": 9
+    },
+    {
+      "name": "基础",
+      "value": 9
+    },
+    {
+      "name": "悠久",
+      "value": 9
+    },
+    {
+      "name": "展区",
+      "value": 9
+    },
+    {
+      "name": "中心",
+      "value": 9
+    },
+    {
+      "name": "活动",
+      "value": 9
+    },
+    {
+      "name": "教育",
+      "value": 9
+    },
+    {
+      "name": "这座",
+      "value": 8
+    },
+    {
+      "name": "四层",
+      "value": 8
+    },
+    {
+      "name": "值得",
+      "value": 8
+    },
+    {
+      "name": "艺术",
+      "value": 8
+    },
+    {
+      "name": "免费",
+      "value": 8
+    },
+    {
+      "name": "对外开放",
+      "value": 8
+    }
+  ],
+  "tiedao_guan": [
+    {
+      "name": "中国",
+      "value": 164
+    },
+    {
+      "name": "博物馆",
+      "value": 119
+    },
+    {
+      "name": "旅游",
+      "value": 107
+    },
+    {
+      "name": "攻略",
+      "value": 102
+    },
+    {
+      "name": "铁路",
+      "value": 85
+    },
+    {
+      "name": "铁道",
+      "value": 67
+    },
+    {
+      "name": "参观",
+      "value": 50
+    },
+    {
+      "name": "正阳门",
+      "value": 47
+    },
+    {
+      "name": "资讯",
+      "value": 31
+    },
+    {
+      "name": "发表",
+      "value": 31
+    },
+    {
+      "name": "发展",
+      "value": 30
+    },
+    {
+      "name": "历史",
+      "value": 29
+    },
+    {
+      "name": "火车",
+      "value": 27
+    },
+    {
+      "name": "东郊",
+      "value": 21
+    },
+    {
+      "name": "展示",
+      "value": 20
+    },
+    {
+      "name": "了解",
+      "value": 20
+    },
+    {
+      "name": "前门",
+      "value": 20
+    },
+    {
+      "name": "免费",
+      "value": 16
+    },
+    {
+      "name": "高铁",
+      "value": 16
+    },
+    {
+      "name": "展览",
+      "value": 16
+    },
+    {
+      "name": "位于",
+      "value": 16
+    },
+    {
+      "name": "机车车辆",
+      "value": 16
+    },
+    {
+      "name": "展厅",
+      "value": 16
+    },
+    {
+      "name": "主要",
+      "value": 15
+    },
+    {
+      "name": "机车",
+      "value": 15
+    },
+    {
+      "name": "展品",
+      "value": 14
+    },
+    {
+      "name": "看看",
+      "value": 12
+    },
+    {
+      "name": "火车站",
+      "value": 12
+    },
+    {
+      "name": "模型",
+      "value": 12
+    },
+    {
+      "name": "发展史",
+      "value": 12
+    },
+    {
+      "name": "值得",
+      "value": 12
+    },
+    {
+      "name": "蒸汽机车",
+      "value": 12
+    },
+    {
+      "name": "不同",
+      "value": 12
+    },
+    {
+      "name": "建筑",
+      "value": 12
+    },
+    {
+      "name": "很多",
+      "value": 11
+    },
+    {
+      "name": "里面",
+      "value": 11
+    },
+    {
+      "name": "詹天佑",
+      "value": 11
+    },
+    {
+      "name": "车站",
+      "value": 10
+    },
+    {
+      "name": "孩子",
+      "value": 10
+    },
+    {
+      "name": "看到",
+      "value": 10
+    },
+    {
+      "name": "不错",
+      "value": 10
+    },
+    {
+      "name": "时期",
+      "value": 10
+    },
+    {
+      "name": "展馆",
+      "value": 10
+    },
+    {
+      "name": "好玩",
+      "value": 10
+    },
+    {
+      "name": "历程",
+      "value": 9
+    },
+    {
+      "name": "前门大街",
+      "value": 9
+    },
+    {
+      "name": "体验",
+      "value": 9
+    },
+    {
+      "name": "时间",
+      "value": 9
+    },
+    {
+      "name": "文档",
+      "value": 9
+    },
+    {
+      "name": "信息",
+      "value": 9
+    }
+  ],
+  "ziran_guan": [
+    {
+      "name": "孩子",
+      "value": 654
+    },
+    {
+      "name": "讲解",
+      "value": 574
+    },
+    {
+      "name": "老师",
+      "value": 488
+    },
+    {
+      "name": "博物馆",
+      "value": 383
+    },
+    {
+      "name": "自然",
+      "value": 295
+    },
+    {
+      "name": "知识",
+      "value": 226
+    },
+    {
+      "name": "喜欢",
+      "value": 218
+    },
+    {
+      "name": "不错",
+      "value": 185
+    },
+    {
+      "name": "很多",
+      "value": 179
+    },
+    {
+      "name": "恐龙",
+      "value": 174
+    },
+    {
+      "name": "小朋友",
+      "value": 173
+    },
+    {
+      "name": "值得",
+      "value": 153
+    },
+    {
+      "name": "预约",
+      "value": 126
+    },
+    {
+      "name": "导游",
+      "value": 121
+    },
+    {
+      "name": "体验",
+      "value": 93
+    },
+    {
+      "name": "参观",
+      "value": 91
+    },
+    {
+      "name": "丰富",
+      "value": 87
+    },
+    {
+      "name": "适合",
+      "value": 87
+    },
+    {
+      "name": "研学",
+      "value": 87
+    },
+    {
+      "name": "内容",
+      "value": 86
+    },
+    {
+      "name": "化石",
+      "value": 85
+    },
+    {
+      "name": "标本",
+      "value": 77
+    },
+    {
+      "name": "学习",
+      "value": 77
+    },
+    {
+      "name": "里面",
+      "value": 76
+    },
+    {
+      "name": "展厅",
+      "value": 74
+    },
+    {
+      "name": "生动",
+      "value": 74
+    },
+    {
+      "name": "免费",
+      "value": 71
+    },
+    {
+      "name": "耐心",
+      "value": 69
+    },
+    {
+      "name": "时间",
+      "value": 67
+    },
+    {
+      "name": "有趣",
+      "value": 67
+    },
+    {
+      "name": "细致",
+      "value": 67
+    },
+    {
+      "name": "提前",
+      "value": 65
+    },
+    {
+      "name": "认真",
+      "value": 65
+    },
+    {
+      "name": "北京自然博物馆",
+      "value": 64
+    },
+    {
+      "name": "学到",
+      "value": 62
+    },
+    {
+      "name": "推荐",
+      "value": 61
+    },
+    {
+      "name": "收获",
+      "value": 61
+    },
+    {
+      "name": "动物",
+      "value": 60
+    },
+    {
+      "name": "国家",
+      "value": 60
+    },
+    {
+      "name": "互动",
+      "value": 59
+    },
+    {
+      "name": "专业",
+      "value": 59
+    },
+    {
+      "name": "一次",
+      "value": 53
+    },
+    {
+      "name": "方便",
+      "value": 51
+    },
+    {
+      "name": "王老师",
+      "value": 51
+    },
+    {
+      "name": "详细",
+      "value": 49
+    },
+    {
+      "name": "开心",
+      "value": 46
+    },
+    {
+      "name": "下次",
+      "value": 45
+    },
+    {
+      "name": "植物",
+      "value": 44
+    },
+    {
+      "name": "世界",
+      "value": 44
+    },
+    {
+      "name": "很棒",
+      "value": 43
+    }
+  ],
+  "gudai_guan": [
+    {
+      "name": "建筑",
+      "value": 196
+    },
+    {
+      "name": "博物馆",
+      "value": 168
+    },
+    {
+      "name": "古代",
+      "value": 134
+    },
+    {
+      "name": "先农坛",
+      "value": 89
+    },
+    {
+      "name": "中国",
+      "value": 77
+    },
+    {
+      "name": "历史",
+      "value": 67
+    },
+    {
+      "name": "藻井",
+      "value": 64
+    },
+    {
+      "name": "文化",
+      "value": 44
+    },
+    {
+      "name": "参观",
+      "value": 42
+    },
+    {
+      "name": "展示",
+      "value": 38
+    },
+    {
+      "name": "讲解",
+      "value": 33
+    },
+    {
+      "name": "开放",
+      "value": 33
+    },
+    {
+      "name": "预约",
+      "value": 29
+    },
+    {
+      "name": "祭祀",
+      "value": 27
+    },
+    {
+      "name": "值得",
+      "value": 27
+    },
+    {
+      "name": "古建筑",
+      "value": 27
+    },
+    {
+      "name": "艺术",
+      "value": 25
+    },
+    {
+      "name": "发展",
+      "value": 25
+    },
+    {
+      "name": "古建",
+      "value": 24
+    },
+    {
+      "name": "环境",
+      "value": 24
+    },
+    {
+      "name": "位于",
+      "value": 23
+    },
+    {
+      "name": "明清",
+      "value": 22
+    },
+    {
+      "name": "模型",
+      "value": 21
+    },
+    {
+      "name": "了解",
+      "value": 21
+    },
+    {
+      "name": "隆福寺",
+      "value": 20
+    },
+    {
+      "name": "游客",
+      "value": 20
+    },
+    {
+      "name": "清幽",
+      "value": 19
+    },
+    {
+      "name": "里面",
+      "value": 19
+    },
+    {
+      "name": "研究",
+      "value": 18
+    },
+    {
+      "name": "皇帝",
+      "value": 17
+    },
+    {
+      "name": "技术",
+      "value": 17
+    },
+    {
+      "name": "专题性",
+      "value": 17
+    },
+    {
+      "name": "展览",
+      "value": 17
+    },
+    {
+      "name": "推荐",
+      "value": 16
+    },
+    {
+      "name": "适合",
+      "value": 16
+    },
+    {
+      "name": "皇家",
+      "value": 15
+    },
+    {
+      "name": "技艺",
+      "value": 15
+    },
+    {
+      "name": "遗址",
+      "value": 15
+    },
+    {
+      "name": "知识",
+      "value": 15
+    },
+    {
+      "name": "感受",
+      "value": 15
+    },
+    {
+      "name": "时间",
+      "value": 15
+    },
+    {
+      "name": "提前",
+      "value": 15
+    },
+    {
+      "name": "打卡",
+      "value": 15
+    },
+    {
+      "name": "古柏",
+      "value": 14
+    },
+    {
+      "name": "我国",
+      "value": 14
+    },
+    {
+      "name": "第一座",
+      "value": 14
+    },
+    {
+      "name": "参天",
+      "value": 14
+    },
+    {
+      "name": "建议",
+      "value": 14
+    },
+    {
+      "name": "故宫",
+      "value": 14
+    },
+    {
+      "name": "路线",
+      "value": 14
+    }
+  ],
+  "quanju_de": [
+    {
+      "name": "烤鸭",
+      "value": 64
+    },
+    {
+      "name": "全聚德",
+      "value": 43
+    },
+    {
+      "name": "文化",
+      "value": 30
+    },
+    {
+      "name": "传统",
+      "value": 25
+    },
+    {
+      "name": "服务",
+      "value": 22
+    },
+    {
+      "name": "老字号",
+      "value": 20
+    },
+    {
+      "name": "历史",
+      "value": 19
+    },
+    {
+      "name": "品牌",
+      "value": 17
+    },
+    {
+      "name": "特色",
+      "value": 17
+    },
+    {
+      "name": "味道",
+      "value": 16
+    },
+    {
+      "name": "菜品",
+      "value": 15
+    },
+    {
+      "name": "美食",
+      "value": 15
+    },
+    {
+      "name": "今日",
+      "value": 14
+    },
+    {
+      "name": "好吃",
+      "value": 14
+    },
+    {
+      "name": "服务费",
+      "value": 14
+    },
+    {
+      "name": "百年",
+      "value": 13
+    },
+    {
+      "name": "技艺",
+      "value": 13
+    },
+    {
+      "name": "正宗",
+      "value": 13
+    },
+    {
+      "name": "中国",
+      "value": 12
+    },
+    {
+      "name": "头条",
+      "value": 12
+    },
+    {
+      "name": "创新",
+      "value": 12
+    },
+    {
+      "name": "体验",
+      "value": 12
+    },
+    {
+      "name": "集团",
+      "value": 12
+    },
+    {
+      "name": "环境",
+      "value": 11
+    },
+    {
+      "name": "值得",
+      "value": 11
+    },
+    {
+      "name": "价格",
+      "value": 11
+    },
+    {
+      "name": "消费",
+      "value": 11
+    },
+    {
+      "name": "门店",
+      "value": 11
+    },
+    {
+      "name": "不错",
+      "value": 10
+    },
+    {
+      "name": "游客",
+      "value": 10
+    },
+    {
+      "name": "烤鸭店",
+      "value": 9
+    },
+    {
+      "name": "挂炉",
+      "value": 9
+    },
+    {
+      "name": "口味",
+      "value": 9
+    },
+    {
+      "name": "性价比",
+      "value": 9
+    },
+    {
+      "name": "用餐",
+      "value": 9
+    },
+    {
+      "name": "食用",
+      "value": 8
+    },
+    {
+      "name": "到底",
+      "value": 8
+    },
+    {
+      "name": "核心",
+      "value": 8
+    },
+    {
+      "name": "蔡笃棠",
+      "value": 8
+    },
+    {
+      "name": "推荐",
+      "value": 7
+    },
+    {
+      "name": "感受",
+      "value": 7
+    },
+    {
+      "name": "宫廷",
+      "value": 7
+    },
+    {
+      "name": "故宫",
+      "value": 7
+    },
+    {
+      "name": "喜欢",
+      "value": 7
+    },
+    {
+      "name": "饮食文化",
+      "value": 6
+    },
+    {
+      "name": "老店",
+      "value": 6
+    },
+    {
+      "name": "京味",
+      "value": 6
+    },
+    {
+      "name": "探店",
+      "value": 6
+    },
+    {
+      "name": "饭店",
+      "value": 6
+    },
+    {
+      "name": "经典",
+      "value": 6
+    }
+  ],
+  "laoshe_chaguan": [
+    {
+      "name": "茶馆",
+      "value": 146
+    },
+    {
+      "name": "不错",
+      "value": 118
+    },
+    {
+      "name": "表演",
+      "value": 99
+    },
+    {
+      "name": "老舍",
+      "value": 98
+    },
+    {
+      "name": "相声",
+      "value": 90
+    },
+    {
+      "name": "体验",
+      "value": 86
+    },
+    {
+      "name": "文化",
+      "value": 70
+    },
+    {
+      "name": "演出",
+      "value": 64
+    },
+    {
+      "name": "节目",
+      "value": 61
+    },
+    {
+      "name": "值得",
+      "value": 53
+    },
+    {
+      "name": "演员",
+      "value": 48
+    },
+    {
+      "name": "传统",
+      "value": 46
+    },
+    {
+      "name": "精彩",
+      "value": 41
+    },
+    {
+      "name": "特色",
+      "value": 38
+    },
+    {
+      "name": "感觉",
+      "value": 37
+    },
+    {
+      "name": "喜欢",
+      "value": 34
+    },
+    {
+      "name": "环境",
+      "value": 33
+    },
+    {
+      "name": "孩子",
+      "value": 30
+    },
+    {
+      "name": "大碗茶",
+      "value": 26
+    },
+    {
+      "name": "感受",
+      "value": 24
+    },
+    {
+      "name": "曲艺",
+      "value": 23
+    },
+    {
+      "name": "开心",
+      "value": 22
+    },
+    {
+      "name": "现场",
+      "value": 21
+    },
+    {
+      "name": "推荐",
+      "value": 21
+    },
+    {
+      "name": "有点",
+      "value": 21
+    },
+    {
+      "name": "听相声",
+      "value": 20
+    },
+    {
+      "name": "有趣",
+      "value": 19
+    },
+    {
+      "name": "丰富",
+      "value": 19
+    },
+    {
+      "name": "喝茶",
+      "value": 18
+    },
+    {
+      "name": "一次",
+      "value": 18
+    },
+    {
+      "name": "内容",
+      "value": 18
+    },
+    {
+      "name": "时间",
+      "value": 17
+    },
+    {
+      "name": "味道",
+      "value": 16
+    },
+    {
+      "name": "京味",
+      "value": 16
+    },
+    {
+      "name": "安排",
+      "value": 16
+    },
+    {
+      "name": "位置",
+      "value": 16
+    },
+    {
+      "name": "观众",
+      "value": 15
+    },
+    {
+      "name": "小朋友",
+      "value": 15
+    },
+    {
+      "name": "变脸",
+      "value": 15
+    },
+    {
+      "name": "里面",
+      "value": 15
+    },
+    {
+      "name": "味儿",
+      "value": 14
+    },
+    {
+      "name": "欣赏",
+      "value": 14
+    },
+    {
+      "name": "性价比",
+      "value": 14
+    },
+    {
+      "name": "服务",
+      "value": 14
+    },
+    {
+      "name": "中国",
+      "value": 14
+    },
+    {
+      "name": "小吃",
+      "value": 14
+    },
+    {
+      "name": "总体",
+      "value": 14
+    },
+    {
+      "name": "生活",
+      "value": 13
+    },
+    {
+      "name": "看看",
+      "value": 13
+    },
+    {
+      "name": "很多",
+      "value": 13
+    }
+  ],
+  "neiliansheng": [
+    {
+      "name": "布鞋",
+      "value": 33
+    },
+    {
+      "name": "内联升",
+      "value": 31
+    },
+    {
+      "name": "老字号",
+      "value": 25
+    },
+    {
+      "name": "文化",
+      "value": 18
+    },
+    {
+      "name": "传统",
+      "value": 18
+    },
+    {
+      "name": "品牌",
+      "value": 16
+    },
+    {
+      "name": "中国",
+      "value": 16
+    },
+    {
+      "name": "制作",
+      "value": 14
+    },
+    {
+      "name": "博物馆",
+      "value": 13
+    },
+    {
+      "name": "历史",
+      "value": 13
+    },
+    {
+      "name": "技艺",
+      "value": 12
+    },
+    {
+      "name": "大栅栏",
+      "value": 12
+    },
+    {
+      "name": "千层底",
+      "value": 10
+    },
+    {
+      "name": "服务",
+      "value": 10
+    },
+    {
+      "name": "值得",
+      "value": 8
+    },
+    {
+      "name": "升级",
+      "value": 7
+    },
+    {
+      "name": "体验",
+      "value": 7
+    },
+    {
+      "name": "亲身",
+      "value": 6
+    },
+    {
+      "name": "物质",
+      "value": 6
+    },
+    {
+      "name": "文化遗产",
+      "value": 6
+    },
+    {
+      "name": "手工",
+      "value": 6
+    },
+    {
+      "name": "地址",
+      "value": 6
+    },
+    {
+      "name": "开放",
+      "value": 6
+    },
+    {
+      "name": "创新",
+      "value": 6
+    },
+    {
+      "name": "发展",
+      "value": 6
+    },
+    {
+      "name": "发布",
+      "value": 5
+    },
+    {
+      "name": "真实",
+      "value": 5
+    },
+    {
+      "name": "王府井",
+      "value": 5
+    },
+    {
+      "name": "进行",
+      "value": 5
+    },
+    {
+      "name": "展厅",
+      "value": 5
+    },
+    {
+      "name": "商业",
+      "value": 5
+    },
+    {
+      "name": "时间",
+      "value": 5
+    },
+    {
+      "name": "传承",
+      "value": 5
+    },
+    {
+      "name": "总店",
+      "value": 5
+    },
+    {
+      "name": "全面",
+      "value": 5
+    },
+    {
+      "name": "遗传",
+      "value": 5
+    },
+    {
+      "name": "赵廷",
+      "value": 5
+    },
+    {
+      "name": "企业",
+      "value": 5
+    },
+    {
+      "name": "空间",
+      "value": 4
+    },
+    {
+      "name": "本文",
+      "value": 4
+    },
+    {
+      "name": "作者",
+      "value": 4
+    },
+    {
+      "name": "购买",
+      "value": 4
+    },
+    {
+      "name": "使用",
+      "value": 4
+    },
+    {
+      "name": "旅游",
+      "value": 4
+    },
+    {
+      "name": "照片",
+      "value": 4
+    },
+    {
+      "name": "攻略",
+      "value": 4
+    },
+    {
+      "name": "团购",
+      "value": 4
+    },
+    {
+      "name": "顾客",
+      "value": 4
+    },
+    {
+      "name": "方式",
+      "value": 4
+    },
+    {
+      "name": "名录",
+      "value": 4
+    }
+  ],
+  "tongrentang": [
+    {
+      "name": "医院",
+      "value": 439
+    },
+    {
+      "name": "患者",
+      "value": 100
+    },
+    {
+      "name": "环境",
+      "value": 93
+    },
+    {
+      "name": "评价",
+      "value": 92
+    },
+    {
+      "name": "中医",
+      "value": 73
+    },
+    {
+      "name": "中药",
+      "value": 52
+    },
+    {
+      "name": "结合",
+      "value": 46
+    },
+    {
+      "name": "中西医",
+      "value": 45
+    },
+    {
+      "name": "专家",
+      "value": 36
+    },
+    {
+      "name": "皮肤病",
+      "value": 35
+    },
+    {
+      "name": "同仁堂",
+      "value": 34
+    },
+    {
+      "name": "就医",
+      "value": 34
+    },
+    {
+      "name": "南京",
+      "value": 30
+    },
+    {
+      "name": "简介",
+      "value": 27
+    },
+    {
+      "name": "科室",
+      "value": 27
+    },
+    {
+      "name": "指南",
+      "value": 27
+    },
+    {
+      "name": "郑州",
+      "value": 25
+    },
+    {
+      "name": "西安",
+      "value": 24
+    },
+    {
+      "name": "中医医院",
+      "value": 23
+    },
+    {
+      "name": "中医院",
+      "value": 23
+    },
+    {
+      "name": "白癜风",
+      "value": 22
+    },
+    {
+      "name": "苏州",
+      "value": 22
+    },
+    {
+      "name": "成都",
+      "value": 20
+    },
+    {
+      "name": "儿童医院",
+      "value": 19
+    },
+    {
+      "name": "济南",
+      "value": 18
+    },
+    {
+      "name": "健康",
+      "value": 17
+    },
+    {
+      "name": "中医药",
+      "value": 17
+    },
+    {
+      "name": "传统",
+      "value": 16
+    },
+    {
+      "name": "上海",
+      "value": 16
+    },
+    {
+      "name": "南昌市",
+      "value": 16
+    },
+    {
+      "name": "第十二",
+      "value": 16
+    },
+    {
+      "name": "服务",
+      "value": 15
+    },
+    {
+      "name": "老字号",
+      "value": 15
+    },
+    {
+      "name": "用户",
+      "value": 14
+    },
+    {
+      "name": "中际",
+      "value": 14
+    },
+    {
+      "name": "脑病",
+      "value": 14
+    },
+    {
+      "name": "东吴",
+      "value": 14
+    },
+    {
+      "name": "武汉",
+      "value": 13
+    },
+    {
+      "name": "医疗",
+      "value": 12
+    },
+    {
+      "name": "治疗",
+      "value": 12
+    },
+    {
+      "name": "牛皮癣",
+      "value": 12
+    },
+    {
+      "name": "品牌",
+      "value": 11
+    },
+    {
+      "name": "中医科",
+      "value": 11
+    },
+    {
+      "name": "天佑",
+      "value": 11
+    },
+    {
+      "name": "内科",
+      "value": 10
+    },
+    {
+      "name": "昆明",
+      "value": 10
+    },
+    {
+      "name": "合肥",
+      "value": 10
+    },
+    {
+      "name": "重庆",
+      "value": 10
+    },
+    {
+      "name": "历史",
+      "value": 9
+    },
+    {
+      "name": "中国",
+      "value": 9
+    }
+  ],
+  "shengxifu": [
+    {
+      "name": "盛锡福",
+      "value": 42
+    },
+    {
+      "name": "皮帽",
+      "value": 26
+    },
+    {
+      "name": "技艺",
+      "value": 25
+    },
+    {
+      "name": "制作",
+      "value": 23
+    },
+    {
+      "name": "文化",
+      "value": 20
+    },
+    {
+      "name": "中国",
+      "value": 18
+    },
+    {
+      "name": "李欣",
+      "value": 17
+    },
+    {
+      "name": "传统",
+      "value": 16
+    },
+    {
+      "name": "日摄",
+      "value": 15
+    },
+    {
+      "name": "新华社",
+      "value": 15
+    },
+    {
+      "name": "记者",
+      "value": 15
+    },
+    {
+      "name": "传承",
+      "value": 14
+    },
+    {
+      "name": "帽子",
+      "value": 14
+    },
+    {
+      "name": "老字号",
+      "value": 14
+    },
+    {
+      "name": "文化遗产",
+      "value": 12
+    },
+    {
+      "name": "物质",
+      "value": 11
+    },
+    {
+      "name": "国家级",
+      "value": 11
+    },
+    {
+      "name": "历史",
+      "value": 9
+    },
+    {
+      "name": "劳动",
+      "value": 9
+    },
+    {
+      "name": "推荐",
+      "value": 8
+    },
+    {
+      "name": "品牌",
+      "value": 8
+    },
+    {
+      "name": "代表性",
+      "value": 8
+    },
+    {
+      "name": "全国",
+      "value": 8
+    },
+    {
+      "name": "五一",
+      "value": 8
+    },
+    {
+      "name": "奖章",
+      "value": 8
+    },
+    {
+      "name": "获得者",
+      "value": 8
+    },
+    {
+      "name": "李金善",
+      "value": 8
+    },
+    {
+      "name": "顾客",
+      "value": 7
+    },
+    {
+      "name": "博物馆",
+      "value": 7
+    },
+    {
+      "name": "旅馆",
+      "value": 7
+    },
+    {
+      "name": "颐和园",
+      "value": 7
+    },
+    {
+      "name": "车间",
+      "value": 7
+    },
+    {
+      "name": "中华",
+      "value": 6
+    },
+    {
+      "name": "展示",
+      "value": 6
+    },
+    {
+      "name": "创新",
+      "value": 6
+    },
+    {
+      "name": "别样红",
+      "value": 6
+    },
+    {
+      "name": "帽店",
+      "value": 6
+    },
+    {
+      "name": "王府井",
+      "value": 6
+    },
+    {
+      "name": "商业街",
+      "value": 6
+    },
+    {
+      "name": "小吃",
+      "value": 6
+    },
+    {
+      "name": "服务",
+      "value": 6
+    },
+    {
+      "name": "行程",
+      "value": 6
+    },
+    {
+      "name": "八达岭",
+      "value": 6
+    },
+    {
+      "name": "守得",
+      "value": 5
+    },
+    {
+      "name": "企业",
+      "value": 5
+    },
+    {
+      "name": "手工",
+      "value": 5
+    },
+    {
+      "name": "国家",
+      "value": 5
+    },
+    {
+      "name": "故宫",
+      "value": 5
+    },
+    {
+      "name": "早餐",
+      "value": 5
+    },
+    {
+      "name": "三宝",
+      "value": 5
+    }
+  ],
+  "beida_honglou": [
+    {
+      "name": "新文化运动",
+      "value": 31
+    },
+    {
+      "name": "历史",
+      "value": 30
+    },
+    {
+      "name": "红楼",
+      "value": 27
+    },
+    {
+      "name": "建筑",
+      "value": 27
+    },
+    {
+      "name": "中国",
+      "value": 24
+    },
+    {
+      "name": "五四",
+      "value": 22
+    },
+    {
+      "name": "参观",
+      "value": 21
+    },
+    {
+      "name": "红色",
+      "value": 21
+    },
+    {
+      "name": "北大",
+      "value": 18
+    },
+    {
+      "name": "一座",
+      "value": 17
+    },
+    {
+      "name": "具有",
+      "value": 15
+    },
+    {
+      "name": "东城区",
+      "value": 14
+    },
+    {
+      "name": "纪念馆",
+      "value": 14
+    },
+    {
+      "name": "文化",
+      "value": 13
+    },
+    {
+      "name": "感受",
+      "value": 12
+    },
+    {
+      "name": "大街",
+      "value": 12
+    },
+    {
+      "name": "五四运动",
+      "value": 12
+    },
+    {
+      "name": "革命",
+      "value": 11
+    },
+    {
+      "name": "传统",
+      "value": 11
+    },
+    {
+      "name": "思想",
+      "value": 10
+    },
+    {
+      "name": "见证",
+      "value": 9
+    },
+    {
+      "name": "近代",
+      "value": 9
+    },
+    {
+      "name": "策源地",
+      "value": 9
+    },
+    {
+      "name": "预约",
+      "value": 9
+    },
+    {
+      "name": "中国共产党",
+      "value": 8
+    },
+    {
+      "name": "红砖",
+      "value": 8
+    },
+    {
+      "name": "开放",
+      "value": 8
+    },
+    {
+      "name": "展览",
+      "value": 8
+    },
+    {
+      "name": "这座",
+      "value": 7
+    },
+    {
+      "name": "位于",
+      "value": 7
+    },
+    {
+      "name": "活动",
+      "value": 7
+    },
+    {
+      "name": "光辉",
+      "value": 7
+    },
+    {
+      "name": "主题",
+      "value": 7
+    },
+    {
+      "name": "观众",
+      "value": 7
+    },
+    {
+      "name": "展厅",
+      "value": 6
+    },
+    {
+      "name": "年代",
+      "value": 6
+    },
+    {
+      "name": "重要",
+      "value": 6
+    },
+    {
+      "name": "第一",
+      "value": 6
+    },
+    {
+      "name": "光荣革命",
+      "value": 6
+    },
+    {
+      "name": "李大钊",
+      "value": 6
+    },
+    {
+      "name": "青年",
+      "value": 6
+    },
+    {
+      "name": "砌筑",
+      "value": 6
+    },
+    {
+      "name": "马克思主义",
+      "value": 6
+    },
+    {
+      "name": "起点",
+      "value": 6
+    },
+    {
+      "name": "重点",
+      "value": 6
+    },
+    {
+      "name": "请勿",
+      "value": 6
+    },
+    {
+      "name": "建成",
+      "value": 5
+    },
+    {
+      "name": "沙滩",
+      "value": 5
+    },
+    {
+      "name": "旧址",
+      "value": 5
+    },
+    {
+      "name": "大学",
+      "value": 5
+    }
+  ],
+  "tiananmen": [
+    {
+      "name": "历史",
+      "value": 26
+    },
+    {
+      "name": "中国",
+      "value": 26
+    },
+    {
+      "name": "广场",
+      "value": 18
+    },
+    {
+      "name": "建筑",
+      "value": 16
+    },
+    {
+      "name": "抖音",
+      "value": 14
+    },
+    {
+      "name": "震撼",
+      "value": 13
+    },
+    {
+      "name": "喜欢",
+      "value": 11
+    },
+    {
+      "name": "感受",
+      "value": 11
+    },
+    {
+      "name": "发布",
+      "value": 11
+    },
+    {
+      "name": "世界",
+      "value": 10
+    },
+    {
+      "name": "天安门",
+      "value": 10
+    },
+    {
+      "name": "攻略",
+      "value": 9
+    },
+    {
+      "name": "颐和园",
+      "value": 9
+    },
+    {
+      "name": "收获",
+      "value": 9
+    },
+    {
+      "name": "文化",
+      "value": 8
+    },
+    {
+      "name": "城楼",
+      "value": 8
+    },
+    {
+      "name": "故宫",
+      "value": 8
+    },
+    {
+      "name": "中华民族",
+      "value": 7
+    },
+    {
+      "name": "博物馆",
+      "value": 7
+    },
+    {
+      "name": "长城",
+      "value": 7
+    },
+    {
+      "name": "提前",
+      "value": 6
+    },
+    {
+      "name": "最大",
+      "value": 6
+    },
+    {
+      "name": "庄严",
+      "value": 6
+    },
+    {
+      "name": "这座",
+      "value": 6
+    },
+    {
+      "name": "国家博物馆",
+      "value": 6
+    },
+    {
+      "name": "升旗仪式",
+      "value": 6
+    },
+    {
+      "name": "古代",
+      "value": 6
+    },
+    {
+      "name": "游客",
+      "value": 6
+    },
+    {
+      "name": "旅游",
+      "value": 6
+    },
+    {
+      "name": "时间",
+      "value": 6
+    },
+    {
+      "name": "游玩",
+      "value": 5
+    },
+    {
+      "name": "更是",
+      "value": 5
+    },
+    {
+      "name": "仿佛",
+      "value": 5
+    },
+    {
+      "name": "预约",
+      "value": 5
+    },
+    {
+      "name": "前门",
+      "value": 5
+    },
+    {
+      "name": "记录",
+      "value": 5
+    },
+    {
+      "name": "美好生活",
+      "value": 5
+    },
+    {
+      "name": "象征",
+      "value": 5
+    },
+    {
+      "name": "升旗",
+      "value": 5
+    },
+    {
+      "name": "很多",
+      "value": 4
+    },
+    {
+      "name": "欣赏",
+      "value": 4
+    },
+    {
+      "name": "展示",
+      "value": 4
+    },
+    {
+      "name": "国家",
+      "value": 4
+    },
+    {
+      "name": "打卡",
+      "value": 4
+    },
+    {
+      "name": "充满",
+      "value": 4
+    },
+    {
+      "name": "人山人海",
+      "value": 4
+    },
+    {
+      "name": "参观",
+      "value": 4
+    },
+    {
+      "name": "八达岭长城",
+      "value": 4
+    },
+    {
+      "name": "下午",
+      "value": 4
+    },
+    {
+      "name": "一次",
+      "value": 4
+    }
+  ],
+  "dongjiaomin": [
+    {
+      "name": "建筑",
+      "value": 76
+    },
+    {
+      "name": "胡同",
+      "value": 49
+    },
+    {
+      "name": "历史",
+      "value": 49
+    },
+    {
+      "name": "东交民巷",
+      "value": 42
+    },
+    {
+      "name": "使馆",
+      "value": 32
+    },
+    {
+      "name": "中国",
+      "value": 25
+    },
+    {
+      "name": "西洋",
+      "value": 25
+    },
+    {
+      "name": "风格",
+      "value": 23
+    },
+    {
+      "name": "博物馆",
+      "value": 21
+    },
+    {
+      "name": "一条",
+      "value": 20
+    },
+    {
+      "name": "拍照",
+      "value": 19
+    },
+    {
+      "name": "打卡",
+      "value": 18
+    },
+    {
+      "name": "建筑群",
+      "value": 17
+    },
+    {
+      "name": "街区",
+      "value": 17
+    },
+    {
+      "name": "崇文门",
+      "value": 16
+    },
+    {
+      "name": "拍摄",
+      "value": 16
+    },
+    {
+      "name": "旧址",
+      "value": 15
+    },
+    {
+      "name": "教堂",
+      "value": 14
+    },
+    {
+      "name": "漫步",
+      "value": 13
+    },
+    {
+      "name": "现存",
+      "value": 11
+    },
+    {
+      "name": "法院",
+      "value": 11
+    },
+    {
+      "name": "世纪",
+      "value": 11
+    },
+    {
+      "name": "适合",
+      "value": 11
+    },
+    {
+      "name": "特色",
+      "value": 11
+    },
+    {
+      "name": "最长",
+      "value": 11
+    },
+    {
+      "name": "两旁",
+      "value": 10
+    },
+    {
+      "name": "法国",
+      "value": 10
+    },
+    {
+      "name": "厄尔",
+      "value": 10
+    },
+    {
+      "name": "文化",
+      "value": 9
+    },
+    {
+      "name": "道路",
+      "value": 9
+    },
+    {
+      "name": "照片",
+      "value": 9
+    },
+    {
+      "name": "使馆区",
+      "value": 9
+    },
+    {
+      "name": "免费",
+      "value": 9
+    },
+    {
+      "name": "日本",
+      "value": 9
+    },
+    {
+      "name": "正义路",
+      "value": 9
+    },
+    {
+      "name": "哥特式",
+      "value": 9
+    },
+    {
+      "name": "银行",
+      "value": 8
+    },
+    {
+      "name": "发布",
+      "value": 8
+    },
+    {
+      "name": "地址",
+      "value": 8
+    },
+    {
+      "name": "旅游",
+      "value": 8
+    },
+    {
+      "name": "天主教堂",
+      "value": 8
+    },
+    {
+      "name": "全长",
+      "value": 8
+    },
+    {
+      "name": "著名",
+      "value": 7
+    },
+    {
+      "name": "美食",
+      "value": 7
+    },
+    {
+      "name": "推荐",
+      "value": 7
+    },
+    {
+      "name": "比利时",
+      "value": 7
+    },
+    {
+      "name": "东城区",
+      "value": 7
+    },
+    {
+      "name": "风情",
+      "value": 7
+    },
+    {
+      "name": "感受",
+      "value": 7
+    },
+    {
+      "name": "百年",
+      "value": 7
+    }
+  ],
+  "zhaojialou": [
+    {
+      "name": "胡同",
+      "value": 38
+    },
+    {
+      "name": "历史",
+      "value": 19
+    },
+    {
+      "name": "文化",
+      "value": 16
+    },
+    {
+      "name": "赵家楼",
+      "value": 14
+    },
+    {
+      "name": "中国",
+      "value": 10
+    },
+    {
+      "name": "遗址",
+      "value": 8
+    },
+    {
+      "name": "建筑",
+      "value": 7
+    },
+    {
+      "name": "重新",
+      "value": 7
+    },
+    {
+      "name": "重要",
+      "value": 7
+    },
+    {
+      "name": "红色",
+      "value": 7
+    },
+    {
+      "name": "五四运动",
+      "value": 7
+    },
+    {
+      "name": "印记",
+      "value": 5
+    },
+    {
+      "name": "对外开放",
+      "value": 5
+    },
+    {
+      "name": "开放",
+      "value": 5
+    },
+    {
+      "name": "更新改造",
+      "value": 5
+    },
+    {
+      "name": "成为",
+      "value": 5
+    },
+    {
+      "name": "曹汝霖",
+      "value": 5
+    },
+    {
+      "name": "东二环",
+      "value": 4
+    },
+    {
+      "name": "一座",
+      "value": 4
+    },
+    {
+      "name": "北大",
+      "value": 4
+    },
+    {
+      "name": "东城区",
+      "value": 4
+    },
+    {
+      "name": "新浪",
+      "value": 4
+    },
+    {
+      "name": "地标",
+      "value": 4
+    },
+    {
+      "name": "吸引",
+      "value": 4
+    },
+    {
+      "name": "一处",
+      "value": 4
+    },
+    {
+      "name": "旧址",
+      "value": 4
+    },
+    {
+      "name": "镶嵌",
+      "value": 4
+    },
+    {
+      "name": "人们",
+      "value": 3
+    },
+    {
+      "name": "东城",
+      "value": 3
+    },
+    {
+      "name": "这座",
+      "value": 3
+    },
+    {
+      "name": "特色",
+      "value": 3
+    },
+    {
+      "name": "地图",
+      "value": 3
+    },
+    {
+      "name": "王府井大街",
+      "value": 3
+    },
+    {
+      "name": "参观",
+      "value": 3
+    },
+    {
+      "name": "前往",
+      "value": 3
+    },
+    {
+      "name": "赵州桥",
+      "value": 3
+    },
+    {
+      "name": "浓厚",
+      "value": 3
+    },
+    {
+      "name": "教育",
+      "value": 3
+    },
+    {
+      "name": "传承",
+      "value": 3
+    },
+    {
+      "name": "先辈",
+      "value": 3
+    },
+    {
+      "name": "新闻",
+      "value": 3
+    },
+    {
+      "name": "革命",
+      "value": 3
+    },
+    {
+      "name": "游客",
+      "value": 3
+    },
+    {
+      "name": "开设",
+      "value": 3
+    },
+    {
+      "name": "文化展",
+      "value": 3
+    },
+    {
+      "name": "隆庆",
+      "value": 3
+    },
+    {
+      "name": "建国门",
+      "value": 3
+    },
+    {
+      "name": "火烧",
+      "value": 3
+    },
+    {
+      "name": "后来",
+      "value": 3
+    },
+    {
+      "name": "生活气息",
+      "value": 3
+    }
+  ],
+  "xinhuamen": [
+    {
+      "name": "新华门",
+      "value": 84
+    },
+    {
+      "name": "中国",
+      "value": 51
+    },
+    {
+      "name": "中南海",
+      "value": 49
+    },
+    {
+      "name": "历史",
+      "value": 38
+    },
+    {
+      "name": "人民",
+      "value": 28
+    },
+    {
+      "name": "服务",
+      "value": 24
+    },
+    {
+      "name": "文化",
+      "value": 21
+    },
+    {
+      "name": "建筑",
+      "value": 20
+    },
+    {
+      "name": "正门",
+      "value": 15
+    },
+    {
+      "name": "故事",
+      "value": 13
+    },
+    {
+      "name": "承载",
+      "value": 12
+    },
+    {
+      "name": "游客",
+      "value": 12
+    },
+    {
+      "name": "重要",
+      "value": 11
+    },
+    {
+      "name": "影壁",
+      "value": 11
+    },
+    {
+      "name": "毛泽东",
+      "value": 11
+    },
+    {
+      "name": "外国",
+      "value": 11
+    },
+    {
+      "name": "天安门",
+      "value": 10
+    },
+    {
+      "name": "五个",
+      "value": 10
+    },
+    {
+      "name": "象征",
+      "value": 10
+    },
+    {
+      "name": "皇家",
+      "value": 10
+    },
+    {
+      "name": "中国共产党",
+      "value": 10
+    },
+    {
+      "name": "世界",
+      "value": 9
+    },
+    {
+      "name": "时期",
+      "value": 9
+    },
+    {
+      "name": "宝月楼",
+      "value": 9
+    },
+    {
+      "name": "国家",
+      "value": 9
+    },
+    {
+      "name": "对面",
+      "value": 9
+    },
+    {
+      "name": "悼念",
+      "value": 9
+    },
+    {
+      "name": "开朗",
+      "value": 8
+    },
+    {
+      "name": "典雅",
+      "value": 8
+    },
+    {
+      "name": "今日",
+      "value": 8
+    },
+    {
+      "name": "头条",
+      "value": 8
+    },
+    {
+      "name": "大字",
+      "value": 8
+    },
+    {
+      "name": "西长安街",
+      "value": 8
+    },
+    {
+      "name": "揭秘",
+      "value": 8
+    },
+    {
+      "name": "疫情",
+      "value": 8
+    },
+    {
+      "name": "逝世",
+      "value": 8
+    },
+    {
+      "name": "昆明",
+      "value": 8
+    },
+    {
+      "name": "一座",
+      "value": 7
+    },
+    {
+      "name": "琉璃瓦",
+      "value": 7
+    },
+    {
+      "name": "朱栏护",
+      "value": 7
+    },
+    {
+      "name": "地标",
+      "value": 7
+    },
+    {
+      "name": "无数",
+      "value": 7
+    },
+    {
+      "name": "攻略",
+      "value": 7
+    },
+    {
+      "name": "变迁",
+      "value": 7
+    },
+    {
+      "name": "门前",
+      "value": 7
+    },
+    {
+      "name": "喜欢",
+      "value": 7
+    },
+    {
+      "name": "现代",
+      "value": 7
+    },
+    {
+      "name": "属于",
+      "value": 7
+    },
+    {
+      "name": "四个",
+      "value": 7
+    },
+    {
+      "name": "西城区",
+      "value": 7
+    }
+  ],
+  "beida": [
+    {
+      "name": "北京大学",
+      "value": 33
+    },
+    {
+      "name": "参观",
+      "value": 23
+    },
+    {
+      "name": "北大",
+      "value": 21
+    },
+    {
+      "name": "博雅",
+      "value": 20
+    },
+    {
+      "name": "预约",
+      "value": 18
+    },
+    {
+      "name": "未名湖",
+      "value": 15
+    },
+    {
+      "name": "校园",
+      "value": 15
+    },
+    {
+      "name": "专业",
+      "value": 15
+    },
+    {
+      "name": "抖音",
+      "value": 14
+    },
+    {
+      "name": "喜欢",
+      "value": 14
+    },
+    {
+      "name": "发布",
+      "value": 13
+    },
+    {
+      "name": "收获",
+      "value": 12
+    },
+    {
+      "name": "大学",
+      "value": 11
+    },
+    {
+      "name": "今日",
+      "value": 11
+    },
+    {
+      "name": "头条",
+      "value": 10
+    },
+    {
+      "name": "学科",
+      "value": 10
+    },
+    {
+      "name": "入校",
+      "value": 10
+    },
+    {
+      "name": "中国",
+      "value": 9
+    },
+    {
+      "name": "信息",
+      "value": 9
+    },
+    {
+      "name": "西门",
+      "value": 9
+    },
+    {
+      "name": "氛围",
+      "value": 9
+    },
+    {
+      "name": "建筑",
+      "value": 8
+    },
+    {
+      "name": "科学",
+      "value": 8
+    },
+    {
+      "name": "颐和园",
+      "value": 7
+    },
+    {
+      "name": "游览",
+      "value": 7
+    },
+    {
+      "name": "全国",
+      "value": 6
+    },
+    {
+      "name": "重点",
+      "value": 6
+    },
+    {
+      "name": "提供",
+      "value": 6
+    },
+    {
+      "name": "历史",
+      "value": 6
+    },
+    {
+      "name": "进入",
+      "value": 6
+    },
+    {
+      "name": "了解",
+      "value": 6
+    },
+    {
+      "name": "美丽",
+      "value": 6
+    },
+    {
+      "name": "学校",
+      "value": 6
+    },
+    {
+      "name": "学术",
+      "value": 6
+    },
+    {
+      "name": "记录",
+      "value": 6
+    },
+    {
+      "name": "结合",
+      "value": 6
+    },
+    {
+      "name": "拍摄",
+      "value": 6
+    },
+    {
+      "name": "高考",
+      "value": 6
+    },
+    {
+      "name": "报考",
+      "value": 6
+    },
+    {
+      "name": "环境",
+      "value": 6
+    },
+    {
+      "name": "选择",
+      "value": 6
+    },
+    {
+      "name": "校友",
+      "value": 6
+    },
+    {
+      "name": "体验",
+      "value": 6
+    },
+    {
+      "name": "拍照",
+      "value": 5
+    },
+    {
+      "name": "学生",
+      "value": 5
+    },
+    {
+      "name": "打卡",
+      "value": 5
+    },
+    {
+      "name": "图书馆",
+      "value": 5
+    },
+    {
+      "name": "游客",
+      "value": 5
+    },
+    {
+      "name": "感受",
+      "value": 5
+    },
+    {
+      "name": "教育部",
+      "value": 5
+    }
+  ],
+  "xidan": [
+    {
+      "name": "酒店",
+      "value": 59
+    },
+    {
+      "name": "西单",
+      "value": 57
+    },
+    {
+      "name": "推荐",
+      "value": 41
+    },
+    {
+      "name": "停车",
+      "value": 33
+    },
+    {
+      "name": "百货",
+      "value": 26
+    },
+    {
+      "name": "泳池",
+      "value": 25
+    },
+    {
+      "name": "出行",
+      "value": 24
+    },
+    {
+      "name": "商务",
+      "value": 23
+    },
+    {
+      "name": "带娃",
+      "value": 22
+    },
+    {
+      "name": "爱住",
+      "value": 22
+    },
+    {
+      "name": "购物",
+      "value": 21
+    },
+    {
+      "name": "休闲",
+      "value": 20
+    },
+    {
+      "name": "打卡",
+      "value": 19
+    },
+    {
+      "name": "商业",
+      "value": 18
+    },
+    {
+      "name": "回答",
+      "value": 18
+    },
+    {
+      "name": "文化",
+      "value": 17
+    },
+    {
+      "name": "大悦",
+      "value": 17
+    },
+    {
+      "name": "历史",
+      "value": 17
+    },
+    {
+      "name": "度假",
+      "value": 17
+    },
+    {
+      "name": "周边",
+      "value": 16
+    },
+    {
+      "name": "会议",
+      "value": 16
+    },
+    {
+      "name": "很多",
+      "value": 15
+    },
+    {
+      "name": "亲子",
+      "value": 14
+    },
+    {
+      "name": "攻略",
+      "value": 13
+    },
+    {
+      "name": "商场",
+      "value": 13
+    },
+    {
+      "name": "上榜",
+      "value": 13
+    },
+    {
+      "name": "旅游",
+      "value": 12
+    },
+    {
+      "name": "广场",
+      "value": 11
+    },
+    {
+      "name": "温泉",
+      "value": 11
+    },
+    {
+      "name": "好吃",
+      "value": 11
+    },
+    {
+      "name": "时尚",
+      "value": 10
+    },
+    {
+      "name": "信息",
+      "value": 10
+    },
+    {
+      "name": "大学",
+      "value": 9
+    },
+    {
+      "name": "中心",
+      "value": 9
+    },
+    {
+      "name": "建筑",
+      "value": 9
+    },
+    {
+      "name": "君太",
+      "value": 9
+    },
+    {
+      "name": "设计师",
+      "value": 9
+    },
+    {
+      "name": "品牌",
+      "value": 9
+    },
+    {
+      "name": "大厦",
+      "value": 9
+    },
+    {
+      "name": "中国",
+      "value": 9
+    },
+    {
+      "name": "商业街",
+      "value": 8
+    },
+    {
+      "name": "喜欢",
+      "value": 8
+    },
+    {
+      "name": "年轻人",
+      "value": 8
+    },
+    {
+      "name": "老佛爷",
+      "value": 8
+    },
+    {
+      "name": "好玩",
+      "value": 8
+    },
+    {
+      "name": "主要",
+      "value": 8
+    },
+    {
+      "name": "精品",
+      "value": 8
+    },
+    {
+      "name": "特色",
+      "value": 7
+    },
+    {
+      "name": "一家",
+      "value": 7
+    },
+    {
+      "name": "照片",
+      "value": 7
+    }
+  ],
+  "tianqiao": [
+    {
+      "name": "天桥",
+      "value": 289
+    },
+    {
+      "name": "艺术",
+      "value": 221
+    },
+    {
+      "name": "中心",
+      "value": 191
+    },
+    {
+      "name": "文化",
+      "value": 168
+    },
+    {
+      "name": "音乐剧",
+      "value": 121
+    },
+    {
+      "name": "演艺",
+      "value": 96
+    },
+    {
+      "name": "演出",
+      "value": 80
+    },
+    {
+      "name": "剧场",
+      "value": 64
+    },
+    {
+      "name": "空间",
+      "value": 62
+    },
+    {
+      "name": "观众",
+      "value": 60
+    },
+    {
+      "name": "中国",
+      "value": 55
+    },
+    {
+      "name": "发展",
+      "value": 49
+    },
+    {
+      "name": "传统",
+      "value": 35
+    },
+    {
+      "name": "剧目",
+      "value": 35
+    },
+    {
+      "name": "成为",
+      "value": 34
+    },
+    {
+      "name": "市场",
+      "value": 33
+    },
+    {
+      "name": "建设",
+      "value": 32
+    },
+    {
+      "name": "历史",
+      "value": 31
+    },
+    {
+      "name": "票房",
+      "value": 31
+    },
+    {
+      "name": "集团",
+      "value": 28
+    },
+    {
+      "name": "剧院",
+      "value": 27
+    },
+    {
+      "name": "盛世",
+      "value": 27
+    },
+    {
+      "name": "消费",
+      "value": 25
+    },
+    {
+      "name": "全国",
+      "value": 24
+    },
+    {
+      "name": "城市",
+      "value": 23
+    },
+    {
+      "name": "品牌",
+      "value": 23
+    },
+    {
+      "name": "现代",
+      "value": 22
+    },
+    {
+      "name": "北京市",
+      "value": 22
+    },
+    {
+      "name": "舞台",
+      "value": 22
+    },
+    {
+      "name": "服务",
+      "value": 22
+    },
+    {
+      "name": "西城区",
+      "value": 20
+    },
+    {
+      "name": "运营",
+      "value": 20
+    },
+    {
+      "name": "首都",
+      "value": 19
+    },
+    {
+      "name": "打造",
+      "value": 19
+    },
+    {
+      "name": "亿元",
+      "value": 19
+    },
+    {
+      "name": "话剧",
+      "value": 19
+    },
+    {
+      "name": "项目",
+      "value": 19
+    },
+    {
+      "name": "产业",
+      "value": 19
+    },
+    {
+      "name": "国际",
+      "value": 19
+    },
+    {
+      "name": "融合",
+      "value": 18
+    },
+    {
+      "name": "创新",
+      "value": 17
+    },
+    {
+      "name": "活动",
+      "value": 17
+    },
+    {
+      "name": "故事",
+      "value": 16
+    },
+    {
+      "name": "重要",
+      "value": 16
+    },
+    {
+      "name": "丰富",
+      "value": 16
+    },
+    {
+      "name": "戏剧",
+      "value": 16
+    },
+    {
+      "name": "举办",
+      "value": 16
+    },
+    {
+      "name": "体验",
+      "value": 15
+    },
+    {
+      "name": "博物馆",
+      "value": 15
+    },
+    {
+      "name": "年度",
+      "value": 15
+    }
+  ],
+  "xichang_an": [
+    {
+      "name": "故宮",
+      "value": 105
+    },
+    {
+      "name": "天安",
+      "value": 70
+    },
+    {
+      "name": "公園",
+      "value": 61
+    },
+    {
+      "name": "時間",
+      "value": 55
+    },
+    {
+      "name": "預約",
+      "value": 52
+    },
+    {
+      "name": "拍照",
+      "value": 48
+    },
+    {
+      "name": "打卡",
+      "value": 48
+    },
+    {
+      "name": "攻略",
+      "value": 47
+    },
+    {
+      "name": "提前",
+      "value": 45
+    },
+    {
+      "name": "紅牆",
+      "value": 44
+    },
+    {
+      "name": "建議",
+      "value": 43
+    },
+    {
+      "name": "天壇",
+      "value": 42
+    },
+    {
+      "name": "文化",
+      "value": 38
+    },
+    {
+      "name": "中国",
+      "value": 38
+    },
+    {
+      "name": "感受",
+      "value": 35
+    },
+    {
+      "name": "博物",
+      "value": 33
+    },
+    {
+      "name": "小時",
+      "value": 31
+    },
+    {
+      "name": "景山",
+      "value": 31
+    },
+    {
+      "name": "胡同",
+      "value": 30
+    },
+    {
+      "name": "推薦",
+      "value": 29
+    },
+    {
+      "name": "分鐘",
+      "value": 29
+    },
+    {
+      "name": "門票",
+      "value": 29
+    },
+    {
+      "name": "酒店",
+      "value": 28
+    },
+    {
+      "name": "步行",
+      "value": 28
+    },
+    {
+      "name": "安街",
+      "value": 28
+    },
+    {
+      "name": "出片",
+      "value": 26
+    },
+    {
+      "name": "路線",
+      "value": 26
+    },
+    {
+      "name": "城市",
+      "value": 24
+    },
+    {
+      "name": "交通",
+      "value": 24
+    },
+    {
+      "name": "號線",
+      "value": 24
+    },
+    {
+      "name": "體驗",
+      "value": 24
+    },
+    {
+      "name": "长安街",
+      "value": 23
+    },
+    {
+      "name": "地址",
+      "value": 23
+    },
+    {
+      "name": "皇家",
+      "value": 23
+    },
+    {
+      "name": "門廣場",
+      "value": 23
+    },
+    {
+      "name": "西安",
+      "value": 23
+    },
+    {
+      "name": "民族",
+      "value": 23
+    },
+    {
+      "name": "历史",
+      "value": 22
+    },
+    {
+      "name": "核心",
+      "value": 22
+    },
+    {
+      "name": "貼士",
+      "value": 22
+    },
+    {
+      "name": "景點",
+      "value": 22
+    },
+    {
+      "name": "春日",
+      "value": 22
+    },
+    {
+      "name": "全景",
+      "value": 22
+    },
+    {
+      "name": "劇場",
+      "value": 22
+    },
+    {
+      "name": "夜景",
+      "value": 21
+    },
+    {
+      "name": "地鐵",
+      "value": 21
+    },
+    {
+      "name": "開放",
+      "value": 21
+    },
+    {
+      "name": "機位",
+      "value": 21
+    },
+    {
+      "name": "免費",
+      "value": 20
+    },
+    {
+      "name": "國家",
+      "value": 20
+    }
+  ],
+  "xisi_pailou": [
+    {
+      "name": "胡同",
+      "value": 108
+    },
+    {
+      "name": "西四",
+      "value": 76
+    },
+    {
+      "name": "酒店",
+      "value": 57
+    },
+    {
+      "name": "推荐",
+      "value": 39
+    },
+    {
+      "name": "历史",
+      "value": 37
+    },
+    {
+      "name": "停车",
+      "value": 31
+    },
+    {
+      "name": "牌楼",
+      "value": 29
+    },
+    {
+      "name": "泳池",
+      "value": 25
+    },
+    {
+      "name": "商务",
+      "value": 24
+    },
+    {
+      "name": "出行",
+      "value": 24
+    },
+    {
+      "name": "中国",
+      "value": 23
+    },
+    {
+      "name": "文化",
+      "value": 23
+    },
+    {
+      "name": "建筑",
+      "value": 22
+    },
+    {
+      "name": "带娃",
+      "value": 22
+    },
+    {
+      "name": "爱住",
+      "value": 22
+    },
+    {
+      "name": "头条",
+      "value": 19
+    },
+    {
+      "name": "白塔",
+      "value": 19
+    },
+    {
+      "name": "周边",
+      "value": 18
+    },
+    {
+      "name": "故宫",
+      "value": 17
+    },
+    {
+      "name": "度假",
+      "value": 17
+    },
+    {
+      "name": "时间",
+      "value": 16
+    },
+    {
+      "name": "休闲",
+      "value": 16
+    },
+    {
+      "name": "会议",
+      "value": 16
+    },
+    {
+      "name": "砖塔",
+      "value": 15
+    },
+    {
+      "name": "旅游",
+      "value": 14
+    },
+    {
+      "name": "北京市",
+      "value": 14
+    },
+    {
+      "name": "亲子",
+      "value": 14
+    },
+    {
+      "name": "咖啡",
+      "value": 13
+    },
+    {
+      "name": "大街",
+      "value": 13
+    },
+    {
+      "name": "上榜",
+      "value": 13
+    },
+    {
+      "name": "程砚秋",
+      "value": 13
+    },
+    {
+      "name": "温泉",
+      "value": 11
+    },
+    {
+      "name": "长城",
+      "value": 11
+    },
+    {
+      "name": "生活",
+      "value": 10
+    },
+    {
+      "name": "特色",
+      "value": 10
+    },
+    {
+      "name": "四合院",
+      "value": 10
+    },
+    {
+      "name": "八条",
+      "value": 10
+    },
+    {
+      "name": "成为",
+      "value": 10
+    },
+    {
+      "name": "开放",
+      "value": 9
+    },
+    {
+      "name": "路线",
+      "value": 9
+    },
+    {
+      "name": "陈三立",
+      "value": 9
+    },
+    {
+      "name": "位于",
+      "value": 9
+    },
+    {
+      "name": "西城区",
+      "value": 9
+    },
+    {
+      "name": "游玩",
+      "value": 9
+    },
+    {
+      "name": "位置",
+      "value": 9
+    },
+    {
+      "name": "阜成门",
+      "value": 9
+    },
+    {
+      "name": "火车站",
+      "value": 9
+    },
+    {
+      "name": "元代",
+      "value": 8
+    },
+    {
+      "name": "白塔寺",
+      "value": 8
+    },
+    {
+      "name": "感受",
+      "value": 8
+    }
+  ],
+  "dianmen": [
+    {
+      "name": "酒店",
+      "value": 63
+    },
+    {
+      "name": "推荐",
+      "value": 36
+    },
+    {
+      "name": "停车",
+      "value": 31
+    },
+    {
+      "name": "历史",
+      "value": 30
+    },
+    {
+      "name": "胡同",
+      "value": 26
+    },
+    {
+      "name": "泳池",
+      "value": 25
+    },
+    {
+      "name": "商务",
+      "value": 24
+    },
+    {
+      "name": "出行",
+      "value": 23
+    },
+    {
+      "name": "带娃",
+      "value": 22
+    },
+    {
+      "name": "爱住",
+      "value": 22
+    },
+    {
+      "name": "建筑",
+      "value": 20
+    },
+    {
+      "name": "小吃",
+      "value": 20
+    },
+    {
+      "name": "天安门",
+      "value": 18
+    },
+    {
+      "name": "周边",
+      "value": 18
+    },
+    {
+      "name": "休闲",
+      "value": 16
+    },
+    {
+      "name": "度假",
+      "value": 16
+    },
+    {
+      "name": "会议",
+      "value": 16
+    },
+    {
+      "name": "亲子",
+      "value": 14
+    },
+    {
+      "name": "上榜",
+      "value": 13
+    },
+    {
+      "name": "皇城",
+      "value": 11
+    },
+    {
+      "name": "温泉",
+      "value": 11
+    },
+    {
+      "name": "护国寺",
+      "value": 11
+    },
+    {
+      "name": "环境",
+      "value": 11
+    },
+    {
+      "name": "现代",
+      "value": 10
+    },
+    {
+      "name": "文化",
+      "value": 10
+    },
+    {
+      "name": "很多",
+      "value": 10
+    },
+    {
+      "name": "美食",
+      "value": 10
+    },
+    {
+      "name": "喜欢",
+      "value": 9
+    },
+    {
+      "name": "味道",
+      "value": 9
+    },
+    {
+      "name": "大学",
+      "value": 9
+    },
+    {
+      "name": "肉饼",
+      "value": 9
+    },
+    {
+      "name": "好吃",
+      "value": 9
+    },
+    {
+      "name": "大街",
+      "value": 8
+    },
+    {
+      "name": "重要",
+      "value": 8
+    },
+    {
+      "name": "中国",
+      "value": 8
+    },
+    {
+      "name": "攻略",
+      "value": 8
+    },
+    {
+      "name": "鼓楼",
+      "value": 8
+    },
+    {
+      "name": "里面",
+      "value": 8
+    },
+    {
+      "name": "一家",
+      "value": 8
+    },
+    {
+      "name": "地安门",
+      "value": 7
+    },
+    {
+      "name": "什刹海",
+      "value": 7
+    },
+    {
+      "name": "步行",
+      "value": 7
+    },
+    {
+      "name": "附近",
+      "value": 7
+    },
+    {
+      "name": "餐厅",
+      "value": 7
+    },
+    {
+      "name": "四合院",
+      "value": 7
+    },
+    {
+      "name": "火车站",
+      "value": 7
+    },
+    {
+      "name": "服务",
+      "value": 7
+    },
+    {
+      "name": "生活",
+      "value": 6
+    },
+    {
+      "name": "交融",
+      "value": 6
+    },
+    {
+      "name": "天安门广场",
+      "value": 6
+    }
+  ],
+  "wangfujing": [
+    {
+      "name": "王府井",
+      "value": 434
+    },
+    {
+      "name": "北京王府井",
+      "value": 103
+    },
+    {
+      "name": "酒店",
+      "value": 80
+    },
+    {
+      "name": "攻略",
+      "value": 73
+    },
+    {
+      "name": "王府井大街",
+      "value": 72
+    },
+    {
+      "name": "购物",
+      "value": 71
+    },
+    {
+      "name": "美食",
+      "value": 63
+    },
+    {
+      "name": "旅游",
+      "value": 62
+    },
+    {
+      "name": "文化",
+      "value": 58
+    },
+    {
+      "name": "体验",
+      "value": 42
+    },
+    {
+      "name": "感受",
+      "value": 42
+    },
+    {
+      "name": "步行街",
+      "value": 39
+    },
+    {
+      "name": "游玩",
+      "value": 38
+    },
+    {
+      "name": "打卡",
+      "value": 38
+    },
+    {
+      "name": "历史",
+      "value": 38
+    },
+    {
+      "name": "王府",
+      "value": 34
+    },
+    {
+      "name": "天安门",
+      "value": 32
+    },
+    {
+      "name": "中国",
+      "value": 31
+    },
+    {
+      "name": "商业",
+      "value": 30
+    },
+    {
+      "name": "中心",
+      "value": 29
+    },
+    {
+      "name": "小吃街",
+      "value": 28
+    },
+    {
+      "name": "游客",
+      "value": 26
+    },
+    {
+      "name": "百货大楼",
+      "value": 26
+    },
+    {
+      "name": "北京市",
+      "value": 25
+    },
+    {
+      "name": "胡同",
+      "value": 25
+    },
+    {
+      "name": "附近",
+      "value": 24
+    },
+    {
+      "name": "汇集",
+      "value": 24
+    },
+    {
+      "name": "时间",
+      "value": 23
+    },
+    {
+      "name": "详解",
+      "value": 22
+    },
+    {
+      "name": "品尝",
+      "value": 22
+    },
+    {
+      "name": "故宫",
+      "value": 21
+    },
+    {
+      "name": "游记",
+      "value": 21
+    },
+    {
+      "name": "商场",
+      "value": 21
+    },
+    {
+      "name": "传统",
+      "value": 21
+    },
+    {
+      "name": "区域",
+      "value": 19
+    },
+    {
+      "name": "教堂",
+      "value": 19
+    },
+    {
+      "name": "指南",
+      "value": 18
+    },
+    {
+      "name": "商圈",
+      "value": 18
+    },
+    {
+      "name": "集团",
+      "value": 18
+    },
+    {
+      "name": "城市",
+      "value": 18
+    },
+    {
+      "name": "中环",
+      "value": 18
+    },
+    {
+      "name": "逛街",
+      "value": 18
+    },
+    {
+      "name": "到达",
+      "value": 18
+    },
+    {
+      "name": "繁华",
+      "value": 17
+    },
+    {
+      "name": "位于",
+      "value": 17
+    },
+    {
+      "name": "交通",
+      "value": 17
+    },
+    {
+      "name": "著名",
+      "value": 16
+    },
+    {
+      "name": "商业街",
+      "value": 16
+    },
+    {
+      "name": "东城区",
+      "value": 16
+    },
+    {
+      "name": "地址",
+      "value": 16
+    }
+  ],
+  "qianmen": [
+    {
+      "name": "酒店",
+      "value": 61
+    },
+    {
+      "name": "推荐",
+      "value": 34
+    },
+    {
+      "name": "停车",
+      "value": 31
+    },
+    {
+      "name": "历史",
+      "value": 29
+    },
+    {
+      "name": "老字号",
+      "value": 26
+    },
+    {
+      "name": "文化",
+      "value": 26
+    },
+    {
+      "name": "泳池",
+      "value": 25
+    },
+    {
+      "name": "出行",
+      "value": 24
+    },
+    {
+      "name": "商务",
+      "value": 23
+    },
+    {
+      "name": "大街",
+      "value": 22
+    },
+    {
+      "name": "带娃",
+      "value": 22
+    },
+    {
+      "name": "爱住",
+      "value": 22
+    },
+    {
+      "name": "周边",
+      "value": 18
+    },
+    {
+      "name": "休闲",
+      "value": 16
+    },
+    {
+      "name": "度假",
+      "value": 16
+    },
+    {
+      "name": "会议",
+      "value": 16
+    },
+    {
+      "name": "商业",
+      "value": 15
+    },
+    {
+      "name": "传统",
+      "value": 14
+    },
+    {
+      "name": "上榜",
+      "value": 14
+    },
+    {
+      "name": "亲子",
+      "value": 14
+    },
+    {
+      "name": "大栅栏",
+      "value": 13
+    },
+    {
+      "name": "胡同",
+      "value": 13
+    },
+    {
+      "name": "游客",
+      "value": 12
+    },
+    {
+      "name": "打卡",
+      "value": 12
+    },
+    {
+      "name": "建筑",
+      "value": 11
+    },
+    {
+      "name": "温泉",
+      "value": 11
+    },
+    {
+      "name": "攻略",
+      "value": 10
+    },
+    {
+      "name": "商业街",
+      "value": 10
+    },
+    {
+      "name": "现代",
+      "value": 9
+    },
+    {
+      "name": "前门",
+      "value": 9
+    },
+    {
+      "name": "附近",
+      "value": 8
+    },
+    {
+      "name": "著名",
+      "value": 8
+    },
+    {
+      "name": "感受",
+      "value": 8
+    },
+    {
+      "name": "网红",
+      "value": 8
+    },
+    {
+      "name": "地址",
+      "value": 8
+    },
+    {
+      "name": "火车站",
+      "value": 8
+    },
+    {
+      "name": "大学",
+      "value": 8
+    },
+    {
+      "name": "交通",
+      "value": 7
+    },
+    {
+      "name": "时间",
+      "value": 7
+    },
+    {
+      "name": "里面",
+      "value": 7
+    },
+    {
+      "name": "中国",
+      "value": 7
+    },
+    {
+      "name": "京城",
+      "value": 7
+    },
+    {
+      "name": "照片",
+      "value": 7
+    },
+    {
+      "name": "城市",
+      "value": 7
+    },
+    {
+      "name": "体验",
+      "value": 7
+    },
+    {
+      "name": "古老",
+      "value": 7
+    },
+    {
+      "name": "四合院",
+      "value": 7
+    },
+    {
+      "name": "路线",
+      "value": 6
+    },
+    {
+      "name": "独特",
+      "value": 6
+    },
+    {
+      "name": "团购",
+      "value": 6
+    }
+  ],
+  "chongwenmen": [
+    {
+      "name": "酒店",
+      "value": 61
+    },
+    {
+      "name": "推荐",
+      "value": 37
+    },
+    {
+      "name": "停车",
+      "value": 31
+    },
+    {
+      "name": "泳池",
+      "value": 25
+    },
+    {
+      "name": "商务",
+      "value": 24
+    },
+    {
+      "name": "出行",
+      "value": 23
+    },
+    {
+      "name": "带娃",
+      "value": 22
+    },
+    {
+      "name": "爱住",
+      "value": 22
+    },
+    {
+      "name": "周边",
+      "value": 17
+    },
+    {
+      "name": "休闲",
+      "value": 16
+    },
+    {
+      "name": "度假",
+      "value": 16
+    },
+    {
+      "name": "会议",
+      "value": 16
+    },
+    {
+      "name": "小吃",
+      "value": 16
+    },
+    {
+      "name": "亲子",
+      "value": 15
+    },
+    {
+      "name": "上榜",
+      "value": 13
+    },
+    {
+      "name": "不错",
+      "value": 11
+    },
+    {
+      "name": "温泉",
+      "value": 11
+    },
+    {
+      "name": "环境",
+      "value": 11
+    },
+    {
+      "name": "服务",
+      "value": 11
+    },
+    {
+      "name": "好吃",
+      "value": 10
+    },
+    {
+      "name": "护国寺",
+      "value": 10
+    },
+    {
+      "name": "胡同",
+      "value": 9
+    },
+    {
+      "name": "大学",
+      "value": 9
+    },
+    {
+      "name": "肉饼",
+      "value": 9
+    },
+    {
+      "name": "历史",
+      "value": 8
+    },
+    {
+      "name": "喜欢",
+      "value": 8
+    },
+    {
+      "name": "美食",
+      "value": 8
+    },
+    {
+      "name": "餐厅",
+      "value": 8
+    },
+    {
+      "name": "牛肉",
+      "value": 8
+    },
+    {
+      "name": "火车站",
+      "value": 7
+    },
+    {
+      "name": "里面",
+      "value": 7
+    },
+    {
+      "name": "一家",
+      "value": 7
+    },
+    {
+      "name": "味道",
+      "value": 7
+    },
+    {
+      "name": "设计师",
+      "value": 6
+    },
+    {
+      "name": "精品",
+      "value": 6
+    },
+    {
+      "name": "河沿",
+      "value": 6
+    },
+    {
+      "name": "很多",
+      "value": 6
+    },
+    {
+      "name": "步行",
+      "value": 6
+    },
+    {
+      "name": "附近",
+      "value": 5
+    },
+    {
+      "name": "选择",
+      "value": 5
+    },
+    {
+      "name": "园林建筑",
+      "value": 5
+    },
+    {
+      "name": "网红",
+      "value": 5
+    },
+    {
+      "name": "浪漫",
+      "value": 5
+    },
+    {
+      "name": "情侣",
+      "value": 5
+    },
+    {
+      "name": "菜品",
+      "value": 5
+    },
+    {
+      "name": "油饼",
+      "value": 5
+    },
+    {
+      "name": "口感",
+      "value": 5
+    },
+    {
+      "name": "食材",
+      "value": 5
+    },
+    {
+      "name": "美味",
+      "value": 5
+    },
+    {
+      "name": "有点",
+      "value": 5
+    }
+  ],
+  "zhushikou": [
+    {
+      "name": "酒店",
+      "value": 64
+    },
+    {
+      "name": "推荐",
+      "value": 45
+    },
+    {
+      "name": "停车",
+      "value": 31
+    },
+    {
+      "name": "泳池",
+      "value": 25
+    },
+    {
+      "name": "商务",
+      "value": 24
+    },
+    {
+      "name": "出行",
+      "value": 23
+    },
+    {
+      "name": "带娃",
+      "value": 22
+    },
+    {
+      "name": "爱住",
+      "value": 22
+    },
+    {
+      "name": "小吃",
+      "value": 18
+    },
+    {
+      "name": "休闲",
+      "value": 17
+    },
+    {
+      "name": "度假",
+      "value": 16
+    },
+    {
+      "name": "周边",
+      "value": 16
+    },
+    {
+      "name": "会议",
+      "value": 16
+    },
+    {
+      "name": "亲子",
+      "value": 14
+    },
+    {
+      "name": "上榜",
+      "value": 13
+    },
+    {
+      "name": "胡同",
+      "value": 12
+    },
+    {
+      "name": "温泉",
+      "value": 11
+    },
+    {
+      "name": "餐厅",
+      "value": 11
+    },
+    {
+      "name": "护国寺",
+      "value": 11
+    },
+    {
+      "name": "历史",
+      "value": 10
+    },
+    {
+      "name": "喜欢",
+      "value": 10
+    },
+    {
+      "name": "美食",
+      "value": 10
+    },
+    {
+      "name": "环境",
+      "value": 10
+    },
+    {
+      "name": "大学",
+      "value": 9
+    },
+    {
+      "name": "服务",
+      "value": 9
+    },
+    {
+      "name": "里面",
+      "value": 8
+    },
+    {
+      "name": "今日",
+      "value": 8
+    },
+    {
+      "name": "选择",
+      "value": 8
+    },
+    {
+      "name": "味道",
+      "value": 8
+    },
+    {
+      "name": "不错",
+      "value": 8
+    },
+    {
+      "name": "热闹",
+      "value": 7
+    },
+    {
+      "name": "头条",
+      "value": 7
+    },
+    {
+      "name": "很多",
+      "value": 7
+    },
+    {
+      "name": "火车站",
+      "value": 7
+    },
+    {
+      "name": "一家",
+      "value": 7
+    },
+    {
+      "name": "好吃",
+      "value": 7
+    },
+    {
+      "name": "牛肉",
+      "value": 7
+    },
+    {
+      "name": "文化",
+      "value": 6
+    },
+    {
+      "name": "中国",
+      "value": 6
+    },
+    {
+      "name": "设计师",
+      "value": 6
+    },
+    {
+      "name": "精品",
+      "value": 6
+    },
+    {
+      "name": "口味",
+      "value": 6
+    },
+    {
+      "name": "肉饼",
+      "value": 6
+    },
+    {
+      "name": "步行",
+      "value": 6
+    },
+    {
+      "name": "搭配",
+      "value": 6
+    },
+    {
+      "name": "前门大街",
+      "value": 5
+    },
+    {
+      "name": "发布",
+      "value": 5
+    },
+    {
+      "name": "收获",
+      "value": 5
+    },
+    {
+      "name": "天桥",
+      "value": 5
+    },
+    {
+      "name": "地铁站",
+      "value": 5
+    }
+  ],
+  "xuanwumen": [
+    {
+      "name": "宣武门",
+      "value": 45
+    },
+    {
+      "name": "中国",
+      "value": 25
+    },
+    {
+      "name": "建筑",
+      "value": 24
+    },
+    {
+      "name": "胡同",
+      "value": 19
+    },
+    {
+      "name": "历史",
+      "value": 19
+    },
+    {
+      "name": "瓮城",
+      "value": 18
+    },
+    {
+      "name": "教堂",
+      "value": 15
+    },
+    {
+      "name": "箭楼",
+      "value": 14
+    },
+    {
+      "name": "南堂",
+      "value": 13
+    },
+    {
+      "name": "微风",
+      "value": 12
+    },
+    {
+      "name": "美国",
+      "value": 12
+    },
+    {
+      "name": "文化",
+      "value": 11
+    },
+    {
+      "name": "佟麟阁",
+      "value": 11
+    },
+    {
+      "name": "城市",
+      "value": 10
+    },
+    {
+      "name": "时间",
+      "value": 10
+    },
+    {
+      "name": "位于",
+      "value": 10
+    },
+    {
+      "name": "交通",
+      "value": 9
+    },
+    {
+      "name": "传统",
+      "value": 9
+    },
+    {
+      "name": "参观",
+      "value": 9
+    },
+    {
+      "name": "一座",
+      "value": 9
+    },
+    {
+      "name": "宣武",
+      "value": 9
+    },
+    {
+      "name": "大街",
+      "value": 9
+    },
+    {
+      "name": "拦截",
+      "value": 9
+    },
+    {
+      "name": "崇文门",
+      "value": 8
+    },
+    {
+      "name": "天主堂",
+      "value": 8
+    },
+    {
+      "name": "城楼",
+      "value": 8
+    },
+    {
+      "name": "天安门",
+      "value": 7
+    },
+    {
+      "name": "喜欢",
+      "value": 7
+    },
+    {
+      "name": "这座",
+      "value": 7
+    },
+    {
+      "name": "特色",
+      "value": 7
+    },
+    {
+      "name": "年代",
+      "value": 7
+    },
+    {
+      "name": "中心",
+      "value": 7
+    },
+    {
+      "name": "有着",
+      "value": 7
+    },
+    {
+      "name": "菜市口",
+      "value": 7
+    },
+    {
+      "name": "开放",
+      "value": 7
+    },
+    {
+      "name": "今日",
+      "value": 7
+    },
+    {
+      "name": "新文化",
+      "value": 7
+    },
+    {
+      "name": "独特",
+      "value": 6
+    },
+    {
+      "name": "京城",
+      "value": 6
+    },
+    {
+      "name": "小吃",
+      "value": 6
+    },
+    {
+      "name": "为主",
+      "value": 6
+    },
+    {
+      "name": "充满",
+      "value": 6
+    },
+    {
+      "name": "心中",
+      "value": 6
+    },
+    {
+      "name": "拆除",
+      "value": 6
+    },
+    {
+      "name": "鲁迅",
+      "value": 6
+    },
+    {
+      "name": "事件",
+      "value": 6
+    },
+    {
+      "name": "警告",
+      "value": 6
+    },
+    {
+      "name": "著名",
+      "value": 5
+    },
+    {
+      "name": "故宫",
+      "value": 5
+    },
+    {
+      "name": "皇家",
+      "value": 5
+    }
+  ],
+  "guobo": [
+    {
+      "name": "中国",
+      "value": 160
+    },
+    {
+      "name": "参观",
+      "value": 144
+    },
+    {
+      "name": "博物馆",
+      "value": 107
+    },
+    {
+      "name": "历史",
+      "value": 93
+    },
+    {
+      "name": "文化",
+      "value": 90
+    },
+    {
+      "name": "国家博物馆",
+      "value": 72
+    },
+    {
+      "name": "预约",
+      "value": 68
+    },
+    {
+      "name": "人民",
+      "value": 41
+    },
+    {
+      "name": "展览",
+      "value": 40
+    },
+    {
+      "name": "心得体会",
+      "value": 40
+    },
+    {
+      "name": "精选",
+      "value": 36
+    },
+    {
+      "name": "客家",
+      "value": 32
+    },
+    {
+      "name": "国家",
+      "value": 30
+    },
+    {
+      "name": "文物",
+      "value": 30
+    },
+    {
+      "name": "复兴",
+      "value": 28
+    },
+    {
+      "name": "古代",
+      "value": 28
+    },
+    {
+      "name": "看到",
+      "value": 26
+    },
+    {
+      "name": "感受",
+      "value": 25
+    },
+    {
+      "name": "建筑",
+      "value": 24
+    },
+    {
+      "name": "生活",
+      "value": 24
+    },
+    {
+      "name": "服务",
+      "value": 24
+    },
+    {
+      "name": "国博",
+      "value": 23
+    },
+    {
+      "name": "餐饮",
+      "value": 22
+    },
+    {
+      "name": "汀州",
+      "value": 22
+    },
+    {
+      "name": "时间",
+      "value": 21
+    },
+    {
+      "name": "展示",
+      "value": 21
+    },
+    {
+      "name": "中国共产党",
+      "value": 21
+    },
+    {
+      "name": "时期",
+      "value": 20
+    },
+    {
+      "name": "提前",
+      "value": 19
+    },
+    {
+      "name": "艺术",
+      "value": 19
+    },
+    {
+      "name": "展厅",
+      "value": 19
+    },
+    {
+      "name": "开放",
+      "value": 18
+    },
+    {
+      "name": "信息",
+      "value": 18
+    },
+    {
+      "name": "出土",
+      "value": 18
+    },
+    {
+      "name": "震撼",
+      "value": 17
+    },
+    {
+      "name": "一次",
+      "value": 17
+    },
+    {
+      "name": "发展",
+      "value": 17
+    },
+    {
+      "name": "陈列",
+      "value": 17
+    },
+    {
+      "name": "游客",
+      "value": 17
+    },
+    {
+      "name": "走进",
+      "value": 17
+    },
+    {
+      "name": "天安门广场",
+      "value": 16
+    },
+    {
+      "name": "活动",
+      "value": 16
+    },
+    {
+      "name": "旅游",
+      "value": 16
+    },
+    {
+      "name": "世界",
+      "value": 16
+    },
+    {
+      "name": "青铜",
+      "value": 16
+    },
+    {
+      "name": "伟大",
+      "value": 16
+    },
+    {
+      "name": "心得",
+      "value": 16
+    },
+    {
+      "name": "藏品",
+      "value": 15
+    },
+    {
+      "name": "丰富",
+      "value": 15
+    },
+    {
+      "name": "时段",
+      "value": 15
+    }
+  ],
+  "renmin_dahui": [
+    {
+      "name": "人民大会堂",
+      "value": 52
+    },
+    {
+      "name": "建筑",
+      "value": 41
+    },
+    {
+      "name": "参观",
+      "value": 41
+    },
+    {
+      "name": "中国",
+      "value": 35
+    },
+    {
+      "name": "人民",
+      "value": 26
+    },
+    {
+      "name": "天安门广场",
+      "value": 22
+    },
+    {
+      "name": "庄严",
+      "value": 20
+    },
+    {
+      "name": "国家",
+      "value": 18
+    },
+    {
+      "name": "故宫",
+      "value": 18
+    },
+    {
+      "name": "历史",
+      "value": 16
+    },
+    {
+      "name": "天安门城楼",
+      "value": 16
+    },
+    {
+      "name": "抖音",
+      "value": 16
+    },
+    {
+      "name": "现代化",
+      "value": 16
+    },
+    {
+      "name": "攻略",
+      "value": 14
+    },
+    {
+      "name": "政治",
+      "value": 13
+    },
+    {
+      "name": "发布",
+      "value": 13
+    },
+    {
+      "name": "喜欢",
+      "value": 13
+    },
+    {
+      "name": "预约",
+      "value": 13
+    },
+    {
+      "name": "世界",
+      "value": 12
+    },
+    {
+      "name": "收获",
+      "value": 12
+    },
+    {
+      "name": "文化",
+      "value": 11
+    },
+    {
+      "name": "时间",
+      "value": 11
+    },
+    {
+      "name": "旅游",
+      "value": 10
+    },
+    {
+      "name": "感受",
+      "value": 10
+    },
+    {
+      "name": "长城",
+      "value": 10
+    },
+    {
+      "name": "活动",
+      "value": 9
+    },
+    {
+      "name": "今日",
+      "value": 9
+    },
+    {
+      "name": "大会堂",
+      "value": 8
+    },
+    {
+      "name": "震撼",
+      "value": 8
+    },
+    {
+      "name": "头条",
+      "value": 8
+    },
+    {
+      "name": "宏伟",
+      "value": 8
+    },
+    {
+      "name": "侠客",
+      "value": 8
+    },
+    {
+      "name": "游玩",
+      "value": 8
+    },
+    {
+      "name": "全面",
+      "value": 8
+    },
+    {
+      "name": "重要",
+      "value": 7
+    },
+    {
+      "name": "大礼堂",
+      "value": 7
+    },
+    {
+      "name": "记录",
+      "value": 7
+    },
+    {
+      "name": "壮观",
+      "value": 7
+    },
+    {
+      "name": "传统",
+      "value": 7
+    },
+    {
+      "name": "服务",
+      "value": 7
+    },
+    {
+      "name": "外观",
+      "value": 7
+    },
+    {
+      "name": "规模",
+      "value": 7
+    },
+    {
+      "name": "金碧辉煌",
+      "value": 7
+    },
+    {
+      "name": "雄伟",
+      "value": 7
+    },
+    {
+      "name": "西侧",
+      "value": 7
+    },
+    {
+      "name": "百年",
+      "value": 7
+    },
+    {
+      "name": "这座",
+      "value": 6
+    },
+    {
+      "name": "哔哩",
+      "value": 6
+    },
+    {
+      "name": "正门",
+      "value": 6
+    },
+    {
+      "name": "生活",
+      "value": 6
+    }
+  ]
+}

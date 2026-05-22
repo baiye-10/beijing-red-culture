@@ -1,0 +1,694 @@
+{
+  "by_route": {
+    "路线一": [
+      {
+        "id": "tiananmen_sq",
+        "name": "天安门广场",
+        "total": 455,
+        "positive": 450,
+        "negative": 5,
+        "positive_ratio": 98.9,
+        "avg_score": 0.8369
+      },
+      {
+        "id": "tiananmen_gate",
+        "name": "天安门城楼",
+        "total": 324,
+        "positive": 322,
+        "negative": 2,
+        "positive_ratio": 99.38,
+        "avg_score": 0.8588
+      },
+      {
+        "id": "duanmen",
+        "name": "端门",
+        "total": 188,
+        "positive": 185,
+        "negative": 3,
+        "positive_ratio": 98.4,
+        "avg_score": 0.8993
+      },
+      {
+        "id": "zhongshan_park",
+        "name": "中山公园",
+        "total": 498,
+        "positive": 492,
+        "negative": 6,
+        "positive_ratio": 98.8,
+        "avg_score": 0.9494
+      },
+      {
+        "id": "mengzang",
+        "name": "蒙藏学校旧址",
+        "total": 180,
+        "positive": 178,
+        "negative": 2,
+        "positive_ratio": 98.89,
+        "avg_score": 0.8826
+      }
+    ],
+    "路线二": [
+      {
+        "id": "taimiao",
+        "name": "太庙",
+        "total": 210,
+        "positive": 206,
+        "negative": 4,
+        "positive_ratio": 98.1,
+        "avg_score": 0.8895
+      },
+      {
+        "id": "zhengyangmen",
+        "name": "正阳门",
+        "total": 248,
+        "positive": 242,
+        "negative": 6,
+        "positive_ratio": 97.58,
+        "avg_score": 0.9236
+      },
+      {
+        "id": "nanzhongzhou",
+        "name": "南中轴御道",
+        "total": 61,
+        "positive": 60,
+        "negative": 1,
+        "positive_ratio": 98.36,
+        "avg_score": 0.8786
+      },
+      {
+        "id": "tiantan",
+        "name": "天坛",
+        "total": 2835,
+        "positive": 2758,
+        "negative": 77,
+        "positive_ratio": 97.28,
+        "avg_score": 0.9262
+      },
+      {
+        "id": "xiannongtan",
+        "name": "先农坛",
+        "total": 315,
+        "positive": 303,
+        "negative": 12,
+        "positive_ratio": 96.19,
+        "avg_score": 0.8758
+      }
+    ],
+    "路线三": [
+      {
+        "id": "hongen_guan",
+        "name": "宏恩观",
+        "total": 197,
+        "positive": 193,
+        "negative": 4,
+        "positive_ratio": 97.97,
+        "avg_score": 0.8803
+      },
+      {
+        "id": "zhonglou",
+        "name": "钟楼",
+        "total": 308,
+        "positive": 304,
+        "negative": 4,
+        "positive_ratio": 98.7,
+        "avg_score": 0.9097
+      },
+      {
+        "id": "gulou",
+        "name": "鼓楼",
+        "total": 396,
+        "positive": 375,
+        "negative": 21,
+        "positive_ratio": 94.7,
+        "avg_score": 0.8043
+      },
+      {
+        "id": "wanning_bridge",
+        "name": "万宁桥",
+        "total": 244,
+        "positive": 232,
+        "negative": 12,
+        "positive_ratio": 95.08,
+        "avg_score": 0.8062
+      },
+      {
+        "id": "shichahai",
+        "name": "什刹海",
+        "total": 1516,
+        "positive": 1435,
+        "negative": 81,
+        "positive_ratio": 94.66,
+        "avg_score": 0.8758
+      }
+    ],
+    "路线四": [
+      {
+        "id": "guihua_guan",
+        "name": "北京市规划展览馆",
+        "total": 218,
+        "positive": 208,
+        "negative": 10,
+        "positive_ratio": 95.41,
+        "avg_score": 0.8251
+      },
+      {
+        "id": "tiedao_guan",
+        "name": "中国铁道博物馆正阳门馆",
+        "total": 352,
+        "positive": 338,
+        "negative": 14,
+        "positive_ratio": 96.02,
+        "avg_score": 0.8419
+      },
+      {
+        "id": "ziran_guan",
+        "name": "国家自然博物馆",
+        "total": 1351,
+        "positive": 1253,
+        "negative": 98,
+        "positive_ratio": 92.75,
+        "avg_score": 0.842
+      },
+      {
+        "id": "gudai_guan",
+        "name": "北京古代建筑博物馆",
+        "total": 272,
+        "positive": 267,
+        "negative": 5,
+        "positive_ratio": 98.16,
+        "avg_score": 0.9089
+      }
+    ],
+    "路线五": [
+      {
+        "id": "quanju_de",
+        "name": "全聚德博物馆",
+        "total": 247,
+        "positive": 212,
+        "negative": 35,
+        "positive_ratio": 85.83,
+        "avg_score": 0.6683
+      },
+      {
+        "id": "laoshe_chaguan",
+        "name": "老舍茶馆",
+        "total": 431,
+        "positive": 383,
+        "negative": 48,
+        "positive_ratio": 88.86,
+        "avg_score": 0.7655
+      },
+      {
+        "id": "neiliansheng",
+        "name": "内联升非物质文化遗产展厅",
+        "total": 120,
+        "positive": 117,
+        "negative": 3,
+        "positive_ratio": 97.5,
+        "avg_score": 0.8739
+      },
+      {
+        "id": "tongrentang",
+        "name": "北京同仁堂",
+        "total": 493,
+        "positive": 471,
+        "negative": 22,
+        "positive_ratio": 95.54,
+        "avg_score": 0.8034
+      },
+      {
+        "id": "shengxifu",
+        "name": "盛锡福中国冠帽文化馆",
+        "total": 119,
+        "positive": 118,
+        "negative": 1,
+        "positive_ratio": 99.16,
+        "avg_score": 0.8693
+      }
+    ],
+    "五四运动": [
+      {
+        "id": "beida_honglou",
+        "name": "北大红楼",
+        "total": 120,
+        "positive": 119,
+        "negative": 1,
+        "positive_ratio": 99.17,
+        "avg_score": 0.9148
+      },
+      {
+        "id": "tiananmen",
+        "name": "天安门",
+        "total": 119,
+        "positive": 119,
+        "negative": 0,
+        "positive_ratio": 100.0,
+        "avg_score": 0.9257
+      },
+      {
+        "id": "dongjiaomin",
+        "name": "东交民巷",
+        "total": 195,
+        "positive": 193,
+        "negative": 2,
+        "positive_ratio": 98.97,
+        "avg_score": 0.9194
+      },
+      {
+        "id": "zhaojialou",
+        "name": "赵家楼",
+        "total": 79,
+        "positive": 74,
+        "negative": 5,
+        "positive_ratio": 93.67,
+        "avg_score": 0.8136
+      }
+    ],
+    "一二九运动": [
+      {
+        "id": "xinhuamen",
+        "name": "新华门",
+        "total": 222,
+        "positive": 216,
+        "negative": 6,
+        "positive_ratio": 97.3,
+        "avg_score": 0.8688
+      },
+      {
+        "id": "beida",
+        "name": "北京大学",
+        "total": 140,
+        "positive": 134,
+        "negative": 6,
+        "positive_ratio": 95.71,
+        "avg_score": 0.86
+      },
+      {
+        "id": "xidan",
+        "name": "西单",
+        "total": 184,
+        "positive": 177,
+        "negative": 7,
+        "positive_ratio": 96.2,
+        "avg_score": 0.832
+      },
+      {
+        "id": "tianqiao",
+        "name": "天桥",
+        "total": 339,
+        "positive": 328,
+        "negative": 11,
+        "positive_ratio": 96.76,
+        "avg_score": 0.8393
+      },
+      {
+        "id": "xichang_an",
+        "name": "西长安街",
+        "total": 292,
+        "positive": 276,
+        "negative": 16,
+        "positive_ratio": 94.52,
+        "avg_score": 0.7854
+      },
+      {
+        "id": "xisi_pailou",
+        "name": "西四牌楼",
+        "total": 277,
+        "positive": 273,
+        "negative": 4,
+        "positive_ratio": 98.56,
+        "avg_score": 0.8883
+      },
+      {
+        "id": "dianmen",
+        "name": "地安门",
+        "total": 187,
+        "positive": 182,
+        "negative": 5,
+        "positive_ratio": 97.33,
+        "avg_score": 0.8901
+      },
+      {
+        "id": "wangfujing",
+        "name": "王府井",
+        "total": 213,
+        "positive": 210,
+        "negative": 3,
+        "positive_ratio": 98.59,
+        "avg_score": 0.8586
+      },
+      {
+        "id": "qianmen",
+        "name": "前门",
+        "total": 174,
+        "positive": 171,
+        "negative": 3,
+        "positive_ratio": 98.28,
+        "avg_score": 0.8982
+      },
+      {
+        "id": "chongwenmen",
+        "name": "崇文门",
+        "total": 107,
+        "positive": 103,
+        "negative": 4,
+        "positive_ratio": 96.26,
+        "avg_score": 0.859
+      },
+      {
+        "id": "zhushikou",
+        "name": "珠市口",
+        "total": 128,
+        "positive": 124,
+        "negative": 4,
+        "positive_ratio": 96.88,
+        "avg_score": 0.8833
+      },
+      {
+        "id": "xuanwumen",
+        "name": "宣武门",
+        "total": 209,
+        "positive": 202,
+        "negative": 7,
+        "positive_ratio": 96.65,
+        "avg_score": 0.8408
+      }
+    ],
+    "天安门广场": [
+      {
+        "id": "guobo",
+        "name": "中国国家博物馆",
+        "total": 433,
+        "positive": 412,
+        "negative": 21,
+        "positive_ratio": 95.15,
+        "avg_score": 0.8384
+      },
+      {
+        "id": "renmin_dahui",
+        "name": "人民大会堂",
+        "total": 194,
+        "positive": 181,
+        "negative": 13,
+        "positive_ratio": 93.3,
+        "avg_score": 0.7997
+      }
+    ]
+  },
+  "ranking": [
+    {
+      "id": "quanju_de",
+      "name": "全聚德博物馆",
+      "positive_ratio": 85.83,
+      "avg_score": 0.6683,
+      "total": 247
+    },
+    {
+      "id": "laoshe_chaguan",
+      "name": "老舍茶馆",
+      "positive_ratio": 88.86,
+      "avg_score": 0.7655,
+      "total": 431
+    },
+    {
+      "id": "ziran_guan",
+      "name": "国家自然博物馆",
+      "positive_ratio": 92.75,
+      "avg_score": 0.842,
+      "total": 1351
+    },
+    {
+      "id": "renmin_dahui",
+      "name": "人民大会堂",
+      "positive_ratio": 93.3,
+      "avg_score": 0.7997,
+      "total": 194
+    },
+    {
+      "id": "zhaojialou",
+      "name": "赵家楼",
+      "positive_ratio": 93.67,
+      "avg_score": 0.8136,
+      "total": 79
+    },
+    {
+      "id": "xichang_an",
+      "name": "西长安街",
+      "positive_ratio": 94.52,
+      "avg_score": 0.7854,
+      "total": 292
+    },
+    {
+      "id": "shichahai",
+      "name": "什刹海",
+      "positive_ratio": 94.66,
+      "avg_score": 0.8758,
+      "total": 1516
+    },
+    {
+      "id": "gulou",
+      "name": "鼓楼",
+      "positive_ratio": 94.7,
+      "avg_score": 0.8043,
+      "total": 396
+    },
+    {
+      "id": "wanning_bridge",
+      "name": "万宁桥",
+      "positive_ratio": 95.08,
+      "avg_score": 0.8062,
+      "total": 244
+    },
+    {
+      "id": "guobo",
+      "name": "中国国家博物馆",
+      "positive_ratio": 95.15,
+      "avg_score": 0.8384,
+      "total": 433
+    },
+    {
+      "id": "guihua_guan",
+      "name": "北京市规划展览馆",
+      "positive_ratio": 95.41,
+      "avg_score": 0.8251,
+      "total": 218
+    },
+    {
+      "id": "tongrentang",
+      "name": "北京同仁堂",
+      "positive_ratio": 95.54,
+      "avg_score": 0.8034,
+      "total": 493
+    },
+    {
+      "id": "beida",
+      "name": "北京大学",
+      "positive_ratio": 95.71,
+      "avg_score": 0.86,
+      "total": 140
+    },
+    {
+      "id": "tiedao_guan",
+      "name": "中国铁道博物馆正阳门馆",
+      "positive_ratio": 96.02,
+      "avg_score": 0.8419,
+      "total": 352
+    },
+    {
+      "id": "xiannongtan",
+      "name": "先农坛",
+      "positive_ratio": 96.19,
+      "avg_score": 0.8758,
+      "total": 315
+    },
+    {
+      "id": "xidan",
+      "name": "西单",
+      "positive_ratio": 96.2,
+      "avg_score": 0.832,
+      "total": 184
+    },
+    {
+      "id": "chongwenmen",
+      "name": "崇文门",
+      "positive_ratio": 96.26,
+      "avg_score": 0.859,
+      "total": 107
+    },
+    {
+      "id": "xuanwumen",
+      "name": "宣武门",
+      "positive_ratio": 96.65,
+      "avg_score": 0.8408,
+      "total": 209
+    },
+    {
+      "id": "tianqiao",
+      "name": "天桥",
+      "positive_ratio": 96.76,
+      "avg_score": 0.8393,
+      "total": 339
+    },
+    {
+      "id": "zhushikou",
+      "name": "珠市口",
+      "positive_ratio": 96.88,
+      "avg_score": 0.8833,
+      "total": 128
+    },
+    {
+      "id": "tiantan",
+      "name": "天坛",
+      "positive_ratio": 97.28,
+      "avg_score": 0.9262,
+      "total": 2835
+    },
+    {
+      "id": "xinhuamen",
+      "name": "新华门",
+      "positive_ratio": 97.3,
+      "avg_score": 0.8688,
+      "total": 222
+    },
+    {
+      "id": "dianmen",
+      "name": "地安门",
+      "positive_ratio": 97.33,
+      "avg_score": 0.8901,
+      "total": 187
+    },
+    {
+      "id": "neiliansheng",
+      "name": "内联升非物质文化遗产展厅",
+      "positive_ratio": 97.5,
+      "avg_score": 0.8739,
+      "total": 120
+    },
+    {
+      "id": "zhengyangmen",
+      "name": "正阳门",
+      "positive_ratio": 97.58,
+      "avg_score": 0.9236,
+      "total": 248
+    },
+    {
+      "id": "hongen_guan",
+      "name": "宏恩观",
+      "positive_ratio": 97.97,
+      "avg_score": 0.8803,
+      "total": 197
+    },
+    {
+      "id": "taimiao",
+      "name": "太庙",
+      "positive_ratio": 98.1,
+      "avg_score": 0.8895,
+      "total": 210
+    },
+    {
+      "id": "gudai_guan",
+      "name": "北京古代建筑博物馆",
+      "positive_ratio": 98.16,
+      "avg_score": 0.9089,
+      "total": 272
+    },
+    {
+      "id": "qianmen",
+      "name": "前门",
+      "positive_ratio": 98.28,
+      "avg_score": 0.8982,
+      "total": 174
+    },
+    {
+      "id": "nanzhongzhou",
+      "name": "南中轴御道",
+      "positive_ratio": 98.36,
+      "avg_score": 0.8786,
+      "total": 61
+    },
+    {
+      "id": "duanmen",
+      "name": "端门",
+      "positive_ratio": 98.4,
+      "avg_score": 0.8993,
+      "total": 188
+    },
+    {
+      "id": "xisi_pailou",
+      "name": "西四牌楼",
+      "positive_ratio": 98.56,
+      "avg_score": 0.8883,
+      "total": 277
+    },
+    {
+      "id": "wangfujing",
+      "name": "王府井",
+      "positive_ratio": 98.59,
+      "avg_score": 0.8586,
+      "total": 213
+    },
+    {
+      "id": "zhonglou",
+      "name": "钟楼",
+      "positive_ratio": 98.7,
+      "avg_score": 0.9097,
+      "total": 308
+    },
+    {
+      "id": "zhongshan_park",
+      "name": "中山公园",
+      "positive_ratio": 98.8,
+      "avg_score": 0.9494,
+      "total": 498
+    },
+    {
+      "id": "mengzang",
+      "name": "蒙藏学校旧址",
+      "positive_ratio": 98.89,
+      "avg_score": 0.8826,
+      "total": 180
+    },
+    {
+      "id": "tiananmen_sq",
+      "name": "天安门广场",
+      "positive_ratio": 98.9,
+      "avg_score": 0.8369,
+      "total": 455
+    },
+    {
+      "id": "dongjiaomin",
+      "name": "东交民巷",
+      "positive_ratio": 98.97,
+      "avg_score": 0.9194,
+      "total": 195
+    },
+    {
+      "id": "shengxifu",
+      "name": "盛锡福中国冠帽文化馆",
+      "positive_ratio": 99.16,
+      "avg_score": 0.8693,
+      "total": 119
+    },
+    {
+      "id": "beida_honglou",
+      "name": "北大红楼",
+      "positive_ratio": 99.17,
+      "avg_score": 0.9148,
+      "total": 120
+    },
+    {
+      "id": "tiananmen_gate",
+      "name": "天安门城楼",
+      "positive_ratio": 99.38,
+      "avg_score": 0.8588,
+      "total": 324
+    },
+    {
+      "id": "tiananmen",
+      "name": "天安门",
+      "positive_ratio": 100.0,
+      "avg_score": 0.9257,
+      "total": 119
+    }
+  ]
+}

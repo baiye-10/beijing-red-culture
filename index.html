@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探寻北京中轴线红色文化足迹</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <div class="brand-icon">🏛️</div>
+            <span class="brand-text">中轴线红色文化</span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active">首页</a>
+            <a href="#yixiang" class="nav-link">意象</a>
+            <a href="#manyou" class="nav-link">漫游</a>
+            <a href="#xingzou" class="nav-link">行走</a>
+            <a href="pages/analysis.html" class="nav-link">分析</a>
+        </div>
+    </nav>
+    
+    <section id="hero" class="section hero-section">
+        <div class="hero-background">
+            <img src="images/主页面.png" alt="主页面" class="hero-background-image">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">探寻北京中轴线</h1>
+                <h2 class="hero-subtitle">红色文化足迹</h2>
+                <p class="hero-desc">穿越时空，感受历史与现代的交融</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>向下探索</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section summary-section" id="summary">
+        <div class="container">
+            <div class="summary-card">
+                <h3 class="summary-title">叙事地图</h3>
+                <p class="summary-text">探索北京中轴线的历史变迁与红色文化记忆</p>
+                <div class="narrative-image-container">
+                    <img src="images/叙事地图总.png" alt="叙事地图总览" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section summary-section" id="summary">
+        <div class="container">
+            <div class="summary-card">
+                <h3 class="summary-title">我们的研究方向</h3>
+                <p class="summary-text">从意象、漫游到行走，三个维度深入探索北京中轴线的历史文化风貌</p>
+                <div class="three-dimensions">
+                    <div class="dimension" onclick="updateDescription('yixiang')">
+                        <div class="dimension-icon">🎨</div>
+                        <div class="dimension-name">意象</div>
+                        <div class="dimension-desc">文化意象的深度解读</div>
+                    </div>
+                    <div class="dimension" onclick="updateDescription('manyou')">
+                        <div class="dimension-icon">🗺️</div>
+                        <div class="dimension-name">漫游</div>
+                        <div class="dimension-desc">叙事地图的时光之旅</div>
+                    </div>
+                    <div class="dimension" onclick="updateDescription('xingzou')">
+                        <div class="dimension-icon">🚶</div>
+                        <div class="dimension-name">行走</div>
+                        <div class="dimension-desc">实地体验的文化探索</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section description-section" id="dynamic-description">
+        <div class="container">
+            <div class="description-card" id="description-content">
+                <h2 class="description-title" id="desc-title">意象</h2>
+                <p class="description-text" id="desc-text">意象：代表了人们对解读城市文化的初级阶段，即碎片式的、不成体系的认识。</p>
+            </div>
+            <div class="dynamic-image-container" id="dynamic-image">
+                <img src="images/意象.png" alt="意象" class="dynamic-image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="section map-section" id="map-hero">
+        <div class="container">
+            <div class="map-container">
+                <h2 class="section-title">中轴线景点示意图</h2>
+                <div class="image-wrapper">
+                    <img src="images/中轴线景点示意图.png" alt="中轴线景点示意图" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section analysis-summary-section" id="analysis-summary" style="padding:4rem 0;background:linear-gradient(135deg,#faf7f0,#f5efe6);">
+        <div class="container" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+            <h2 class="section-title">数据分析总结</h2>
+            <div id="analysis-summary-content" style="background:white;border-radius:1rem;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+                <p style="text-align:center;color:#666;">加载中...</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section scenic-buttons-section" id="scenic-buttons" style="padding:4rem 0;background:#fff;">
+        <div class="container" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+            <h2 class="section-title">各景点优缺点分析</h2>
+            <p class="section-subtitle">点击下方按钮查看各景点的详细分析</p>
+            <div id="scenic-buttons-container" style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2rem;">
+            </div>
+        </div>
+    </section>
+    
+    <section class="section scenic-detail-section" id="scenic-detail" style="padding:4rem 0;background:linear-gradient(135deg,#f5efe6,#faf7f0);display:none;">
+        <div class="container" style="max-width:1000px;margin:0 auto;padding:0 2rem;">
+            <div id="scenic-detail-content" style="background:white;border-radius:1rem;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+            </div>
+        </div>
+    </section>
+    
+    <section class="section yixiang-section" id="yixiang">
+        <div class="container">
+            <h2 class="section-title">意象</h2>
+            <div class="yixiang-content">
+                <div class="yixiang-image">
+                    <img src="images/意象展示.png" alt="意象展示" class="responsive-image">
+                </div>
+                <div class="yixiang-text">
+                    <p>北京中轴线作为北京古都的脊梁，承载着深厚的历史文化内涵。从永定门到钟鼓楼，这条轴线见证了北京城数百年的变迁。</p>
+                    <p>我们通过文化意象的解读，深入挖掘中轴线背后的红色故事和历史记忆。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section manyou-section" id="manyou">
+        <div class="container">
+            <h2 class="section-title">漫游</h2>
+            <p class="section-subtitle">叙事地图与历史记忆</p>
+            
+            <div class="manyou-cards">
+                <a href="pages/may4th.html" class="narrative-card may4th">
+                    <div class="card-image">
+                        <img src="images/五四运动路线图.png" alt="五四运动路线图">
+                    </div>
+                    <div class="card-overlay">
+                        <h3 class="card-title">五四运动</h3>
+                        <p class="card-desc">1919年的爱国运动，开启了中国新民主主义革命的序幕</p>
+                        <div class="card-action">探索路线 →</div>
+                    </div>
+                </a>
+                
+                <a href="pages/dec9th-day9.html" class="narrative-card december9th">
+                    <div class="card-image">
+                        <img src="images/一二九路线9日.png" alt="一二九运动9日路线图">
+                    </div>
+                    <div class="card-overlay">
+                        <h3 class="card-title">一二九运动（9日）</h3>
+                        <p class="card-desc">1935年12月9日的抗日救亡运动</p>
+                        <div class="card-action">探索路线 →</div>
+                    </div>
+                </a>
+                
+                <a href="pages/dec9th-day16.html" class="narrative-card december9th">
+                    <div class="card-image">
+                        <img src="images/一二九运动16日.png" alt="一二九运动16日路线图">
+                    </div>
+                    <div class="card-overlay">
+                        <h3 class="card-title">一二九运动（16日）</h3>
+                        <p class="card-desc">1935年12月16日的抗日救亡游行</p>
+                        <div class="card-action">探索路线 →</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section xingzou-section" id="xingzou">
+        <div class="container">
+            <h2 class="section-title">行走</h2>
+            <p class="section-subtitle">五条路线实地探索</p>
+            
+            <div class="xingzou-grid">
+                <a href="pages/walk-route1.html" class="walk-card">
+                    <div class="walk-number">路线一</div>
+                    <div class="walk-image">
+                        <img src="images/国家礼仪爱国情怀红色游.png" alt="漫步北京路线1">
+                    </div>
+                    <div class="walk-info">
+                        <h4>国家礼仪·爱国情怀红色游</h4>
+                        <p>从历史到现代的穿越</p>
+                    </div>
+                </a>
+                
+                <a href="pages/walk-route2.html" class="walk-card">
+                    <div class="walk-number">路线二</div>
+                    <div class="walk-image">
+                        <img src="images/古代祭祀传统文化探秘游.png" alt="漫步北京路线2">
+                    </div>
+                    <div class="walk-info">
+                        <h4>古代祭祀·传统文化探秘游</h4>
+                        <p>文化与自然的交融</p>
+                    </div>
+                </a>
+                
+                <a href="pages/walk-route3.html" class="walk-card">
+                    <div class="walk-number">路线三</div>
+                    <div class="walk-image">
+                        <img src="images/古都文化城市管理探迹游.png" alt="漫步北京路线3">
+                    </div>
+                    <div class="walk-info">
+                        <h4>古都文化·城市管理探迹游</h4>
+                        <p>传统与创新的对话</p>
+                    </div>
+                </a>
+                
+                <a href="pages/walk-route4.html" class="walk-card">
+                    <div class="walk-number">路线四</div>
+                    <div class="walk-image">
+                        <img src="images/博物馆之城中轴线感知游.png" alt="漫步北京路线4">
+                    </div>
+                    <div class="walk-info">
+                        <h4>博物馆之城·中轴线感知游</h4>
+                        <p>记忆与现实的碰撞</p>
+                    </div>
+                </a>
+                
+                <a href="pages/walk-route5.html" class="walk-card">
+                    <div class="walk-number">路线五</div>
+                    <div class="walk-image">
+                        <img src="images/京味文化中轴非遗体验游.png" alt="漫步北京路线5">
+                    </div>
+                    <div class="walk-info">
+                        <h4>京味文化·中轴非遗体验游</h4>
+                        <p>过去与未来的连接</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="analysis-entry" style="padding:4rem 0;background:linear-gradient(135deg,#faf7f0,#f5efe6);">
+        <div class="container" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+            <h2 class="section-title">数据分析</h2>
+            <p class="section-subtitle">游客价值感知量化研究</p>
+            <a href="pages/analysis.html" style="display:block;max-width:800px;margin:2rem auto 0;background:white;border-radius:1rem;padding:2rem;text-decoration:none;color:inherit;box-shadow:0 4px 20px rgba(0,0,0,0.08);border:1px solid #e8e0d4;transition:transform 0.3s,box-shadow 0.3s;">
+                <div style="display:flex;align-items:center;gap:2rem;">
+                    <div style="font-size:4rem;">📊</div>
+                    <div>
+                        <h3 style="font-family:'Noto Serif SC',serif;color:#2c3e50;margin-bottom:0.5rem;">游客价值感知分析</h3>
+                        <p style="color:#666;font-size:0.95rem;line-height:1.8;">基于LDA主题模型与BERT情感分析，对42个中轴线景点的15,000+条游客评论进行深度挖掘，涵盖情感分析、关键词提取、主题模型等多维度研究。</p>
+                        <div style="display:flex;gap:1rem;margin-top:1rem;">
+                            <span style="background:linear-gradient(135deg,#c84038,#e85d55);color:white;padding:0.3rem 0.8rem;border-radius:1rem;font-size:0.8rem;">BERT情感分析</span>
+                            <span style="background:linear-gradient(135deg,#d4af37,#e8c94a);color:white;padding:0.3rem 0.8rem;border-radius:1rem;font-size:0.8rem;">LDA主题模型</span>
+                            <span style="background:linear-gradient(135deg,#2e7d32,#66bb6a);color:white;padding:0.3rem 0.8rem;border-radius:1rem;font-size:0.8rem;">TF-IDF关键词</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <section class="section footer-section" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-icon">🏛️</div>
+                    <span>探寻北京中轴线红色文化足迹</span>
+                </div>
+                <div class="footer-info">
+                    <p>北京联合大学应用文科综合实验教学中心</p>
+                    <p>2025年文科创新性实验项目</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 红色文化足迹研究项目组</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+    <script>
+        function updateDescription(section) {
+            const descriptions = {
+                yixiang: {
+                    title: "意象",
+                    text: "意象：代表了人们对解读城市文化的初级阶段，即碎片式的、不成体系的认识。",
+                    image: "images/意象.png"
+                },
+                manyou: {
+                    title: "漫游",
+                    text: "漫游：代表了人们解读城市文化的中级阶段，即局部的、成体系的认识。",
+                    image: "images/漫游.png"
+                },
+                xingzou: {
+                    title: "行走",
+                    text: "行走：代表了人们对解读城市文化的高级阶段，即全局的、系统深入的认识。",
+                    image: "images/行走.png"
+                }
+            };
+            
+            const desc = descriptions[section];
+            document.getElementById('desc-title').textContent = desc.title;
+            document.getElementById('desc-text').textContent = desc.text;
+            document.getElementById('dynamic-image').innerHTML = '<img src="' + desc.image + '" alt="' + desc.title + '" class="dynamic-image">';
+        }
+        
+        let scenicData = null;
+        let analysisData = null;
+        
+        async function loadData() {
+            try {
+                const [scenicResponse, analysisResponse] = await Promise.all([
+                    fetch('data/scenic_pros_cons.json'),
+                    fetch('data/analysis_summary.json')
+                ]);
+                
+                scenicData = await scenicResponse.json();
+                analysisData = await analysisResponse.json();
+                
+                renderAnalysisSummary();
+                renderScenicButtons();
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                const summaryEl = document.getElementById('analysis-summary-content');
+                if (summaryEl) {
+                    summaryEl.innerHTML = '<p style="text-align:center;color:#dc3545;">数据加载失败</p>';
+                }
+            }
+        }
+        
+        function renderAnalysisSummary() {
+            const container = document.getElementById('analysis-summary-content');
+            if (!container) return;
+            container.innerHTML = `
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-bottom:2rem;">
+                    <div style="background:linear-gradient(135deg,#667eea,#764ba2);padding:1.5rem;border-radius:1rem;color:white;text-align:center;">
+                        <div style="font-size:2.5rem;font-weight:bold;">${analysisData.total_spots}</div>
+                        <div style="opacity:0.9;">景点总数</div>
+                    </div>
+                    <div style="background:linear-gradient(135deg,#f093fb,#f5576c);padding:1.5rem;border-radius:1rem;color:white;text-align:center;">
+                        <div style="font-size:2.5rem;font-weight:bold;">${analysisData.total_reviews.toLocaleString()}</div>
+                        <div style="opacity:0.9;">评论总数</div>
+                    </div>
+                    <div style="background:linear-gradient(135deg,#4facfe,#00f2fe);padding:1.5rem;border-radius:1rem;color:white;text-align:center;">
+                        <div style="font-size:2.5rem;font-weight:bold;">${(analysisData.avg_positive_rate * 100).toFixed(1)}%</div>
+                        <div style="opacity:0.9;">平均正面率</div>
+                    </div>
+                </div>
+                <div style="margin-top:2rem;">
+                    <h3 style="color:#2c3e50;margin-bottom:1rem;">核心洞察</h3>
+                    <ul style="color:#555;line-height:2;">
+                        ${analysisData.key_insights.map(insight => `<li>${insight}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+        
+        function renderScenicButtons() {
+            const container = document.getElementById('scenic-buttons-container');
+            if (!container) return;
+            const spots = Object.values(scenicData);
+            
+            container.innerHTML = spots.map(spot => {
+                const colorClass = spot.positive_rate >= 0.7 ? 'linear-gradient(135deg,#2e7d32,#66bb6a)' : 
+                                   spot.positive_rate >= 0.6 ? 'linear-gradient(135deg,#f093fb,#f5576c)' : 
+                                   'linear-gradient(135deg,#dc3545,#c82333)';
+                return `
+                    <button onclick="showScenicDetail('${spot.id}')" 
+                            style="padding:1rem 1.5rem;background:${colorClass};color:white;border:none;border-radius:0.75rem;
+                                   cursor:pointer;font-size:1rem;font-weight:500;transition:transform 0.3s,box-shadow 0.3s;
+                                   box-shadow:0 2px 8px rgba(0,0,0,0.1);"
+                            onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.15)'"
+                            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'">
+                        ${spot.name}
+                    </button>
+                `;
+            }).join('');
+        }
+        
+        function showScenicDetail(spotId) {
+            const spot = scenicData[spotId];
+            if (!spot) return;
+            
+            const detailSection = document.getElementById('scenic-detail');
+            const container = document.getElementById('scenic-detail-content');
+            if (!detailSection || !container) return;
+            
+            const scoreColor = spot.positive_rate >= 0.7 ? '#2e7d32' : 
+                              spot.positive_rate >= 0.6 ? '#f5576c' : '#dc3545';
+            
+            container.innerHTML = `
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
+                    <h2 style="color:#2c3e50;margin:0;">${spot.name}</h2>
+                    <button onclick="closeScenicDetail()" 
+                            style="padding:0.5rem 1rem;background:#e9ecef;border:none;border-radius:0.5rem;cursor:pointer;color:#495057;">
+                        关闭
+                    </button>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-bottom:2rem;">
+                    <div style="background:#f8f9fa;padding:1.5rem;border-radius:1rem;text-align:center;">
+                        <div style="font-size:2rem;font-weight:bold;color:${scoreColor};">${(spot.positive_rate * 100).toFixed(1)}%</div>
+                        <div style="color:#666;">正面评价率</div>
+                    </div>
+                    <div style="background:#f8f9fa;padding:1.5rem;border-radius:1rem;text-align:center;">
+                        <div style="font-size:2rem;font-weight:bold;color:#495057;">${spot.review_count}</div>
+                        <div style="color:#666;">评论数</div>
+                    </div>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;">
+                    <div>
+                        <h3 style="color:#2e7d32;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
+                            <span style="font-size:1.5rem;">✅</span>优点
+                        </h3>
+                        <ul style="color:#555;line-height:1.8;">
+                            ${spot.pros.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color:#dc3545;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem;">
+                            <span style="font-size:1.5rem;">⚠️</span>待改进
+                        </h3>
+                        <ul style="color:#555;line-height:1.8;">
+                            ${spot.cons.length > 0 ? spot.cons.map(c => `<li>${c}</li>`).join('') : '<li>暂无</li>'}
+                        </ul>
+                    </div>
+                </div>
+                ${spot.topics.length > 0 ? `
+                <div style="margin-top:2rem;">
+                    <h3 style="color:#495057;margin-bottom:1rem;">主题特色</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                        ${spot.topics.map(t => `<span style="background:#e3f2fd;color:#1976d2;padding:0.5rem 1rem;border-radius:1.5rem;font-size:0.9rem;">${t}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                ${spot.keywords.length > 0 ? `
+                <div style="margin-top:2rem;">
+                    <h3 style="color:#495057;margin-bottom:1rem;">关键词</h3>
+                    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                        ${spot.keywords.map(k => `<span style="background:#f3e5f5;color:#7b1fa2;padding:0.3rem 0.8rem;border-radius:1rem;font-size:0.85rem;">${k}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            `;
+            
+            detailSection.style.display = 'block';
+            detailSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function closeScenicDetail() {
+            const el = document.getElementById('scenic-detail');
+            if (el) el.style.display = 'none';
+        }
+        
+        window.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

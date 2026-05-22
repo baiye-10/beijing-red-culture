@@ -1,0 +1,93 @@
+{
+  "dimensions": [
+    {
+      "name": "能力提升",
+      "indicator_count": 3
+    },
+    {
+      "name": "认知体验",
+      "indicator_count": 6
+    },
+    {
+      "name": "文化认同",
+      "indicator_count": 6
+    }
+  ],
+  "indicators": [
+    {
+      "code": "S1",
+      "name": "技能获取",
+      "dimension": "能力提升"
+    },
+    {
+      "code": "S2",
+      "name": "智慧增长",
+      "dimension": "能力提升"
+    },
+    {
+      "code": "S3",
+      "name": "知识增长",
+      "dimension": "能力提升"
+    },
+    {
+      "code": "S4",
+      "name": "情感体验",
+      "dimension": "认知体验"
+    },
+    {
+      "code": "S5",
+      "name": "反思体验",
+      "dimension": "认知体验"
+    },
+    {
+      "code": "S6",
+      "name": "具身感知",
+      "dimension": "认知体验"
+    },
+    {
+      "code": "S7",
+      "name": "城市依恋",
+      "dimension": "认知体验"
+    },
+    {
+      "code": "S8",
+      "name": "焕新体验",
+      "dimension": "认知体验"
+    },
+    {
+      "code": "S9",
+      "name": "娱乐体验",
+      "dimension": "认知体验"
+    },
+    {
+      "code": "S10",
+      "name": "文化传承",
+      "dimension": "文化认同"
+    },
+    {
+      "code": "S11",
+      "name": "观念变化",
+      "dimension": "文化认同"
+    },
+    {
+      "code": "S12",
+      "name": "情感共鸣",
+      "dimension": "文化认同"
+    },
+    {
+      "code": "S13",
+      "name": "影像增强",
+      "dimension": "文化认同"
+    },
+    {
+      "code": "S14",
+      "name": "自我认可",
+      "dimension": "文化认同"
+    },
+    {
+      "code": "S15",
+      "name": "人际关系",
+      "dimension": "文化认同"
+    }
+  ]
+}
